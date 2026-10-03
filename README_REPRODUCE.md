@@ -143,6 +143,8 @@ frozen records; their environment-specific adapters are not public rerun
 entry points. RQ2 mutation replay is documented in
 [the case-study instructions](experiments/case_studies/saleor_attribute_choices/README.md).
 
-`analysis/paper_mapping.csv` maps evidence to artifact paths; `docs/` explains
+`analysis/paper_mapping.csv` maps evidence to artifact paths;
+[`analysis/paper_table_mapping.csv`](analysis/paper_table_mapping.csv) identifies
+the result fields, units and scope of each paper table. `docs/` explains
 construction, annotation and trajectory protocols. `MANIFEST.sha256` defines
 the public file surface and excludes staging-only `_internal/` infrastructure.

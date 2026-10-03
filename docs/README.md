@@ -32,6 +32,24 @@ model event trees, and exploratory runs are excluded.
 
 ## Paper-to-repository guide
 
+The [table mapping](../analysis/paper_table_mapping.csv) links each paper table
+to its result file, fields, units and counting scope using the LaTeX table label.
+In identification tables, precision and recall refer to the positive class,
+Macro-F1 averages the two class F1 scores, and `Acc` reads `balanced_accuracy`:
+`0.5 * (TP / N_positive + TN / N_negative)`. The class supports are 50 positive
+and 1,623 negative episodes. For prior methods, eleven negatives without
+locator candidates remain in the negative support and receive no true-negative
+credit. The separate `accuracy` field records the overall fraction correct.
+SITAR reports the mean of each metric across ten seeds.
+
+Identification and Generation rates are displayed as percentages. Generation
+parentheses give successes out of the condition's denominator. The RQ2 paired
+differences and confidence intervals are displayed in percentage points. The
+locator table uses all 74 applicable episodes for recovery and mean cost.
+The RQ3 cost table displays maintenance-call tokens in millions and actor-process
+time in seconds; Online seed and reflection consumption is reported separately
+in the [resource accounting protocol](history_and_memory_protocol.md).
+
 | Paper content or former appendix section | Readable document | Supporting result group |
 |---|---|---|
 | Construction, execution profiles and task schemas | [Construction protocol](benchmark_construction.md) | [Repository profiles](../benchmark/server/repo_profiles/README.md), [evaluator schema](../benchmark/server/schema.md) |

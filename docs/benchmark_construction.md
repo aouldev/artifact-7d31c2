@@ -60,8 +60,11 @@ boundaries are linked from the [history protocol](history_and_memory_protocol.md
 
 UCR is a file-level criterion: successful execution covers at least one changed
 production file. It does not establish coverage of modified statements,
-branches or complete behavior. The released RQ1/RQ3 records retain the applicable
-denominator and native CSR/TPS/UCR outcomes. Five RQ3 evaluation episodes need
+branches or complete behavior. Released RQ1 Generation records retain the applicable
+denominator and identify the numerator source in their aggregation metadata.
+Coding-agent RQ1 and RQ3 results use native target-test outcomes; prior-method
+RQ1 results aggregate the evaluator pass counts recorded for those runs.
+Five RQ3 evaluation episodes need
 additional original-production dependencies; their actual production state is
 documented in the [evaluation-state record](../results/rq3/evaluation_environment.json).
 

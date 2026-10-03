@@ -1,0 +1,14 @@
+table_label,component,artifact_input,value_fields,display_units,counting_scope
+tab:benchmark-tasks,task_interfaces,benchmark/server/schema.md,input;output;gold,evaluation_schema,Identification and Generation
+tab:generation-metrics,success_conditions,docs/history_and_memory_protocol.md,csr;tps;ucr,metric_definitions,Conditional generation
+tab:maintenance-patterns,maintenance_patterns,results/benchmark_characterization/maintenance_pattern_summary.json,pattern_episode_counts;pattern_percentages;pattern_repository_counts,counts and percentages,288 positive episodes; patterns may overlap
+tab:locator-positive,recovery_and_cost,results/locator/metrics.json,methods.*.hit_at_5;methods.*.all_recall_at_20;methods.*.applicable_cost,percentages; seconds; tokens,74 applicable existing-target episodes
+tab:rq1-prior,identification,results/rq1/prior_methods/identification_metrics.json,methods.*.conditions.*.precision;recall;macro_f1;balanced_accuracy,percentages,1673 episodes; SITAR uses ten-seed means
+tab:rq1-prior,generation,results/rq1/prior_methods/generation_metrics.json,methods.*.*.csr;tps;ucr;*_pass_count;*_denominator,percentages and successes/denominator,Conditional generation; numerator source in aggregation metadata
+tab:rq1-results,identification,results/rq1/stateless_agents/decision_metrics.json,agents.*.per_label.positive.precision;recall;agents.*.macro_f1;balanced_accuracy,percentages,1673 episodes; Acc reads balanced_accuracy
+tab:rq1-results,generation,results/rq1/stateless_agents/generation_metrics.json,agents.*.csr;tps;ucr;*_pass_count;*_denominator,percentages and successes/denominator,Same Stateless results as RQ3
+tab:rq2-missing-share,paired_missing_share,results/rq2/behavior_summary.json,paired_comparison.differences_agent_minus_developer.*.mean;ci95_low;ci95_high,percentage points,46 equally weighted paired episodes; 20000 bootstrap draws
+tab:rq2-mutations,mutation_detection,results/rq2/mutation_execution.json,rows.*.suite_runs.*.normal;mutant;newly_failed_assertions,passed/total and detection status,Two illustrative Saleor mutations
+tab:rq3-results,identification,results/rq3/identification_metrics.json,conditions.*.metrics.precision_positive;recall_positive;macro_f1;balanced_accuracy,percentages,1673 episodes per condition; Acc reads balanced_accuracy
+tab:rq3-results,generation,results/rq3/generation_metrics.json,conditions.*.metrics.*.rate;passed;denominator,percentages and successes/denominator,Reference-evaluable positives intersect correctly identified positives
+tab:rq3-cost,resource_use,results/rq3/cost_metrics.json,conditions.*.tokens.sum;conditions.*.time_seconds.median;p90,million tokens; seconds,Selected maintenance calls; memory construction is reported separately
