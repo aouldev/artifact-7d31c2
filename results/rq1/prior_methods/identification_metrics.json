@@ -1,0 +1,125 @@
+{
+  "status": "reported",
+  "scope": "k75_evaluation",
+  "cohort": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "methods": {
+    "sitar": {
+      "conditions": {
+        "tn": {
+          "mean": {
+            "accuracy": 0.9044829647340108,
+            "precision": 0.17762249347272913,
+            "recall": 0.542,
+            "f1": 0.2673834363971018,
+            "macro_f1": 0.6081767736439828,
+            "balanced_accuracy": 0.7288250154035736
+          },
+          "confusion_mean": {
+            "tp": 27.1,
+            "fp": 125.9,
+            "tn": 1486.1,
+            "fn": 22.9
+          },
+          "seed_count": 10,
+          "episode_count": 1673,
+          "unresolved_negative": 11
+        },
+        "tu": {
+          "mean": {
+            "accuracy": 0.9035265989240885,
+            "precision": 0.16879833721498902,
+            "recall": 0.51,
+            "f1": 0.25345966582997687,
+            "macro_f1": 0.6009726507739338,
+            "balanced_accuracy": 0.7128250154035736
+          },
+          "confusion_mean": {
+            "tp": 25.5,
+            "fp": 125.9,
+            "tn": 1486.1,
+            "fn": 24.5
+          },
+          "seed_count": 10,
+          "episode_count": 1673,
+          "unresolved_negative": 11
+        }
+      }
+    },
+    "ceprot": {
+      "conditions": {
+        "tn": {
+          "accuracy": 0.9611476389719068,
+          "precision": 0.375,
+          "recall": 0.12,
+          "f1": 0.18181818181818182,
+          "macro_f1": 0.5809672126588615,
+          "balanced_accuracy": 0.5535304990757856,
+          "tp": 6,
+          "fp": 10,
+          "tn": 1602,
+          "fn": 44,
+          "unresolved_positive": 0,
+          "unresolved_negative": 11,
+          "unresolved_error_count": 11,
+          "episode_count": 1673
+        },
+        "tu": {
+          "accuracy": 0.9617453676031081,
+          "precision": 0.4117647058823529,
+          "recall": 0.14,
+          "f1": 0.208955223880597,
+          "macro_f1": 0.5946856902756719,
+          "balanced_accuracy": 0.5635304990757856,
+          "tp": 7,
+          "fp": 10,
+          "tn": 1602,
+          "fn": 43,
+          "unresolved_positive": 0,
+          "unresolved_negative": 11,
+          "unresolved_error_count": 11,
+          "episode_count": 1673
+        }
+      }
+    },
+    "reaccept": {
+      "conditions": {
+        "tn": {
+          "accuracy": 0.7364016736401674,
+          "precision": 0.09745762711864407,
+          "recall": 0.92,
+          "f1": 0.17624521072796934,
+          "macro_f1": 0.5097365406643757,
+          "balanced_accuracy": 0.8253727664818238,
+          "tp": 46,
+          "fp": 426,
+          "tn": 1186,
+          "fn": 4,
+          "unresolved_positive": 0,
+          "unresolved_negative": 11,
+          "unresolved_error_count": 11,
+          "episode_count": 1673
+        },
+        "tu": {
+          "accuracy": 0.7346084877465631,
+          "precision": 0.08993576017130621,
+          "recall": 0.84,
+          "f1": 0.16247582205029013,
+          "macro_f1": 0.5024586349428172,
+          "balanced_accuracy": 0.7856808379544054,
+          "tp": 42,
+          "fp": 425,
+          "tn": 1187,
+          "fn": 8,
+          "unresolved_positive": 0,
+          "unresolved_negative": 11,
+          "unresolved_error_count": 11,
+          "episode_count": 1673
+        }
+      }
+    }
+  }
+}

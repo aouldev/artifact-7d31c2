@@ -1,0 +1,52 @@
+{
+  "repo": "typebot",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "typebot_package_vitest",
+      "path_regex": "^(packages|plugins|integrations)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{test_dir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_name}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    },
+    {
+      "name": "typebot_package_vitest_raw_v8",
+      "path_regex": "^(packages|plugins|integrations)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{test_dir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_name}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

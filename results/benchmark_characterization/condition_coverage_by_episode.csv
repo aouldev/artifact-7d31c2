@@ -1,0 +1,577 @@
+episode_id,condition,recorded_targets,satisfying_targets,status
+affine__03478f01929c,Old test source,1,0,None
+affine__221fc550d73a,Old test source,1,0,None
+affine__41d0a248f683,Old test source,3,0,None
+affine__452d90d731e9,Old test source,1,1,All
+affine__497683630265,Old test source,1,0,None
+affine__4e115eb1f696,Old test source,1,0,None
+affine__53ed9e9d72bb,Old test source,1,1,All
+affine__62d1add58b7d,Old test source,5,2,Some
+affine__630af62ab70d,Old test source,1,1,All
+affine__6b20ee8b5202,Old test source,1,0,None
+affine__6ec160daa0a8,Old test source,1,1,All
+affine__6f9add261971,Old test source,2,0,None
+affine__78022b0dbbdc,Old test source,4,4,All
+affine__7b8ec4dc34fc,Old test source,1,0,None
+affine__85e2c5eb86b2,Old test source,1,0,None
+affine__8f77b828a349,Old test source,1,1,All
+affine__91625e588410,Old test source,2,0,None
+affine__9f5e8add110b,Old test source,3,0,None
+affine__aa72a26cb6e8,Old test source,2,1,Some
+affine__ac7e10604287,Old test source,1,0,None
+affine__ac8c136d445d,Old test source,1,1,All
+affine__ade0de7bf746,Old test source,3,1,Some
+affine__adfb23fa85f2,Old test source,1,1,All
+affine__b3a8bd49fd55,Old test source,1,0,None
+affine__b4925b4e707d,Old test source,1,1,All
+affine__b5affd428d27,Old test source,1,0,None
+affine__b65e4ec32965,Old test source,1,0,None
+affine__b6f4f9e4586e,Old test source,1,0,None
+affine__b82e5f511661,Old test source,1,1,All
+affine__bafeebb0c118,Old test source,1,0,None
+affine__bf9b09cd9196,Old test source,1,1,All
+affine__c2f48fe4a45f,Old test source,1,1,All
+affine__e5ef8885a002,Old test source,1,0,None
+affine__e88a176761b0,Old test source,1,0,None
+affine__eb90ff75f9c8,Old test source,1,0,None
+affine__f09468ce3923,Old test source,1,0,None
+affine__f4fdcc6dd920,Old test source,1,0,None
+affine__f938f740a118,Old test source,1,0,None
+affine__ffec8f19d52c,Old test source,1,1,All
+cal.com__01326c3bfff5,Old test source,1,0,None
+cal.com__05b6849de67e,Old test source,1,1,All
+cal.com__08b521b4eaba,Old test source,1,1,All
+cal.com__1ead9182745f,Old test source,2,2,All
+cal.com__31f9ecc1eaae,Old test source,3,3,All
+cal.com__511893d8f1a7,Old test source,2,0,None
+cal.com__513653123ebd,Old test source,1,0,None
+cal.com__520642329292,Old test source,1,1,All
+cal.com__5b34e9640e60,Old test source,1,0,None
+cal.com__5e47c955bf7b,Old test source,1,1,All
+cal.com__73bce329ad3d,Old test source,1,1,All
+cal.com__82aa08f2ad72,Old test source,1,0,None
+cal.com__881c9e4f1763,Old test source,1,1,All
+cal.com__8d296f230b73,Old test source,8,8,All
+cal.com__90a409c66d8e,Old test source,1,1,All
+cal.com__aaf4541161f9,Old test source,1,1,All
+cal.com__acc2d983f31e,Old test source,1,1,All
+cal.com__bf91db6d7a59,Old test source,1,1,All
+cal.com__e28bfcc98795,Old test source,8,7,Some
+cal.com__e8297e6e6cf4,Old test source,2,2,All
+cal.com__e8d5475ff046,Old test source,2,1,Some
+cal.com__f100a0848fc6,Old test source,1,1,All
+cal.com__fb57dd2b0722,Old test source,2,1,Some
+cal.com__ff0550147c08,Old test source,2,2,All
+chatwoot__04d6cb9371ab,Old test source,1,1,All
+chatwoot__0825692ff354,Old test source,1,1,All
+chatwoot__085847d2ad82,Old test source,1,1,All
+chatwoot__10c0dac4da6e,Old test source,5,5,All
+chatwoot__1ac34730be25,Old test source,1,1,All
+chatwoot__1f4f8ae24e79,Old test source,2,1,Some
+chatwoot__254bf703d838,Old test source,1,1,All
+chatwoot__2f5dabdb75dc,Old test source,1,0,None
+chatwoot__312827b1e56f,Old test source,1,1,All
+chatwoot__3247ad50a689,Old test source,2,2,All
+chatwoot__43c550bc55be,Old test source,1,1,All
+chatwoot__717bf5e2a805,Old test source,2,2,All
+chatwoot__7235aa452e00,Old test source,1,1,All
+chatwoot__76e3344da1bb,Old test source,1,1,All
+chatwoot__7ebd0f5dbc29,Old test source,1,1,All
+chatwoot__a7baeb2e005d,Old test source,1,1,All
+chatwoot__ae34e61373c4,Old test source,1,0,None
+chatwoot__b664e6bb50f0,Old test source,1,1,All
+chatwoot__b67a5977771d,Old test source,1,1,All
+chatwoot__d3ea046c1341,Old test source,2,2,All
+chatwoot__d685fab6687f,Old test source,1,1,All
+chatwoot__e0d39f14270f,Old test source,1,1,All
+chatwoot__ea482c18673e,Old test source,2,2,All
+chatwoot__eab3b397d1fc,Old test source,1,1,All
+chatwoot__f13c4f53baae,Old test source,1,1,All
+chatwoot__f4e41c76efda,Old test source,1,1,All
+chatwoot__f679b7df062e,Old test source,2,2,All
+chatwoot__fd10754bdb7c,Old test source,1,1,All
+chatwoot__fe756a85956c,Old test source,1,1,All
+documenso__0131bbb36743,Old test source,1,0,None
+documenso__04535f6ee75a,Old test source,2,2,All
+documenso__15536e43c0a6,Old test source,1,1,All
+documenso__172160b44889,Old test source,4,1,Some
+documenso__306a5155bd12,Old test source,2,0,None
+documenso__4731e80d8953,Old test source,1,0,None
+documenso__ae19792d5720,Old test source,3,0,None
+documenso__e439d4dfeaba,Old test source,1,1,All
+documenso__e440153f4310,Old test source,10,2,Some
+documenso__e8d7f087e177,Old test source,1,1,All
+formbricks__07dacfb3056a,Old test source,2,2,All
+formbricks__10b403ec8f4e,Old test source,3,1,Some
+formbricks__124261cf1d66,Old test source,2,0,None
+formbricks__18382d84106b,Old test source,1,0,None
+formbricks__1e9b38355970,Old test source,1,1,All
+formbricks__425f2e740468,Old test source,1,1,All
+formbricks__55c15414daf8,Old test source,1,1,All
+formbricks__59b78e082bce,Old test source,1,1,All
+formbricks__5ed4d8e60c58,Old test source,1,0,None
+formbricks__5f9c12901328,Old test source,2,2,All
+formbricks__615272efb68f,Old test source,1,1,All
+formbricks__6edfe8f9db6a,Old test source,2,2,All
+formbricks__74cd03baa592,Old test source,1,1,All
+formbricks__83c2d10efb60,Old test source,1,1,All
+formbricks__8804d78891f8,Old test source,1,1,All
+formbricks__9a1fe6bf806d,Old test source,4,4,All
+formbricks__9e7a84135d70,Old test source,21,19,Some
+formbricks__9fddd4dd44da,Old test source,4,4,All
+formbricks__a14dfde4c290,Old test source,1,1,All
+formbricks__a24e4d7176a0,Old test source,1,1,All
+formbricks__a426e2ee8622,Old test source,1,1,All
+formbricks__b1640a544588,Old test source,2,2,All
+formbricks__b9587a7da452,Old test source,1,1,All
+formbricks__bb4831e101b6,Old test source,1,1,All
+formbricks__bd27ad76f5ea,Old test source,1,1,All
+formbricks__c4ecbebbc2a9,Old test source,2,2,All
+formbricks__c6e50874c8a3,Old test source,1,1,All
+formbricks__c74c743a74a6,Old test source,2,2,All
+formbricks__d1be4a6cff8e,Old test source,2,1,Some
+formbricks__da7c5c7ba5ca,Old test source,1,0,None
+formbricks__df05a02659fd,Old test source,1,1,All
+formbricks__e246e86e446b,Old test source,1,1,All
+formbricks__e48986e36d38,Old test source,3,1,Some
+formbricks__eb4af545cdec,Old test source,1,1,All
+formbricks__f45c79d3fe37,Old test source,1,1,All
+formbricks__f85559cf57e2,Old test source,1,1,All
+formbricks__fa11cb6eb760,Old test source,6,2,Some
+formbricks__fed7403f087a,Old test source,3,2,Some
+grafana__046c8d56aa1c,Old test source,2,1,Some
+grafana__3c05750ed8a2,Old test source,21,18,Some
+grafana__5bee1295a0bd,Old test source,1,0,None
+grafana__726645f81206,Old test source,17,12,Some
+grafana__b631518e9055,Old test source,29,12,Some
+grafana__b71de9305549,Old test source,1,1,All
+grafana__c1dcf4965a3a,Old test source,16,14,Some
+grafana__d6ec6f0e13dc,Old test source,10,8,Some
+hoppscotch__09f823420734,Old test source,10,10,All
+hoppscotch__2cf35f0a1630,Old test source,1,0,None
+hoppscotch__5cc4a3518376,Old test source,1,1,All
+hoppscotch__65da7702388b,Old test source,1,1,All
+hoppscotch__68948843f66b,Old test source,3,2,Some
+hoppscotch__7854259a9bcd,Old test source,1,1,All
+hoppscotch__79c3d3442f37,Old test source,4,4,All
+hoppscotch__8c22bb36311e,Old test source,3,3,All
+hoppscotch__9aaad5f47dcc,Old test source,2,2,All
+hoppscotch__b79b6e19a4fa,Old test source,3,3,All
+hoppscotch__b93a774665a9,Old test source,2,2,All
+hoppscotch__bb87bf999811,Old test source,2,2,All
+hoppscotch__c0c49974db13,Old test source,1,1,All
+hoppscotch__c408b3d82806,Old test source,1,1,All
+hoppscotch__d5c3067e2012,Old test source,1,1,All
+hoppscotch__fd297fc8a43c,Old test source,1,1,All
+medusa__2910140b97b7,Old test source,2,2,All
+medusa__d3dfa8ae18c8,Old test source,1,0,None
+medusa__d7cae19119db,Old test source,1,0,None
+payload__0a8e5d8efaa1,Old test source,1,0,None
+payload__149d9b7766ac,Old test source,1,1,All
+payload__16c941abebfd,Old test source,1,0,None
+payload__1ae32f700b80,Old test source,1,0,None
+payload__246fb7f9213e,Old test source,1,0,None
+payload__32c60d60b8a1,Old test source,1,0,None
+payload__5464acd3b813,Old test source,1,0,None
+payload__7270174975fe,Old test source,1,0,None
+payload__730b19472510,Old test source,1,0,None
+payload__8b022d0e8774,Old test source,1,0,None
+payload__8c75eded8723,Old test source,1,0,None
+payload__8fd82f4370fc,Old test source,1,1,All
+payload__97af7716730a,Old test source,1,1,All
+payload__fa7ec34970db,Old test source,1,1,All
+payload__fb621c1ff7b8,Old test source,1,1,All
+rallly__761691a1bfb3,Old test source,1,1,All
+rallly__76aae411d20d,Old test source,1,1,All
+rallly__98899fd68897,Old test source,1,1,All
+rallly__98d32576e7be,Old test source,1,1,All
+rallly__e56f73c51671,Old test source,1,0,None
+rallly__f1c87a008978,Old test source,1,1,All
+rallly__fa52875fd201,Old test source,1,1,All
+requestly__b8ba3c46037c,Old test source,1,1,All
+saleor__03aeca7dc809,Old test source,1,0,None
+saleor__052836836fbc,Old test source,1,1,All
+saleor__0756cd8dad07,Old test source,5,4,Some
+saleor__09b926b7dd99,Old test source,1,1,All
+saleor__0a967e363af4,Old test source,1,1,All
+saleor__0bb46cda954c,Old test source,2,2,All
+saleor__0d40a23a919d,Old test source,9,5,Some
+saleor__0f0a9c4a0cc8,Old test source,1,0,None
+saleor__14136326d1b4,Old test source,2,2,All
+saleor__1443c67d77df,Old test source,2,2,All
+saleor__1644075d81b2,Old test source,1,1,All
+saleor__1862b44826ea,Old test source,1,1,All
+saleor__1974800db565,Old test source,1,0,None
+saleor__1aaaae9f2ee9,Old test source,2,1,Some
+saleor__30f873a646e4,Old test source,1,1,All
+saleor__344b53f15eaa,Old test source,1,1,All
+saleor__38966a07ccbd,Old test source,2,2,All
+saleor__3b6a818048c7,Old test source,1,1,All
+saleor__3fa181ccbb01,Old test source,1,0,None
+saleor__41f8cefdf931,Old test source,1,0,None
+saleor__47f89d573219,Old test source,1,1,All
+saleor__4bb7ec3ba959,Old test source,1,1,All
+saleor__4f7f7c98c454,Old test source,2,1,Some
+saleor__4fd4cafcb76e,Old test source,1,1,All
+saleor__5089ee09bfc4,Old test source,1,1,All
+saleor__528981c53ef2,Old test source,1,0,None
+saleor__5d167e6cfb7d,Old test source,1,1,All
+saleor__5da406cc86f0,Old test source,1,1,All
+saleor__74ddcc2cd861,Old test source,3,2,Some
+saleor__7d6c231fbcee,Old test source,2,1,Some
+saleor__85b021c89701,Old test source,11,3,Some
+saleor__898f59365f5c,Old test source,11,10,Some
+saleor__9ead5c85b9f7,Old test source,1,1,All
+saleor__a11d1fc587f5,Old test source,1,1,All
+saleor__a8d230e6f347,Old test source,170,170,All
+saleor__ae64c2e14023,Old test source,4,3,Some
+saleor__b40069f18b17,Old test source,1,1,All
+saleor__b57c5df7bb3f,Old test source,1,0,None
+saleor__b95e0e1c23b5,Old test source,1,0,None
+saleor__c144958dce49,Old test source,1,1,All
+saleor__ceecc475a28d,Old test source,1,1,All
+saleor__d20d8e473cdb,Old test source,1,1,All
+saleor__d58248463d96,Old test source,1,1,All
+saleor__daad1c7fe4f3,Old test source,1,1,All
+saleor__de5fad7fe972,Old test source,1,0,None
+saleor__e42358a62dc1,Old test source,1,1,All
+saleor__e43020a8d21f,Old test source,1,1,All
+saleor__ebf66c6a071d,Old test source,1,0,None
+saleor__f011a9f5119c,Old test source,1,1,All
+saleor__f43b2841a210,Old test source,1,1,All
+saleor__f7d1a7aca5d7,Old test source,1,0,None
+strapi__0b6cbcd409cb,Old test source,2,2,All
+strapi__161eac9943dc,Old test source,1,1,All
+strapi__5e4ede06fb2d,Old test source,1,1,All
+strapi__73569f4520d2,Old test source,1,0,None
+strapi__74569616d6fc,Old test source,1,0,None
+strapi__7850ae1d9078,Old test source,2,2,All
+strapi__7a376c5187b8,Old test source,1,0,None
+strapi__88ec45fea990,Old test source,1,1,All
+strapi__8ac03f90ad91,Old test source,1,1,All
+strapi__9c4d6409b2d8,Old test source,1,0,None
+strapi__a9e68a17b9ab,Old test source,1,0,None
+strapi__b6c1376f714e,Old test source,1,0,None
+strapi__b929317beae3,Old test source,1,0,None
+strapi__c901080c4b02,Old test source,7,3,Some
+strapi__cab26117683f,Old test source,1,1,All
+strapi__e384740693e0,Old test source,1,1,All
+strapi__e4d6d1fa99d2,Old test source,1,1,All
+strapi__fac079537c4b,Old test source,1,1,All
+supabase__42451f2250ea,Old test source,1,0,None
+supabase__5494f1c356ac,Old test source,1,1,All
+typebot__03c173da80c1,Old test source,1,0,None
+typebot__0f8f568e88ef,Old test source,1,1,All
+typebot__21e09472b69e,Old test source,1,0,None
+typebot__23416779fad3,Old test source,3,3,All
+typebot__2e69608a3666,Old test source,1,1,All
+typebot__35a585820ef8,Old test source,4,4,All
+typebot__36ad04161231,Old test source,33,33,All
+typebot__50cdf2db8e54,Old test source,1,1,All
+typebot__5f2a6e18715f,Old test source,1,1,All
+typebot__89af2196a05b,Old test source,1,1,All
+typebot__8caf6e33425a,Old test source,1,0,None
+typebot__b2a8fd47b3b1,Old test source,62,62,All
+typebot__bef0549a690c,Old test source,3,3,All
+typebot__cbf0b26ca9ca,Old test source,3,3,All
+typebot__ce2fa5b5c3df,Old test source,1,1,All
+typebot__e63fed753ac5,Old test source,62,62,All
+typebot__f6e8bab38904,Old test source,4,4,All
+typebot__f7aa0c0f71d0,Old test source,1,0,None
+vendure__1f571e06eb2e,Old test source,1,1,All
+vendure__7cadeff6bbb1,Old test source,1,1,All
+vendure__8536f6be58a9,Old test source,1,0,None
+vendure__8c85fd9909f6,Old test source,2,2,All
+vendure__8de0011be91d,Old test source,1,1,All
+vendure__aa0d3fe78e06,Old test source,1,1,All
+vendure__dc705b45caa2,Old test source,1,0,None
+vendure__e3880fdb3764,Old test source,1,1,All
+vendure__edfab755a24f,Old test source,1,0,None
+affine__03478f01929c,Module-name correspondence,1,0,None
+affine__221fc550d73a,Module-name correspondence,1,1,All
+affine__41d0a248f683,Module-name correspondence,3,3,All
+affine__452d90d731e9,Module-name correspondence,1,1,All
+affine__497683630265,Module-name correspondence,1,1,All
+affine__4e115eb1f696,Module-name correspondence,1,1,All
+affine__53ed9e9d72bb,Module-name correspondence,1,1,All
+affine__62d1add58b7d,Module-name correspondence,5,4,Some
+affine__630af62ab70d,Module-name correspondence,1,1,All
+affine__6b20ee8b5202,Module-name correspondence,1,1,All
+affine__6ec160daa0a8,Module-name correspondence,1,1,All
+affine__6f9add261971,Module-name correspondence,2,1,Some
+affine__78022b0dbbdc,Module-name correspondence,4,4,All
+affine__7b8ec4dc34fc,Module-name correspondence,1,1,All
+affine__85e2c5eb86b2,Module-name correspondence,1,1,All
+affine__8f77b828a349,Module-name correspondence,1,1,All
+affine__91625e588410,Module-name correspondence,2,2,All
+affine__9f5e8add110b,Module-name correspondence,3,3,All
+affine__aa72a26cb6e8,Module-name correspondence,2,2,All
+affine__ac7e10604287,Module-name correspondence,1,1,All
+affine__ac8c136d445d,Module-name correspondence,1,1,All
+affine__ade0de7bf746,Module-name correspondence,3,3,All
+affine__adfb23fa85f2,Module-name correspondence,1,1,All
+affine__b3a8bd49fd55,Module-name correspondence,1,1,All
+affine__b4925b4e707d,Module-name correspondence,1,0,None
+affine__b5affd428d27,Module-name correspondence,1,0,None
+affine__b65e4ec32965,Module-name correspondence,1,1,All
+affine__b6f4f9e4586e,Module-name correspondence,1,0,None
+affine__b82e5f511661,Module-name correspondence,1,0,None
+affine__bafeebb0c118,Module-name correspondence,1,1,All
+affine__bf9b09cd9196,Module-name correspondence,1,1,All
+affine__c2f48fe4a45f,Module-name correspondence,1,1,All
+affine__e5ef8885a002,Module-name correspondence,1,1,All
+affine__e88a176761b0,Module-name correspondence,1,0,None
+affine__eb90ff75f9c8,Module-name correspondence,1,1,All
+affine__f09468ce3923,Module-name correspondence,1,1,All
+affine__f4fdcc6dd920,Module-name correspondence,1,1,All
+affine__f938f740a118,Module-name correspondence,1,1,All
+affine__ffec8f19d52c,Module-name correspondence,1,0,None
+cal.com__01326c3bfff5,Module-name correspondence,1,1,All
+cal.com__05b6849de67e,Module-name correspondence,1,1,All
+cal.com__08b521b4eaba,Module-name correspondence,1,1,All
+cal.com__1ead9182745f,Module-name correspondence,2,0,None
+cal.com__31f9ecc1eaae,Module-name correspondence,3,3,All
+cal.com__511893d8f1a7,Module-name correspondence,2,1,Some
+cal.com__513653123ebd,Module-name correspondence,1,1,All
+cal.com__520642329292,Module-name correspondence,1,1,All
+cal.com__5b34e9640e60,Module-name correspondence,1,1,All
+cal.com__5e47c955bf7b,Module-name correspondence,1,1,All
+cal.com__73bce329ad3d,Module-name correspondence,1,1,All
+cal.com__82aa08f2ad72,Module-name correspondence,1,1,All
+cal.com__881c9e4f1763,Module-name correspondence,1,0,None
+cal.com__8d296f230b73,Module-name correspondence,8,1,Some
+cal.com__90a409c66d8e,Module-name correspondence,1,1,All
+cal.com__aaf4541161f9,Module-name correspondence,1,0,None
+cal.com__acc2d983f31e,Module-name correspondence,1,1,All
+cal.com__bf91db6d7a59,Module-name correspondence,1,1,All
+cal.com__e28bfcc98795,Module-name correspondence,8,5,Some
+cal.com__e8297e6e6cf4,Module-name correspondence,2,1,Some
+cal.com__e8d5475ff046,Module-name correspondence,2,2,All
+cal.com__f100a0848fc6,Module-name correspondence,1,1,All
+cal.com__fb57dd2b0722,Module-name correspondence,2,0,None
+cal.com__ff0550147c08,Module-name correspondence,2,1,Some
+chatwoot__04d6cb9371ab,Module-name correspondence,1,0,None
+chatwoot__0825692ff354,Module-name correspondence,1,0,None
+chatwoot__085847d2ad82,Module-name correspondence,1,1,All
+chatwoot__10c0dac4da6e,Module-name correspondence,5,3,Some
+chatwoot__1ac34730be25,Module-name correspondence,1,1,All
+chatwoot__1f4f8ae24e79,Module-name correspondence,2,2,All
+chatwoot__254bf703d838,Module-name correspondence,1,1,All
+chatwoot__2f5dabdb75dc,Module-name correspondence,1,1,All
+chatwoot__312827b1e56f,Module-name correspondence,1,1,All
+chatwoot__3247ad50a689,Module-name correspondence,2,1,Some
+chatwoot__43c550bc55be,Module-name correspondence,1,1,All
+chatwoot__717bf5e2a805,Module-name correspondence,2,1,Some
+chatwoot__7235aa452e00,Module-name correspondence,1,1,All
+chatwoot__76e3344da1bb,Module-name correspondence,1,0,None
+chatwoot__7ebd0f5dbc29,Module-name correspondence,1,1,All
+chatwoot__a7baeb2e005d,Module-name correspondence,1,1,All
+chatwoot__ae34e61373c4,Module-name correspondence,1,1,All
+chatwoot__b664e6bb50f0,Module-name correspondence,1,0,None
+chatwoot__b67a5977771d,Module-name correspondence,1,1,All
+chatwoot__d3ea046c1341,Module-name correspondence,2,1,Some
+chatwoot__d685fab6687f,Module-name correspondence,1,1,All
+chatwoot__e0d39f14270f,Module-name correspondence,1,1,All
+chatwoot__ea482c18673e,Module-name correspondence,2,2,All
+chatwoot__eab3b397d1fc,Module-name correspondence,1,1,All
+chatwoot__f13c4f53baae,Module-name correspondence,1,1,All
+chatwoot__f4e41c76efda,Module-name correspondence,1,0,None
+chatwoot__f679b7df062e,Module-name correspondence,2,2,All
+chatwoot__fd10754bdb7c,Module-name correspondence,1,0,None
+chatwoot__fe756a85956c,Module-name correspondence,1,1,All
+documenso__0131bbb36743,Module-name correspondence,1,0,None
+documenso__04535f6ee75a,Module-name correspondence,2,0,None
+documenso__15536e43c0a6,Module-name correspondence,1,0,None
+documenso__172160b44889,Module-name correspondence,4,0,None
+documenso__306a5155bd12,Module-name correspondence,2,0,None
+documenso__4731e80d8953,Module-name correspondence,1,1,All
+documenso__ae19792d5720,Module-name correspondence,3,3,All
+documenso__e439d4dfeaba,Module-name correspondence,1,1,All
+documenso__e440153f4310,Module-name correspondence,10,1,Some
+documenso__e8d7f087e177,Module-name correspondence,1,0,None
+formbricks__07dacfb3056a,Module-name correspondence,2,0,None
+formbricks__10b403ec8f4e,Module-name correspondence,3,3,All
+formbricks__124261cf1d66,Module-name correspondence,2,2,All
+formbricks__18382d84106b,Module-name correspondence,1,1,All
+formbricks__1e9b38355970,Module-name correspondence,1,1,All
+formbricks__425f2e740468,Module-name correspondence,1,1,All
+formbricks__55c15414daf8,Module-name correspondence,1,1,All
+formbricks__59b78e082bce,Module-name correspondence,1,0,None
+formbricks__5ed4d8e60c58,Module-name correspondence,1,1,All
+formbricks__5f9c12901328,Module-name correspondence,2,2,All
+formbricks__615272efb68f,Module-name correspondence,1,1,All
+formbricks__6edfe8f9db6a,Module-name correspondence,2,2,All
+formbricks__74cd03baa592,Module-name correspondence,1,1,All
+formbricks__83c2d10efb60,Module-name correspondence,1,1,All
+formbricks__8804d78891f8,Module-name correspondence,1,0,None
+formbricks__9a1fe6bf806d,Module-name correspondence,4,4,All
+formbricks__9e7a84135d70,Module-name correspondence,21,20,Some
+formbricks__9fddd4dd44da,Module-name correspondence,4,0,None
+formbricks__a14dfde4c290,Module-name correspondence,1,1,All
+formbricks__a24e4d7176a0,Module-name correspondence,1,1,All
+formbricks__a426e2ee8622,Module-name correspondence,1,0,None
+formbricks__b1640a544588,Module-name correspondence,2,2,All
+formbricks__b9587a7da452,Module-name correspondence,1,0,None
+formbricks__bb4831e101b6,Module-name correspondence,1,1,All
+formbricks__bd27ad76f5ea,Module-name correspondence,1,1,All
+formbricks__c4ecbebbc2a9,Module-name correspondence,2,0,None
+formbricks__c6e50874c8a3,Module-name correspondence,1,0,None
+formbricks__c74c743a74a6,Module-name correspondence,2,2,All
+formbricks__d1be4a6cff8e,Module-name correspondence,2,2,All
+formbricks__da7c5c7ba5ca,Module-name correspondence,1,1,All
+formbricks__df05a02659fd,Module-name correspondence,1,0,None
+formbricks__e246e86e446b,Module-name correspondence,1,1,All
+formbricks__e48986e36d38,Module-name correspondence,3,3,All
+formbricks__eb4af545cdec,Module-name correspondence,1,0,None
+formbricks__f45c79d3fe37,Module-name correspondence,1,1,All
+formbricks__f85559cf57e2,Module-name correspondence,1,1,All
+formbricks__fa11cb6eb760,Module-name correspondence,6,6,All
+formbricks__fed7403f087a,Module-name correspondence,3,2,Some
+grafana__046c8d56aa1c,Module-name correspondence,2,2,All
+grafana__3c05750ed8a2,Module-name correspondence,21,20,Some
+grafana__5bee1295a0bd,Module-name correspondence,1,1,All
+grafana__726645f81206,Module-name correspondence,17,12,Some
+grafana__b631518e9055,Module-name correspondence,29,21,Some
+grafana__b71de9305549,Module-name correspondence,1,1,All
+grafana__c1dcf4965a3a,Module-name correspondence,16,11,Some
+grafana__d6ec6f0e13dc,Module-name correspondence,10,9,Some
+hoppscotch__09f823420734,Module-name correspondence,10,5,Some
+hoppscotch__2cf35f0a1630,Module-name correspondence,1,1,All
+hoppscotch__5cc4a3518376,Module-name correspondence,1,1,All
+hoppscotch__65da7702388b,Module-name correspondence,1,1,All
+hoppscotch__68948843f66b,Module-name correspondence,3,3,All
+hoppscotch__7854259a9bcd,Module-name correspondence,1,1,All
+hoppscotch__79c3d3442f37,Module-name correspondence,4,4,All
+hoppscotch__8c22bb36311e,Module-name correspondence,3,3,All
+hoppscotch__9aaad5f47dcc,Module-name correspondence,2,2,All
+hoppscotch__b79b6e19a4fa,Module-name correspondence,3,3,All
+hoppscotch__b93a774665a9,Module-name correspondence,2,2,All
+hoppscotch__bb87bf999811,Module-name correspondence,2,2,All
+hoppscotch__c0c49974db13,Module-name correspondence,1,1,All
+hoppscotch__c408b3d82806,Module-name correspondence,1,1,All
+hoppscotch__d5c3067e2012,Module-name correspondence,1,1,All
+hoppscotch__fd297fc8a43c,Module-name correspondence,1,1,All
+medusa__2910140b97b7,Module-name correspondence,2,0,None
+medusa__d3dfa8ae18c8,Module-name correspondence,1,1,All
+medusa__d7cae19119db,Module-name correspondence,1,1,All
+payload__0a8e5d8efaa1,Module-name correspondence,1,1,All
+payload__149d9b7766ac,Module-name correspondence,1,1,All
+payload__16c941abebfd,Module-name correspondence,1,1,All
+payload__1ae32f700b80,Module-name correspondence,1,1,All
+payload__246fb7f9213e,Module-name correspondence,1,1,All
+payload__32c60d60b8a1,Module-name correspondence,1,1,All
+payload__5464acd3b813,Module-name correspondence,1,1,All
+payload__7270174975fe,Module-name correspondence,1,0,None
+payload__730b19472510,Module-name correspondence,1,1,All
+payload__8b022d0e8774,Module-name correspondence,1,1,All
+payload__8c75eded8723,Module-name correspondence,1,0,None
+payload__8fd82f4370fc,Module-name correspondence,1,1,All
+payload__97af7716730a,Module-name correspondence,1,1,All
+payload__fa7ec34970db,Module-name correspondence,1,1,All
+payload__fb621c1ff7b8,Module-name correspondence,1,1,All
+rallly__761691a1bfb3,Module-name correspondence,1,1,All
+rallly__76aae411d20d,Module-name correspondence,1,0,None
+rallly__98899fd68897,Module-name correspondence,1,1,All
+rallly__98d32576e7be,Module-name correspondence,1,0,None
+rallly__e56f73c51671,Module-name correspondence,1,1,All
+rallly__f1c87a008978,Module-name correspondence,1,1,All
+rallly__fa52875fd201,Module-name correspondence,1,0,None
+requestly__b8ba3c46037c,Module-name correspondence,1,1,All
+saleor__03aeca7dc809,Module-name correspondence,1,1,All
+saleor__052836836fbc,Module-name correspondence,1,1,All
+saleor__0756cd8dad07,Module-name correspondence,5,5,All
+saleor__09b926b7dd99,Module-name correspondence,1,1,All
+saleor__0a967e363af4,Module-name correspondence,1,1,All
+saleor__0bb46cda954c,Module-name correspondence,2,2,All
+saleor__0d40a23a919d,Module-name correspondence,9,8,Some
+saleor__0f0a9c4a0cc8,Module-name correspondence,1,1,All
+saleor__14136326d1b4,Module-name correspondence,2,2,All
+saleor__1443c67d77df,Module-name correspondence,2,2,All
+saleor__1644075d81b2,Module-name correspondence,1,0,None
+saleor__1862b44826ea,Module-name correspondence,1,1,All
+saleor__1974800db565,Module-name correspondence,1,1,All
+saleor__1aaaae9f2ee9,Module-name correspondence,2,2,All
+saleor__30f873a646e4,Module-name correspondence,1,1,All
+saleor__344b53f15eaa,Module-name correspondence,1,1,All
+saleor__38966a07ccbd,Module-name correspondence,2,2,All
+saleor__3b6a818048c7,Module-name correspondence,1,1,All
+saleor__3fa181ccbb01,Module-name correspondence,1,1,All
+saleor__41f8cefdf931,Module-name correspondence,1,1,All
+saleor__47f89d573219,Module-name correspondence,1,1,All
+saleor__4bb7ec3ba959,Module-name correspondence,1,0,None
+saleor__4f7f7c98c454,Module-name correspondence,2,2,All
+saleor__4fd4cafcb76e,Module-name correspondence,1,1,All
+saleor__5089ee09bfc4,Module-name correspondence,1,1,All
+saleor__528981c53ef2,Module-name correspondence,1,1,All
+saleor__5d167e6cfb7d,Module-name correspondence,1,1,All
+saleor__5da406cc86f0,Module-name correspondence,1,1,All
+saleor__74ddcc2cd861,Module-name correspondence,3,2,Some
+saleor__7d6c231fbcee,Module-name correspondence,2,2,All
+saleor__85b021c89701,Module-name correspondence,11,9,Some
+saleor__898f59365f5c,Module-name correspondence,11,5,Some
+saleor__9ead5c85b9f7,Module-name correspondence,1,1,All
+saleor__a11d1fc587f5,Module-name correspondence,1,1,All
+saleor__a8d230e6f347,Module-name correspondence,170,85,Some
+saleor__ae64c2e14023,Module-name correspondence,4,4,All
+saleor__b40069f18b17,Module-name correspondence,1,1,All
+saleor__b57c5df7bb3f,Module-name correspondence,1,1,All
+saleor__b95e0e1c23b5,Module-name correspondence,1,1,All
+saleor__c144958dce49,Module-name correspondence,1,1,All
+saleor__ceecc475a28d,Module-name correspondence,1,0,None
+saleor__d20d8e473cdb,Module-name correspondence,1,1,All
+saleor__d58248463d96,Module-name correspondence,1,1,All
+saleor__daad1c7fe4f3,Module-name correspondence,1,1,All
+saleor__de5fad7fe972,Module-name correspondence,1,1,All
+saleor__e42358a62dc1,Module-name correspondence,1,1,All
+saleor__e43020a8d21f,Module-name correspondence,1,1,All
+saleor__ebf66c6a071d,Module-name correspondence,1,1,All
+saleor__f011a9f5119c,Module-name correspondence,1,1,All
+saleor__f43b2841a210,Module-name correspondence,1,1,All
+saleor__f7d1a7aca5d7,Module-name correspondence,1,1,All
+strapi__0b6cbcd409cb,Module-name correspondence,2,1,Some
+strapi__161eac9943dc,Module-name correspondence,1,0,None
+strapi__5e4ede06fb2d,Module-name correspondence,1,0,None
+strapi__73569f4520d2,Module-name correspondence,1,0,None
+strapi__74569616d6fc,Module-name correspondence,1,1,All
+strapi__7850ae1d9078,Module-name correspondence,2,1,Some
+strapi__7a376c5187b8,Module-name correspondence,1,1,All
+strapi__88ec45fea990,Module-name correspondence,1,1,All
+strapi__8ac03f90ad91,Module-name correspondence,1,0,None
+strapi__9c4d6409b2d8,Module-name correspondence,1,1,All
+strapi__a9e68a17b9ab,Module-name correspondence,1,1,All
+strapi__b6c1376f714e,Module-name correspondence,1,1,All
+strapi__b929317beae3,Module-name correspondence,1,1,All
+strapi__c901080c4b02,Module-name correspondence,7,1,Some
+strapi__cab26117683f,Module-name correspondence,1,0,None
+strapi__e384740693e0,Module-name correspondence,1,1,All
+strapi__e4d6d1fa99d2,Module-name correspondence,1,1,All
+strapi__fac079537c4b,Module-name correspondence,1,0,None
+supabase__42451f2250ea,Module-name correspondence,1,0,None
+supabase__5494f1c356ac,Module-name correspondence,1,1,All
+typebot__03c173da80c1,Module-name correspondence,1,1,All
+typebot__0f8f568e88ef,Module-name correspondence,1,1,All
+typebot__21e09472b69e,Module-name correspondence,1,1,All
+typebot__23416779fad3,Module-name correspondence,3,2,Some
+typebot__2e69608a3666,Module-name correspondence,1,0,None
+typebot__35a585820ef8,Module-name correspondence,4,0,None
+typebot__36ad04161231,Module-name correspondence,33,4,Some
+typebot__50cdf2db8e54,Module-name correspondence,1,1,All
+typebot__5f2a6e18715f,Module-name correspondence,1,1,All
+typebot__89af2196a05b,Module-name correspondence,1,1,All
+typebot__8caf6e33425a,Module-name correspondence,1,1,All
+typebot__b2a8fd47b3b1,Module-name correspondence,62,33,Some
+typebot__bef0549a690c,Module-name correspondence,3,2,Some
+typebot__cbf0b26ca9ca,Module-name correspondence,3,0,None
+typebot__ce2fa5b5c3df,Module-name correspondence,1,0,None
+typebot__e63fed753ac5,Module-name correspondence,62,10,Some
+typebot__f6e8bab38904,Module-name correspondence,4,1,Some
+typebot__f7aa0c0f71d0,Module-name correspondence,1,1,All
+vendure__1f571e06eb2e,Module-name correspondence,1,1,All
+vendure__7cadeff6bbb1,Module-name correspondence,1,0,None
+vendure__8536f6be58a9,Module-name correspondence,1,1,All
+vendure__8c85fd9909f6,Module-name correspondence,2,2,All
+vendure__8de0011be91d,Module-name correspondence,1,1,All
+vendure__aa0d3fe78e06,Module-name correspondence,1,1,All
+vendure__dc705b45caa2,Module-name correspondence,1,1,All
+vendure__e3880fdb3764,Module-name correspondence,1,1,All
+vendure__edfab755a24f,Module-name correspondence,1,1,All

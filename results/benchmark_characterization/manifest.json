@@ -1,0 +1,46 @@
+{
+  "scope": "benchmark characterization",
+  "status": "reported",
+  "files": {
+    "condition_coverage.json": {
+      "bytes": 1170,
+      "sha256": "7cff0ec2f8c049f2cf4937572c9b53122551913f29f173643e20bf303df7c705"
+    },
+    "condition_coverage_by_episode.csv": {
+      "bytes": 30748,
+      "sha256": "0143052fdb52bb9c7276344bed6f447e201689c29e0a40f360711efffb6ec822"
+    },
+    "maintenance_pattern_summary.json": {
+      "bytes": 841,
+      "sha256": "8a5acf69c25e9260f40f1da789ea2ccb211db85c30b1e221afc81388c2a50ed9"
+    },
+    "maintenance_patterns.jsonl": {
+      "bytes": 32209,
+      "sha256": "5af87f909e1ce2d82146e495b0c6162ef8882b37dc5f7b894053d321bc024f57"
+    },
+    "repository_screening.json": {
+      "bytes": 246,
+      "sha256": "1350e05895997d2ac91daac5bc6bab2fb17f12822d3e16c7008f46af8d3cb524"
+    },
+    "saleor_condition_case.json": {
+      "bytes": 736,
+      "sha256": "e67f14c565b62b966ae8cd6de1d28f7de787382f23038f1f68fe5b3c91354d94"
+    },
+    "annotation_codebook.json": {
+      "bytes": 2224,
+      "sha256": "a443281fb82e315e274b1fbb2d969de76f077d046ab37f59a5eba5aab49199b1"
+    },
+    "maintenance_requirement_annotations.csv": {
+      "bytes": 65850,
+      "sha256": "4b24e68a824d5950a73d0523b1838618880636cf61750ede7e12418b57a7235b"
+    },
+    "condition_sensitivity.json": {
+      "bytes": 3251,
+      "sha256": "341664243eafa5205f88642f587efce6b97ead0b56b152d606a7f9dbf6977541"
+    },
+    "attribution_summary.json": {
+      "bytes": 788,
+      "sha256": "db2228c33cd23ee6aaa1e190377cb0acbdc763df05d5375a3e665b2ab3ae94e4"
+    }
+  }
+}

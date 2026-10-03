@@ -1,0 +1,13 @@
+{
+  "repo": "demo",
+  "validation": {
+    "compile": {"argv": ["node", "--check", "tests/calc.test.cjs"]}
+  },
+  "runners": [
+    {
+      "name": "node",
+      "argv": ["node", "{{test_file}}"],
+      "env": {"NODE_V8_COVERAGE": "{{output_dir}}/coverage"}
+    }
+  ]
+}

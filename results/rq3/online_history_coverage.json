@@ -1,0 +1,22 @@
+{
+  "scope": "Online history availability on reference-positive episodes",
+  "reference_episodes": 50,
+  "conditions": {
+    "codex_online": {
+      "usable_n": 50,
+      "initial_nonempty_n": 25,
+      "initial_or_retrieved_nonempty_n": 25,
+      "empty_initial_with_catalog_and_no_anchor_n": 25,
+      "unknown_n": 0,
+      "selected_output_sha256": "9f4612462d27d51051f60adc404984f4fcc3e4aede6cffbb85d1a86fdac87948"
+    },
+    "opencode_online": {
+      "usable_n": 49,
+      "initial_nonempty_n": 27,
+      "initial_or_retrieved_nonempty_n": 27,
+      "empty_initial_with_catalog_and_no_anchor_n": 22,
+      "unknown_n": 1,
+      "selected_output_sha256": "5b6e5225f7a4a0f5d62a49f18acff91d9b85a35c09edd01cb970faa4b4f0e6a1"
+    }
+  }
+}

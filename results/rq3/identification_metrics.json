@@ -1,0 +1,254 @@
+{
+  "scope": "RQ3 identification",
+  "status": "complete",
+  "cohort": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "missing_decision_scoring": "negative",
+  "conditions": {
+    "codex_stateless": {
+      "agent": "Codex",
+      "condition": "Stateless",
+      "decisions": "results/rq1/stateless_agents/codex_predictions.jsonl",
+      "metrics": {
+        "n": 1673,
+        "positive": 50,
+        "negative": 1623,
+        "TP": 43,
+        "FP": 386,
+        "TN": 1237,
+        "FN": 7,
+        "accuracy": 0.7650926479378363,
+        "precision_positive": 0.10023310023310024,
+        "recall_positive": 0.86,
+        "f1_positive": 0.17954070981210857,
+        "f1_negative": 0.862922915940007,
+        "macro_f1": 0.5212318128760578,
+        "balanced_accuracy": 0.8110844115834874
+      },
+      "missing_decision_ids": [],
+      "timeout_skip_ids": []
+    },
+    "codex_continuous": {
+      "agent": "Codex",
+      "condition": "Agent-native memory",
+      "decisions": "results/rq3/codex_continuous_decisions.jsonl",
+      "metrics": {
+        "n": 1673,
+        "positive": 50,
+        "negative": 1623,
+        "TP": 45,
+        "FP": 282,
+        "TN": 1341,
+        "FN": 5,
+        "accuracy": 0.8284518828451883,
+        "precision_positive": 0.13761467889908258,
+        "recall_positive": 0.9,
+        "f1_positive": 0.2387267904509284,
+        "f1_negative": 0.9033344560458066,
+        "macro_f1": 0.5710306232483675,
+        "balanced_accuracy": 0.8631238447319778
+      },
+      "missing_decision_ids": [],
+      "timeout_skip_ids": []
+    },
+    "codex_online": {
+      "agent": "Codex",
+      "condition": "Task-specific memory",
+      "decisions": "results/rq3/codex_online_decisions.jsonl",
+      "metrics": {
+        "n": 1673,
+        "positive": 50,
+        "negative": 1623,
+        "TP": 44,
+        "FP": 333,
+        "TN": 1290,
+        "FN": 6,
+        "accuracy": 0.7973699940227137,
+        "precision_positive": 0.11671087533156499,
+        "recall_positive": 0.88,
+        "f1_positive": 0.20608899297423888,
+        "f1_negative": 0.8838643371017472,
+        "macro_f1": 0.544976665037993,
+        "balanced_accuracy": 0.8374121996303142
+      },
+      "missing_decision_ids": [],
+      "timeout_skip_ids": []
+    },
+    "opencode_stateless": {
+      "agent": "OpenCode",
+      "condition": "Stateless",
+      "decisions": "results/rq1/stateless_agents/opencode_predictions.jsonl",
+      "metrics": {
+        "n": 1673,
+        "positive": 50,
+        "negative": 1623,
+        "TP": 43,
+        "FP": 379,
+        "TN": 1244,
+        "FN": 7,
+        "accuracy": 0.7692767483562463,
+        "precision_positive": 0.1018957345971564,
+        "recall_positive": 0.86,
+        "f1_positive": 0.1822033898305085,
+        "f1_negative": 0.8656924147529574,
+        "macro_f1": 0.5239479022917329,
+        "balanced_accuracy": 0.8132409118915589
+      },
+      "missing_decision_ids": [
+        "activepieces__51b03cfac846",
+        "activepieces__70b91049dee1",
+        "activepieces__71bfea3caf74",
+        "activepieces__76b4bde03a6d",
+        "activepieces__a98839161ca2",
+        "activepieces__ac12d05ffc87",
+        "activepieces__aea0f96b813e",
+        "activepieces__affb377a4119",
+        "affine__02e2939dfcf3",
+        "affine__431659539043",
+        "affine__cca60d8bed97",
+        "affine__dd4799c74c15",
+        "affine__e9825abc6d85",
+        "cal.com__3ee4321f6806",
+        "cal.com__8036fa9ce52c",
+        "cal.com__e8d5475ff046",
+        "joplin__ff2f6d31a981",
+        "medusa__6fcf124ec188",
+        "medusa__70eb48c17301",
+        "medusa__74b3f6ba7ec3",
+        "medusa__7d504b52a37b",
+        "medusa__7eef2d8b57ed",
+        "medusa__807b951b8253",
+        "medusa__82ea6a419fb2",
+        "medusa__8c7788af5153",
+        "medusa__8d3f4493bbfb",
+        "medusa__91ed55c255c3",
+        "medusa__94c4d9870e8d",
+        "medusa__969022b8f2ad",
+        "medusa__a1e7ffdc1586",
+        "medusa__ad8077a55b91",
+        "medusa__ba3acf5e4a9c",
+        "medusa__c53336067228",
+        "medusa__ccc3c09ab1e6",
+        "medusa__dc7ee07fbeee",
+        "medusa__fa14879b0bb7",
+        "payload__a94512a99e6f",
+        "rocketchat__01f5d4de73e0",
+        "rocketchat__0bf75a9789bc",
+        "supabase__0d00c4d98e04",
+        "supabase__6aedf63b6139",
+        "supabase__a2eca0762904",
+        "supabase__cc37eec053eb"
+      ],
+      "timeout_skip_ids": []
+    },
+    "opencode_continuous": {
+      "agent": "OpenCode",
+      "condition": "Agent-native memory",
+      "decisions": "results/rq3/opencode_continuous_decisions.jsonl",
+      "metrics": {
+        "n": 1673,
+        "positive": 50,
+        "negative": 1623,
+        "TP": 40,
+        "FP": 246,
+        "TN": 1377,
+        "FN": 10,
+        "accuracy": 0.8469814704124328,
+        "precision_positive": 0.13986013986013987,
+        "recall_positive": 0.8,
+        "f1_positive": 0.2380952380952381,
+        "f1_negative": 0.9149501661129568,
+        "macro_f1": 0.5765227021040974,
+        "balanced_accuracy": 0.8242144177449169
+      },
+      "missing_decision_ids": [
+        "cal.com__02d3c4b43ce2",
+        "cal.com__087e9826ec5d",
+        "cal.com__e8d5475ff046",
+        "joplin__ccd49d7e092a",
+        "umami__7aa51080a135",
+        "umami__7e66dd0d924a"
+      ],
+      "timeout_skip_ids": [
+        "cal.com__e8d5475ff046",
+        "cal.com__02d3c4b43ce2",
+        "cal.com__087e9826ec5d",
+        "joplin__ccd49d7e092a",
+        "umami__7aa51080a135",
+        "umami__7e66dd0d924a"
+      ]
+    },
+    "opencode_online": {
+      "agent": "OpenCode",
+      "condition": "Task-specific memory",
+      "decisions": "results/rq3/opencode_online_decisions.jsonl",
+      "metrics": {
+        "n": 1673,
+        "positive": 50,
+        "negative": 1623,
+        "TP": 42,
+        "FP": 356,
+        "TN": 1267,
+        "FN": 8,
+        "accuracy": 0.7824267782426778,
+        "precision_positive": 0.10552763819095477,
+        "recall_positive": 0.84,
+        "f1_positive": 0.18749999999999997,
+        "f1_negative": 0.8743961352657005,
+        "macro_f1": 0.5309480676328502,
+        "balanced_accuracy": 0.8103265557609365
+      },
+      "missing_decision_ids": [],
+      "timeout_skip_ids": []
+    }
+  },
+  "transitions_vs_stateless": {
+    "codex": {
+      "codex_continuous": {
+        "TN->TN": 1153,
+        "FP->TN": 188,
+        "FP->FP": 198,
+        "TP->TP": 41,
+        "FN->TP": 4,
+        "TN->FP": 84,
+        "FN->FN": 3,
+        "TP->FN": 2
+      },
+      "codex_online": {
+        "TN->TN": 1135,
+        "FP->TN": 155,
+        "TN->FP": 102,
+        "FP->FP": 231,
+        "TP->TP": 38,
+        "FN->TP": 6,
+        "FN->FN": 1,
+        "TP->FN": 5
+      }
+    },
+    "opencode": {
+      "opencode_continuous": {
+        "TN->TN": 1184,
+        "FP->TN": 193,
+        "FP->FP": 186,
+        "TP->TP": 36,
+        "TP->FN": 7,
+        "FN->FN": 3,
+        "FN->TP": 4,
+        "TN->FP": 60
+      },
+      "opencode_online": {
+        "TN->TN": 1127,
+        "TN->FP": 117,
+        "FP->FP": 239,
+        "FP->TN": 140,
+        "TP->TP": 36,
+        "FN->TP": 6,
+        "TP->FN": 7,
+        "FN->FN": 1
+      }
+    }
+  }
+}

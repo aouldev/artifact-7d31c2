@@ -1,0 +1,56 @@
+{
+  "schema": "rq1_selected_trace_scope_audit",
+  "observation": "Tool-server records from the attempt associated with each scored output. A successful call means the tool server recorded ok=true; it does not establish client receipt or comprehension.",
+  "index_definition": "Zero-based position in the full tool-call sequence, including unsuccessful calls. Null means the event was not observed.",
+  "window_definition": "Events strictly after the first successful test-path read and strictly before the first successful write of any file; use trace end when no write occurs. An empty window is not evidence of premature stopping.",
+  "test_path_rule": "(^|/)(test|tests|spec|specs|__tests__)(/|$)|\\.(test|spec)\\.[^/]+$",
+  "path_normalization": "Remove a leading repo/ before testing path membership. Reading a path may cover only a requested line range.",
+  "event_records": {
+    "agent": "Agent condition identifier.",
+    "episode_id": "Benchmark episode identifier.",
+    "paths": "Path classification table; each path_id is local to one run and preserves path equality without publishing file contents or path strings.",
+    "path_id": "Run-local identifier for a normalized path.",
+    "is_test": "Whether the normalized path matches test_path_rule; a structural proxy, not a semantic relevance label.",
+    "is_changed_production": "Whether the normalized path is in the episode production-file set.",
+    "is_recorded_test": "Whether the normalized path is a recorded developer test target for this episode.",
+    "is_production_diff": "Whether the path is input/prod.diff.",
+    "events": "All recorded tool calls in their original sequence.",
+    "index": "Zero-based tool-call position.",
+    "operation": "read: read_file or repo_context_read_file; write: write_file or repo_context_write_file; search: search or repo_context_search; other: any remaining tool.",
+    "ok": "Recorded tool-server success flag; only boolean true counts as successful.",
+    "path_ids": "Paths mentioned by call arguments and, for search calls, returned matches. Search matches and failed reads are not successful reads."
+  },
+  "top_level": {
+    "cohort": "Number of positive episodes, agent conditions, and paired records.",
+    "records_ok": "Number of available records included in the extraction.",
+    "missing_traces": "Agent/episode pairs without available trace records.",
+    "trace_metrics": "Counts of records satisfying the corresponding file-access condition, recomputed from records.",
+    "records": "One file-access summary per agent/episode pair."
+  },
+  "record_fields": {
+    "agent": "Agent condition identifier.",
+    "episode_id": "Benchmark episode identifier.",
+    "tool_call_count": "All recorded tool calls, including unsuccessful calls.",
+    "read_event_count": "Successful file-read events.",
+    "search_event_count": "Search calls, including unsuccessful calls.",
+    "write_event_count": "Successful file-write events.",
+    "first_production_diff_read": "First successful read of input/prod.diff; null if absent.",
+    "first_changed_production_file_read": "First successful read of a changed production path; null if absent.",
+    "first_test_file_read": "First successful read of a path matching test_path_rule; null if absent.",
+    "first_recorded_test_file_read": "First successful read of a recorded developer test target; null if absent.",
+    "first_write": "First successful write to any file; null if absent.",
+    "distinct_test_files_read": "Distinct test paths successfully read.",
+    "distinct_test_files_written": "Distinct test paths successfully written.",
+    "direct_changed_production_file_count": "Distinct changed production paths successfully read.",
+    "exploration_after_first_test_before_write": "Counts within window_definition."
+  },
+  "exploration_fields": {
+    "event_count": "All tool calls in the window, including unsuccessful calls.",
+    "read_count": "Successful file-read events in the window.",
+    "search_count": "Search calls in the window, including unsuccessful calls.",
+    "distinct_path_count": "Distinct paths mentioned by window calls, including search results and paths in unsuccessful calls.",
+    "new_distinct_path_count": "Paths successfully read in the window that were not successfully read before or at the first test read.",
+    "new_test_path_count": "New paths matching test_path_rule.",
+    "changed_production_path_count": "New paths in the episode production-file set."
+  }
+}

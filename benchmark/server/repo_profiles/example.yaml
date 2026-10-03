@@ -1,0 +1,13 @@
+# Portable Node fixture profile. Name the repository to match the input.
+repo: example-repo
+validation:
+  compile:
+    argv: [node, --check, tests/calc.test.cjs]
+    timeout_ms: 60000
+runners:
+  - name: node
+    path_regex: '.*\.test\.cjs$'
+    argv: [node, '{{test_file}}']
+    timeout_ms: 60000
+    env:
+      NODE_V8_COVERAGE: '{{output_dir}}/coverage'

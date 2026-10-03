@@ -1,0 +1,43 @@
+{
+  "status": "reported",
+  "positive_episode_count": 288,
+  "requirement_row_count": 1359,
+  "pattern_episode_counts": {
+    "AR": 66,
+    "TA": 217,
+    "FA": 83,
+    "IA": 48,
+    "OTHER": 32
+  },
+  "pattern_percentages": {
+    "AR": 22.92,
+    "TA": 75.35,
+    "FA": 28.82,
+    "IA": 16.67,
+    "OTHER": 11.11
+  },
+  "pattern_repository_counts": {
+    "AR": 13,
+    "TA": 15,
+    "FA": 11,
+    "IA": 11,
+    "OTHER": 10
+  },
+  "main_pattern_coverage": 274,
+  "main_pattern_multi": 90,
+  "main_pattern_triple": 28,
+  "main_pattern_all_four": 11,
+  "augmentation_with_existing": 76,
+  "other_only": 4,
+  "no_confirmed_category": 10,
+  "unresolved_episode_count": 15,
+  "author_status_counts": {
+    "completed": 271,
+    "unresolved": 17
+  },
+  "requirement_attribution_counts": {
+    "yes": 1228,
+    "uncertain": 24,
+    "no": 107
+  }
+}

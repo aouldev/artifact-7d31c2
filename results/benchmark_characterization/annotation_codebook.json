@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "scope": "Final maintenance annotation records used for benchmark characterization.",
+  "population": {
+    "positive_episode_count": 288,
+    "requirement_row_count": 1359,
+    "episode_level_pattern_denominator": 288
+  },
+  "pattern_labels": {
+    "AR": "Assertion Revision: revise the expected result or predicate of an existing check.",
+    "TA": "Test Augmentation: add a behavior check that was not expressed in the reviewed scope.",
+    "FA": "Fixture Adaptation: change test data, state, identity, or mock setup while preserving an existing verification target; an import moved with its mock target to preserve dependency mocking is included.",
+    "IA": "Interface Adaptation: adapt test access to an API, returned value, locator, interaction, production-symbol move, or changed type definition while preserving test intent.",
+    "OTHER": "Other attributed maintenance, including check removal, test relocation, or equivalent restructuring."
+  },
+  "attribution_values": {
+    "yes": "The requirement is attributed to the production change.",
+    "no": "The requirement is not attributed to the production change.",
+    "uncertain": "The available annotation evidence does not resolve the attribution."
+  },
+  "record_fields": {
+    "episode_id": "Stable benchmark episode identifier.",
+    "repo": "Repository identifier.",
+    "requirement_id": "Requirement identifier within an episode.",
+    "pattern": "One of AR, TA, FA, IA, or OTHER; unresolved rows may use unresolved.",
+    "attributed_to_change": "One of yes, no, or uncertain.",
+    "row_uncertain": "true when the pattern or attribution remains uncertain."
+  },
+  "aggregation": {
+    "episode_patterns": "For each episode, collect distinct pattern labels from rows attributed_to_change=yes and exclude unresolved as a pattern.",
+    "pattern_percentages": "Count episodes containing each pattern and divide by the 288-episode denominator; patterns overlap.",
+    "activity_count": "Count all requirement rows belonging to an episode, including rows attributed_to_change=no or uncertain.",
+    "unresolved_episode_count": "Count episodes containing a row with pattern=unresolved or attributed_to_change=uncertain."
+  }
+}

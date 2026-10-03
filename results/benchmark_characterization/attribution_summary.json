@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "activity_count": 1359,
+  "positive_episode_count": 288,
+  "activity_attribution_counts": {
+    "yes": 1228,
+    "uncertain": 24,
+    "no": 107
+  },
+  "episode_groups": {
+    "all_attributed": 221,
+    "mixed": 57,
+    "none_attributed": 10
+  },
+  "episode_groups_by_split": {
+    "all_attributed": {
+      "train": 146,
+      "validation": 75
+    },
+    "mixed": {
+      "train": 29,
+      "validation": 28
+    },
+    "none_attributed": {
+      "train": 10
+    }
+  },
+  "sources": {
+    "annotations": "maintenance_requirement_annotations.csv",
+    "training_inputs": "../../data/benchmark_release/train.jsonl"
+  },
+  "interpretation": "Attribution of recorded activities to the supplied production change; this is not an independent inter-rater study."
+}

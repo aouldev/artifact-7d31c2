@@ -1,0 +1,58 @@
+{
+  "repo": "documenso",
+  "workspace": "/workspace/repo",
+  "env": {
+    "NODE_OPTIONS": "--use-env-proxy",
+    "SKIP_POSTINSTALL": "1"
+  },
+  "runners": [
+    {
+      "name": "documenso_app_tests_playwright_api",
+      "path_regex": "^packages/app-tests/e2e/api/.*\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "bash",
+        "-lc",
+        "set -euo pipefail; NEXT_PRIVATE_DATABASE_URL=\"${NEXT_PRIVATE_DATABASE_URL:?Set NEXT_PRIVATE_DATABASE_URL}\" NEXT_PRIVATE_DIRECT_DATABASE_URL=\"${NEXT_PRIVATE_DIRECT_DATABASE_URL:?Set NEXT_PRIVATE_DIRECT_DATABASE_URL}\" DATABASE_URL=\"${DATABASE_URL:?Set DATABASE_URL}\" npm run prisma:migrate-deploy -w @documenso/prisma; coverage_build_key=\"$({ git rev-parse HEAD; git diff HEAD --binary -- apps packages; printf '%s' 'oracle-documenso-build-v1'; } | shasum -a 256 | awk '{print $1}')\"; if [ ! -f apps/remix/build/.oracle_coverage_build_ready ] || [ \"$(cat apps/remix/build/.oracle_coverage_build_ready)\" != \"$coverage_build_key\" ]; then trap 'git checkout -- apps/remix/rollup.config.mjs apps/remix/vite.config.ts packages/lib/translations' EXIT; npm run translate; perl -0pi -e 's/noEmitOnError: true/noEmitOnError: false/' apps/remix/rollup.config.mjs; node -e \"const fs=require('fs'); const p='apps/remix/vite.config.ts'; const s=fs.readFileSync(p,'utf8'); if (!s.includes('sourcemap: true')) fs.writeFileSync(p, s.replace(/build:\\\\s*\\\\{/, 'build: {\\n    sourcemap: true,'));\"; NODE_ENV=production npm exec --workspace @documenso/remix -- react-router build; npm run build:server --workspace @documenso/remix; mkdir -p apps/remix/build/server/hono/packages/lib; cp apps/remix/server/main.js apps/remix/build/server/main.js; rm -rf apps/remix/build/server/hono/packages/lib/translations; cp -r packages/lib/translations apps/remix/build/server/hono/packages/lib/translations; printf '%s\\n' \"$coverage_build_key\" > apps/remix/build/.oracle_coverage_build_ready; fi; npm exec --workspace @documenso/app-tests -- start-server-and-test \"npm run start -w @documenso/remix\" http://localhost:3000 \"cd ../.. && npm exec -- playwright test --config packages/app-tests/playwright.config.ts {{test_file}} --project=api --workers=1 --retries=0 --reporter=line\""
+      ],
+      "env": {
+        "NODE_ENV": "test",
+        "NEXT_PRIVATE_LOGGER_FILE_PATH": "./logs.json",
+        "NEXT_PUBLIC_WEBAPP_URL": "http://localhost:3000",
+        "NEXT_PRIVATE_INTERNAL_WEBAPP_URL": "http://localhost:3000",
+        "PORT": "3000",
+        "NODE_OPTIONS": "--use-env-proxy --experimental-require-module -r {{output_dir}}/playwright_browser_coverage_shim.cjs",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}",
+        "CI": "1"
+      },
+      "timeout_ms": 900000
+    },
+    {
+      "name": "documenso_app_tests_playwright_ui",
+      "path_regex": "^packages/app-tests/e2e/(?!api/|license/).*\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "bash",
+        "-lc",
+        "set -euo pipefail; NEXT_PRIVATE_DATABASE_URL=\"${NEXT_PRIVATE_DATABASE_URL:?Set NEXT_PRIVATE_DATABASE_URL}\" NEXT_PRIVATE_DIRECT_DATABASE_URL=\"${NEXT_PRIVATE_DIRECT_DATABASE_URL:?Set NEXT_PRIVATE_DIRECT_DATABASE_URL}\" DATABASE_URL=\"${DATABASE_URL:?Set DATABASE_URL}\" npm run prisma:migrate-deploy -w @documenso/prisma; coverage_build_key=\"$({ git rev-parse HEAD; git diff HEAD --binary -- apps packages; printf '%s' 'oracle-documenso-build-v1'; } | shasum -a 256 | awk '{print $1}')\"; if [ ! -f apps/remix/build/.oracle_coverage_build_ready ] || [ \"$(cat apps/remix/build/.oracle_coverage_build_ready)\" != \"$coverage_build_key\" ]; then trap 'git checkout -- apps/remix/rollup.config.mjs apps/remix/vite.config.ts packages/lib/translations' EXIT; npm run translate; perl -0pi -e 's/noEmitOnError: true/noEmitOnError: false/' apps/remix/rollup.config.mjs; node -e \"const fs=require('fs'); const p='apps/remix/vite.config.ts'; const s=fs.readFileSync(p,'utf8'); if (!s.includes('sourcemap: true')) fs.writeFileSync(p, s.replace(/build:\\\\s*\\\\{/, 'build: {\\n    sourcemap: true,'));\"; NODE_ENV=production npm exec --workspace @documenso/remix -- react-router build; npm run build:server --workspace @documenso/remix; mkdir -p apps/remix/build/server/hono/packages/lib; cp apps/remix/server/main.js apps/remix/build/server/main.js; rm -rf apps/remix/build/server/hono/packages/lib/translations; cp -r packages/lib/translations apps/remix/build/server/hono/packages/lib/translations; printf '%s\\n' \"$coverage_build_key\" > apps/remix/build/.oracle_coverage_build_ready; fi; npm exec --workspace @documenso/app-tests -- start-server-and-test \"npm run start -w @documenso/remix\" http://localhost:3000 \"cd ../.. && npm exec -- playwright test --config packages/app-tests/playwright.config.ts {{test_file}} --project=ui --workers=1 --retries=0 --reporter=line\""
+      ],
+      "env": {
+        "NODE_ENV": "test",
+        "NEXT_PRIVATE_LOGGER_FILE_PATH": "./logs.json",
+        "NEXT_PUBLIC_WEBAPP_URL": "http://localhost:3000",
+        "NEXT_PRIVATE_INTERNAL_WEBAPP_URL": "http://localhost:3000",
+        "PORT": "3000",
+        "NODE_OPTIONS": "--use-env-proxy --experimental-require-module -r {{output_dir}}/playwright_browser_coverage_shim.cjs",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}",
+        "CI": "1"
+      },
+      "timeout_ms": 900000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 600000
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "repo": "formbricks",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "formbricks_web_vitest_coverage",
+      "path_regex": "^apps/web/(?!playwright/).*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearestPackageDir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "dotenv",
+        "-e",
+        "../../.env",
+        "--",
+        "vitest",
+        "run",
+        "{{assetPathFromCwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{coverageDir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    },
+    {
+      "name": "formbricks_web_vitest_raw_v8",
+      "path_regex": "^apps/web/(?!playwright/).*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearestPackageDir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "dotenv",
+        "-e",
+        "../../.env",
+        "--",
+        "vitest",
+        "run",
+        "{{assetPathFromCwd}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{coverageDir}}"
+      },
+      "timeout_ms": 600000
+    },
+    {
+      "name": "formbricks_package_vitest_coverage",
+      "path_regex": "^packages/(cache|i18n-utils|js-core|logger|storage|survey-ui|surveys)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearestPackageDir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "{{assetPathFromCwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{coverageDir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    },
+    {
+      "name": "formbricks_package_vitest_raw_v8",
+      "path_regex": "^packages/(cache|i18n-utils|js-core|logger|storage|survey-ui|surveys)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearestPackageDir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "{{assetPathFromCwd}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{coverageDir}}"
+      },
+      "timeout_ms": 600000
+    },
+    {
+      "name": "formbricks_playwright_browser_raw",
+      "path_regex": "^apps/web/playwright/.*\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "bash",
+        "-lc",
+        "set -euo pipefail; : \"${DATABASE_URL:?Set DATABASE_URL}\"; corepack pnpm --filter @formbricks/database db:migrate:deploy; corepack pnpm exec playwright install chromium; corepack pnpm --filter @formbricks/web dev > /tmp/formbricks-web-{{test_name}}.log 2>&1 & SERVER_PID=$!; trap \"kill $SERVER_PID 2>/dev/null || true\" EXIT; for i in $(seq 1 120); do curl -fsS http://localhost:3000 >/dev/null 2>&1 && break; sleep 2; done; curl -fsS http://localhost:3000 >/dev/null; NODE_OPTIONS=\"-r {{output_dir}}/playwright_browser_coverage_shim.cjs\" corepack pnpm exec playwright test --config playwright.config.ts {{test_file}} --project=chromium --workers=1 --retries=0 --reporter=line"
+      ],
+      "env": {
+        "WEBAPP_URL": "http://localhost:3000",
+        "NEXTAUTH_URL": "http://localhost:3000",
+        "E2E_TESTING": "1",
+        "EMAIL_VERIFICATION_DISABLED": "1",
+        "PASSWORD_RESET_DISABLED": "1",
+        "NEXT_TELEMETRY_DISABLED": "1",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}",
+        "CI": "1"
+      },
+      "timeout_ms": 900000
+    }
+  ],
+  "validation": {
+    "compile": {
+      "argv": [
+        "corepack",
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "cwd": "{{repo_root}}",
+      "env": {
+        "NEXTAUTH_URL": "http://localhost:3000",
+        "WEBAPP_URL": "http://localhost:3000",
+        "NEXT_TELEMETRY_DISABLED": "1"
+      },
+      "timeout_ms": 1200000
+    },
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000,
+    "commands": [
+      {
+        "argv": [
+          "corepack",
+          "enable"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "cp",
+          "-n",
+          ".env.example",
+          ".env"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "install",
+          "--frozen-lockfile"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 600000
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "--filter",
+          "@formbricks/logger",
+          "build"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 600000
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "--filter",
+          "@formbricks/cache",
+          "build"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 600000
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "--filter",
+          "@formbricks/storage",
+          "build"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 600000
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "--filter",
+          "@formbricks/database",
+          "build"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 600000
+      }
+    ]
+  }
+}

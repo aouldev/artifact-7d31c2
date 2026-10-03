@@ -1,0 +1,46 @@
+{
+  "repo": "directus",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "directus_nearest_package_vitest",
+      "path_regex": "^(api|app|packages|sdk)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearest_package_dir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {}
+    },
+    {
+      "name": "directus_nearest_package_raw_v8",
+      "path_regex": "^(api|app|packages|sdk)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearest_package_dir}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      }
+    }
+  ],
+  "validation": {
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

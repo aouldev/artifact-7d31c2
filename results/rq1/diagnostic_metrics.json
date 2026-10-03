@@ -1,0 +1,35 @@
+{
+  "status": "reported",
+  "scope": "RQ1 supporting diagnostics",
+  "cohort": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "reaccept": {
+    "tn_false_positive_count": 426,
+    "tn_first_rank_false_positive_count": 349,
+    "tu_true_positive_count": 42,
+    "tu_not_selected_developer_target_count": 11,
+    "tu_not_retrieved_count": 9,
+    "tu_retrieved_then_rejected_count": 2
+  },
+  "new_test_only_positive_subgroup": {
+    "episode_count": 14,
+    "reaccept_tn": {
+      "identified_count": 11,
+      "passing_patch_count": 4,
+      "conditional_passing_rate_percent": 36.36
+    },
+    "reaccept_tu": {
+      "identified_count": 8,
+      "passing_patch_count": 0,
+      "conditional_passing_rate_percent": 0.0
+    }
+  },
+  "ceprot_input_visibility": {
+    "existing_target_count": 74,
+    "over_150_token_count": 72,
+    "first_expect_beyond_budget_count": 54
+  }
+}

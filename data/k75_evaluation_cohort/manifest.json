@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "artifact_id": "k75_evaluation_cohort",
+  "frozen_at": "2026-09-30",
+  "scope": "formal experiment cohort",
+  "repositories": 23,
+  "counts": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "files": {
+    "validation": "validation.jsonl",
+    "selected_episode_ids": "selected_episode_ids.txt"
+  },
+  "sha256": {
+    "validation": "1ed5ae82e55e1d86d9f2f2c7d0f0055f7ab14420e0ae537ddda6c37c26021b0b",
+    "selected_episode_ids": "f29b75cd19a7f5fcbb6ede7111009a9697dace9d1ef0e728dd7e418a3d095986"
+  }
+}

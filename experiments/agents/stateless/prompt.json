@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "prompt_id": "repo_test_maintenance.stateless_generation.v1",
+  "condition": "stateless",
+  "task": "generation",
+  "template": "PROMPT.md",
+  "placeholder": "{{EPISODE_JSON}}",
+  "state": {
+    "session": "new_per_episode",
+    "memory": "empty_and_nonpersistent",
+    "training_history": "not_exposed"
+  },
+  "tools": [
+    "tree",
+    "ls",
+    "read_file",
+    "search",
+    "write_file",
+    "delete_file"
+  ],
+  "output_schema": "prediction.schema.json",
+  "prompt_sha256": "cbbf85d03045d68987de42e8127ec2257455488981ffbac6bf8ae280415b2280",
+  "workspace_write_policy": "all_repo_paths_except_episode_prod_files"
+}

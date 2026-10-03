@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "condition": "stateless",
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "actor_timeout_seconds": 600,
+  "actor_calls_per_episode": 1,
+  "workspace_output": "complete_file_host_derived_diff",
+  "provider_policy": {
+    "formal_provider": "official_chatgpt_oauth",
+    "provider_switching": false,
+    "custom_base_url": false,
+    "api_key_adapter": false,
+    "third_party_relay": false,
+    "fallback_model": false,
+    "codex": {
+      "client_version": "codex-cli 0.144.6",
+      "provider": "openai",
+      "authentication": "forced_chatgpt_login"
+    },
+    "opencode": {
+      "client_version": "1.17.18",
+      "provider": "openai",
+      "authentication": "native_chatgpt_oauth"
+    }
+  },
+  "retry_policy": {
+    "automatic_model_retry": false,
+    "quality_driven_retry": false,
+    "best_of_n": false,
+    "in_process_retry": false,
+    "infrastructure_retry": "separate run, same episode input and frozen settings only; never an in-process retry",
+    "retryable_failures": [
+      "timeout",
+      "process_error",
+      "transport_error"
+    ],
+    "auth_or_quota_failure": "record_and_stop; do not switch provider, credential, or model",
+    "non_retryable_model_outcomes": [
+      "positive_with_no_non_production_change",
+      "negative_with_non_production_change",
+      "invalid_output"
+    ]
+  },
+  "memory": {
+    "initial_context": "none",
+    "memory_read_tool": false,
+    "reflection_writer": false,
+    "cross_episode_state": false
+  },
+  "workspace_write_policy": "all_repo_paths_except_episode_prod_files"
+}

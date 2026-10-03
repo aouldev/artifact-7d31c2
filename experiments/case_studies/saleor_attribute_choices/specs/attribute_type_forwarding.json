@@ -1,0 +1,30 @@
+{
+  "episode_id": "saleor__47f89d573219",
+  "behavior_id": "attribute_type_forwarding",
+  "production_edit": {
+    "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts",
+    "normal": "new AttributeChoicesHandler(client, id, inputValue, type)",
+    "mutant": "new AttributeChoicesHandler(client, id, inputValue, undefined)"
+  },
+  "behavior_contract": {
+    "trigger": "A BOOLEAN selected attribute reaches AttributeQueryVarsBuilder.createOptionFetcher.",
+    "normal_oracle": "The builder forwards AttributeInputTypeEnum.BOOLEAN to AttributeChoicesHandler; fetch returns static Yes/No choices and does not call GraphQL.",
+    "mutant_oracle": "The unchanged handler receives undefined and therefore calls GraphQL instead of returning static choices.",
+    "source_anchors": [
+      "Handler.ts: Boolean attributes do not expose choices; BOOLEAN returns createBooleanOptions().",
+      "AttributeQueryVarsBuilder.ts: selected attribute type is destructured and passed as the fourth AttributeChoicesHandler argument."
+    ],
+    "collateral_behavior_assessment": "The replacement changes only the fourth argument at the default AttributeChoicesHandler construction site. The handler branches on this argument only for BOOLEAN; non-BOOLEAN inputs keep the existing GraphQL path."
+  },
+  "admission_status": "admitted",
+  "admission_reason": "The independent BOOLEAN builder probe passes on normal and fails on the mutant after the unchanged handler takes the GraphQL path. Both snapshots load and execute assertions. The one-site edit changes only the type argument at the AttributeChoicesHandler construction boundary.",
+  "probe": {
+    "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/__rq2_attribute_type_forwarding_probe__.test.ts",
+    "source": "probes/attribute_type_forwarding.test.ts",
+    "sha256": "5bab7bb4bfeade565577d6528f5d8527d1f1c6823be9c8592fc4dc38b33632c0"
+  },
+  "mutant_source_sha256": {
+    "src/components/ConditionalFilter/API/Handler.ts": "dc7a648c7a7a0c5b46296e1c18f2de12e478cf56614b1829cc2ad198c24d04aa",
+    "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "1046fa23db77453c64798241a5f9bef63126b08c98d595b5fe2a069cedcd067c"
+  }
+}

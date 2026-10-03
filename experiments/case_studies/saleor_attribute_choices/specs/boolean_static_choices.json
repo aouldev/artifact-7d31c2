@@ -1,0 +1,29 @@
+{
+  "episode_id": "saleor__47f89d573219",
+  "behavior_id": "boolean_static_choices",
+  "production_edit": {
+    "path": "src/components/ConditionalFilter/API/Handler.ts",
+    "normal": "if (this.type === AttributeInputTypeEnum.BOOLEAN) {",
+    "mutant": "if (false) { // RQ2: disable only the BOOLEAN static-options branch"
+  },
+  "behavior_contract": {
+    "trigger": "AttributeChoicesHandler.fetch is invoked for an attribute whose type is AttributeInputTypeEnum.BOOLEAN.",
+    "normal_oracle": "The handler returns static Yes/No options and does not call GraphQL.",
+    "mutant_oracle": "The handler bypasses the static branch and calls GraphQL, so it cannot satisfy the BOOLEAN static-options contract without a response.",
+    "source_anchors": [
+      "Handler.ts: BOOLEAN attributes do not expose choices and return createBooleanOptions()."
+    ],
+    "collateral_behavior_assessment": "The one-site condition replacement affects only invocations whose handler type is BOOLEAN. All non-BOOLEAN handler inputs follow the same GraphQL path in normal and mutant implementations."
+  },
+  "admission_status": "admitted",
+  "admission_reason": "The independent direct-handler probe passes on normal and fails on the mutant after the disabled BOOLEAN branch enters the GraphQL path. Both snapshots load and execute assertions. The one-site condition replacement changes only the BOOLEAN fast path.",
+  "probe": {
+    "path": "src/components/ConditionalFilter/API/__rq2_boolean_static_choices_probe__.test.ts",
+    "source": "probes/boolean_static_choices.test.ts",
+    "sha256": "5d2afe3cec1fcee5522b3a53e5dbb8d582d4ae5b2e29b6a10e07062e0623692b"
+  },
+  "mutant_source_sha256": {
+    "src/components/ConditionalFilter/API/Handler.ts": "84b7ecdeee138dfacda2a6a8b2c988a484b2d38ce230a14ea121349846e67b03",
+    "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "514e0ec41d7428fa37e03b9d07b86c494565dd864c7ec5571f4cd6a8f0078fa9"
+  }
+}

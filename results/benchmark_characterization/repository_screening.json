@@ -1,0 +1,9 @@
+{
+  "status": "reported",
+  "scope": "benchmark repository screening",
+  "repository_counts": {
+    "candidate_pool_repositories": 45,
+    "repositories_with_executable_historical_test_entry_points": 31,
+    "contributing_repositories": 23
+  }
+}

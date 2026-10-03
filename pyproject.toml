@@ -1,0 +1,55 @@
+[project]
+name = "repo-test-evolution"
+version = "0.1.0"
+description = "Research project on repo-level test maintenance"
+readme = "README_REPRODUCE.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = [
+    "PyYAML>=6.0,<7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["benchmark*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.jsonl", "*.txt", "*.md", "*.yaml", "*.yml", "*.html", "*.css", "*.js"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RepoTest-Evolution Leaderboard</title>
+    <meta
+      name="description"
+      content="Leaderboard for the repository-level test maintenance benchmark."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="RepoTest-Evolution home">
+          <span class="brand-mark">RTE</span>
+          <span>RepoTest-Evolution</span>
+        </a>
+        <div class="topbar-links">
+          <a id="paperLink" href="https://example.com/repo-test-evolution-paper.pdf">Paper</a>
+          <a id="githubLink" href="https://github.com/example/repo-test-evolution">GitHub</a>
+          <a id="datasetLink" href="https://example.com/repo-test-evolution-dataset">Dataset</a>
+          <a id="submitLink" class="button button-small" href="mailto:benchmark@example.com">Submit</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Academic Benchmark Leaderboard</p>
+          <h1>Repository-Level Test Maintenance Agents</h1>
+          <p class="hero-text">
+            Evaluating whether agents can identify when evolving production code requires test
+            maintenance, and whether their generated test patches apply, build, and pass targeted
+            changed-test execution.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#leaderboard">View Leaderboard</a>
+            <a class="button button-secondary" href="#protocol">Evaluation Protocol</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Benchmark summary">
+          <dl>
+            <div>
+              <dt>Primary Task</dt>
+              <dd>Binary intent prediction</dd>
+            </div>
+            <div>
+              <dt>Patch Scope</dt>
+              <dd>True-positive positive cases</dd>
+            </div>
+            <div>
+              <dt>Dynamic Target</dt>
+              <dd>Changed tests only</dd>
+            </div>
+            <div>
+              <dt>Data Source</dt>
+              <dd id="dataSourceLabel">server evaluation results</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="cards" aria-label="Leaderboard summary metrics">
+        <article class="card">
+          <span class="card-label">Release</span>
+          <strong id="summaryRelease">—</strong>
+          <span id="summaryGenerated" class="card-note">Waiting for data</span>
+        </article>
+        <article class="card">
+          <span class="card-label">Submissions</span>
+          <strong id="summarySubmissions">—</strong>
+          <span class="card-note">evaluated result files</span>
+        </article>
+        <article class="card">
+          <span class="card-label">Validation Episodes</span>
+          <strong id="summaryEpisodes">—</strong>
+          <span class="card-note">binary labels</span>
+        </article>
+        <article class="card">
+          <span class="card-label">Positive Cases</span>
+          <strong id="summaryPositive">—</strong>
+          <span class="card-note">patch-evaluable gold positives</span>
+        </article>
+      </section>
+
+      <section id="protocol" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Protocol</p>
+          <h2>Two-stage evaluation, one public leaderboard</h2>
+          <p>
+            The leaderboard separates intent recognition from patch analysis, matching the benchmark
+            pipeline used by the private server evaluator.
+          </p>
+        </div>
+        <div class="protocol-grid">
+          <article class="protocol-card">
+            <span class="step">01</span>
+            <h3>Intent Classification</h3>
+            <p>
+              Every validation episode is scored as <code>positive</code> or <code>negative</code>.
+              The table ranks by Intent Macro-F1 by default to reduce class-imbalance bias.
+            </p>
+            <ul>
+              <li>Accuracy</li>
+              <li>Macro-F1</li>
+              <li>Positive precision / recall / F1</li>
+            </ul>
+          </article>
+          <article class="protocol-card">
+            <span class="step">02</span>
+            <h3>Static Patch Analysis</h3>
+            <p>
+              Patch metrics are computed only when <code>gold=positive</code> and
+              <code>prediction=positive</code>. This stage checks patch presence, git-apply success,
+              and target test-file overlap against hidden gold metadata.
+            </p>
+            <ul>
+              <li>Patch apply rate</li>
+              <li>Patch presence rate</li>
+              <li>True-positive target coverage</li>
+            </ul>
+          </article>
+          <article class="protocol-card">
+            <span class="step">03</span>
+            <h3>Dynamic Validation</h3>
+            <p>
+              Server-side repo-specific runners reuse prepared snapshots and dependency caches, then
+              run build/compile checks and changed tests after applying each participant patch.
+            </p>
+            <ul>
+              <li>CSR: compile/build success rate</li>
+              <li>TPS: targeted changed-test pass rate</li>
+              <li>End-to-end dynamic success</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="leaderboard" class="section leaderboard-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Results</p>
+          <h2>Leaderboard</h2>
+          <p>
+            Data is loaded from <code>data/leaderboard.json</code>, which is generated from
+            <code>benchmark/server/storage/evaluated_results/*/result.json</code>.
+          </p>
+        </div>
+
+        <div class="controls" aria-label="Leaderboard filters">
+          <label>
+            Search
+            <input id="searchInput" type="search" placeholder="System, team, model, submission id" />
+          </label>
+          <label>
+            Release
+            <select id="releaseFilter">
+              <option value="all">All releases</option>
+            </select>
+          </label>
+          <label>
+            Evaluation
+            <select id="modeFilter">
+              <option value="all">All submissions</option>
+              <option value="dynamic">Dynamic verified</option>
+              <option value="static">Static only</option>
+            </select>
+          </label>
+          <label>
+            Sort by
+            <select id="sortSelect">
+              <option value="intent_macro_f1">Intent Macro-F1</option>
+              <option value="positive_f1">Positive F1</option>
+              <option value="positive_recall">Positive Recall</option>
+              <option value="patch_apply_rate">Patch Apply</option>
+              <option value="tps">TPS</option>
+              <option value="csr">CSR</option>
+              <option value="end_to_end_success_rate">E2E Success</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="dataNotice" class="notice" role="status"></div>
+
+        <div class="table-wrap" role="region" aria-label="Leaderboard table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">System</th>
+                <th scope="col">Release</th>
+                <th scope="col">Intent Macro-F1</th>
+                <th scope="col">Positive F1</th>
+                <th scope="col">Positive Recall</th>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Patch Apply</th>
+                <th scope="col">CSR</th>
+                <th scope="col">TPS</th>
+                <th scope="col">E2E</th>
+                <th scope="col">Status</th>
+                <th scope="col">Links</th>
+              </tr>
+            </thead>
+            <tbody id="leaderboardBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section details-grid">
+        <article class="detail-card" id="submissionDetails">
+          <p class="eyebrow">Submission Detail</p>
+          <h2>Select a row</h2>
+          <p>
+            Click any leaderboard entry to inspect metric groups, evaluation counts, artifacts, and
+            optional team-provided metadata.
+          </p>
+        </article>
+        <article class="detail-card">
+          <p class="eyebrow">Artifacts</p>
+          <h2>Expected server layout</h2>
+          <ul class="artifact-list">
+            <li><code>decision_metrics.json</code> — binary intent metrics</li>
+            <li><code>static_metrics.json</code> — patch presence and git-apply metrics</li>
+            <li><code>dynamic_metrics.json</code> — CSR, TPS, UCR placeholder, coverage status</li>
+            <li><code>result.json</code> — single closed-loop server evaluation artifact</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section links-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Resources</p>
+          <h2>Benchmark assets</h2>
+          <p>
+            Replace these placeholder links when the paper, GitHub repository, dataset card, and
+            submission instructions are ready.
+          </p>
+        </div>
+        <div class="resource-grid">
+          <a id="resourcePaper" class="resource-card" href="https://example.com/repo-test-evolution-paper.pdf">
+            <span>Paper PDF</span>
+            <strong>Methodology and analysis</strong>
+          </a>
+          <a id="resourceGithub" class="resource-card" href="https://github.com/example/repo-test-evolution">
+            <span>GitHub</span>
+            <strong>Runner, schemas, and profiles</strong>
+          </a>
+          <a id="resourceDataset" class="resource-card" href="https://example.com/repo-test-evolution-dataset">
+            <span>Dataset</span>
+            <strong>Public train / validation release</strong>
+          </a>
+          <a id="resourceSubmission" class="resource-card" href="mailto:benchmark@example.com">
+            <span>Submit</span>
+            <strong>Submission package instructions</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        RepoTest-Evolution Benchmark · Generated from official server evaluation outputs ·
+        <span id="footerGenerated">not generated yet</span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+diff --git a/src/components/ConditionalFilter/API/Handler.test.ts b/src/components/ConditionalFilter/API/Handler.test.ts
+index e9cbae0..f272f30 100644
+--- a/src/components/ConditionalFilter/API/Handler.test.ts
++++ b/src/components/ConditionalFilter/API/Handler.test.ts
+@@ -1,11 +1,107 @@
+ import { type ApolloClient, type ApolloQueryResult } from "@apollo/client";
+ import {
++  _GetAttributeChoicesDocument,
++  type _GetAttributeChoicesQuery,
++  type _GetAttributeChoicesQueryVariables,
+   _GetWarehouseChoicesDocument,
+   type _GetWarehouseChoicesQuery,
+   type _GetWarehouseChoicesQueryVariables,
++  AttributeInputTypeEnum,
+ } from "@dashboard/graphql";
+ 
+-import { WarehouseHandler } from "./Handler";
++import { AttributeChoicesHandler, WarehouseHandler } from "./Handler";
++
++describe("AttributeChoicesHandler", () => {
++  let mockClient: jest.Mocked<ApolloClient<unknown>>;
++
++  beforeEach(() => {
++    mockClient = {
++      query: jest.fn(),
++    } as unknown as jest.Mocked<ApolloClient<unknown>>;
++  });
++
++  it("fetches attribute choices with correct query and variables", async () => {
++    // Arrange
++    const attributeSlug = "size";
++    const searchQuery = "lar";
++    const handler = new AttributeChoicesHandler(mockClient, attributeSlug, searchQuery);
++    const mockResponse: _GetAttributeChoicesQuery = {
++      __typename: "Query" as const,
++      attribute: {
++        __typename: "Attribute",
++        choices: {
++          __typename: "AttributeValueCountableConnection",
++          edges: [
++            {
++              __typename: "AttributeValueCountableEdge",
++              node: {
++                __typename: "AttributeValue",
++                id: "QXR0cmlidXRlVmFsdWU6MQ==",
++                name: "Large",
++                slug: "large",
++              },
++            },
++          ],
++        },
++      },
++    };
++
++    mockClient.query.mockResolvedValueOnce({
++      data: mockResponse,
++    } as ApolloQueryResult<_GetAttributeChoicesQuery>);
++
++    // Act
++    const result = await handler.fetch();
++
++    // Assert
++    expect(mockClient.query).toHaveBeenCalledWith({
++      query: _GetAttributeChoicesDocument,
++      variables: {
++        slug: attributeSlug,
++        first: 5,
++        query: searchQuery,
++      } as _GetAttributeChoicesQueryVariables,
++    });
++    expect(result).toEqual([
++      {
++        label: "Large",
++        value: "QXR0cmlidXRlVmFsdWU6MQ==",
++        slug: "large",
++        originalSlug: undefined,
++      },
++    ]);
++  });
++
++  it("returns static boolean options without querying attribute choices", async () => {
++    // Arrange
++    const handler = new AttributeChoicesHandler(
++      mockClient,
++      "boolean-attribute",
++      "yes",
++      AttributeInputTypeEnum.BOOLEAN,
++    );
++
++    // Act
++    const result = await handler.fetch();
++
++    // Assert
++    expect(mockClient.query).not.toHaveBeenCalled();
++    expect(result).toEqual([
++      {
++        label: "Yes",
++        value: "true",
++        slug: "true",
++        type: undefined,
++      },
++      {
++        label: "No",
++        value: "false",
++        slug: "false",
++        type: undefined,
++      },
++    ]);
++  });
++});
+ 
+ describe("WarehouseHandler", () => {
+   let mockClient: jest.Mocked<ApolloClient<unknown>>;

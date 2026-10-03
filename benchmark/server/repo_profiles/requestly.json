@@ -1,0 +1,54 @@
+{
+  "repo": "requestly",
+  "workspace": "/workspace/repo",
+  "env": {
+    "HUSKY": "0",
+    "npm_config_ignore_scripts": "true",
+    "NPM_CONFIG_IGNORE_SCRIPTS": "true"
+  },
+  "install": {
+    "timeout_ms": 300000,
+    "commands": [
+      {
+        "argv": [
+          "bash",
+          "-lc",
+          "node -e \"const fs=require('fs'); const p='../package.json'; const pkg=JSON.parse(fs.readFileSync(p,'utf8')); if (pkg.scripts) { delete pkg.scripts.prepare; } fs.writeFileSync(p, JSON.stringify(pkg,null,2));\"; HUSKY=0 npm_config_ignore_scripts=true NPM_CONFIG_IGNORE_SCRIPTS=true npm install --legacy-peer-deps --ignore-scripts"
+        ],
+        "cwd": "app",
+        "timeout_ms": 300000,
+        "env": {
+          "HUSKY": "0",
+          "npm_config_ignore_scripts": "true",
+          "NPM_CONFIG_IGNORE_SCRIPTS": "true"
+        }
+      }
+    ]
+  },
+  "validation": {
+    "infer_compile": false
+  },
+  "runners": [
+    {
+      "name": "requestly_app_vitest_raw_v8",
+      "path_regex": "^app/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "app",
+      "argv": [
+        "npm",
+        "exec",
+        "--",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}/coverage/vitest_raw_v8"
+      },
+      "timeout_ms": 900000
+    }
+  ]
+}

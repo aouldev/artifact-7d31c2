@@ -1,0 +1,14 @@
+{
+  "scope": "RQ1 prior methods",
+  "status": "reported",
+  "files": {
+    "generation_metrics.json": {
+      "bytes": 5856,
+      "sha256": "8178fa3c40d7ed7cb37657f8c2de285e4c7110b3fb498bc9d82b0f87c820223b"
+    },
+    "identification_metrics.json": {
+      "bytes": 3381,
+      "sha256": "184ed4046fc105f3a19ea94faa02bed60c470e0b3c604114688371610fa0a1ac"
+    }
+  }
+}

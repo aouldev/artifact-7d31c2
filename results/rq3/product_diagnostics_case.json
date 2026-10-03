@@ -1,0 +1,137 @@
+{
+  "scope": "Saleor product-diagnostics case",
+  "episode_id": "saleor__a11d1fc587f5",
+  "repo": "saleor",
+  "base_commit": "53474a00566363d6164023201a70fb32aa2f7b19",
+  "conditions": {
+    "codex_stateless": {
+      "selected_output_sha256": "4ad5921f5bb565f5b2df1bfff7d102c810e672106928391065995f0b4f0e92bb",
+      "patch": "experiments/case_studies/saleor_product_diagnostics/codex_stateless.patch",
+      "read_paths": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx",
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts",
+        "src/products/components/ProductDoctor/utils/types.ts"
+      ],
+      "edited_paths": [
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+      ],
+      "initial_history_records": 0,
+      "history_query_calls": 0,
+      "outcomes": {
+        "csr": "passed",
+        "tps": "passed",
+        "ucr": "passed"
+      }
+    },
+    "codex_continuous": {
+      "selected_output_sha256": "10db175ebf02500c3b84fe4717f70c0d721d4a44685df60c7055d21471c2ceb8",
+      "patch": "experiments/case_studies/saleor_product_diagnostics/codex_continuous.patch",
+      "read_paths": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx",
+        "src/products/components/ProductDoctor/AvailabilityCard.tsx",
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts",
+        "src/products/components/ProductDoctor/utils/channelUtils.ts"
+      ],
+      "edited_paths": [
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+      ],
+      "initial_history_records": 0,
+      "history_query_calls": 0,
+      "outcomes": {
+        "csr": "passed",
+        "tps": "passed",
+        "ucr": "passed"
+      }
+    },
+    "codex_online": {
+      "selected_output_sha256": "9f4612462d27d51051f60adc404984f4fcc3e4aede6cffbb85d1a86fdac87948",
+      "patch": "experiments/case_studies/saleor_product_diagnostics/codex_online.patch",
+      "read_paths": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx",
+        "src/products/components/ProductDoctor/AvailabilityCard.tsx",
+        "src/products/components/ProductDoctor/AvailabilityChannelItem.tsx",
+        "src/products/components/ProductDoctor/hooks/usePublicApiVerification.test.ts",
+        "src/products/components/ProductDoctor/hooks/usePublicApiVerification.ts",
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts",
+        "src/products/components/ProductDoctor/utils/channelUtils.ts",
+        "src/products/components/ProductDoctor/utils/types.ts"
+      ],
+      "edited_paths": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx",
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+      ],
+      "initial_history_records": 4,
+      "history_query_calls": 1,
+      "outcomes": {
+        "csr": "passed",
+        "tps": "failed",
+        "ucr": "failed"
+      },
+      "target_execution": {
+        "test_file": "src/products/components/ProductDoctor/AvailabilityCard.test.tsx",
+        "passed_tests": 10,
+        "failed_tests": 2,
+        "total_tests": 12,
+        "expected_message": "All channels configured correctly · 2 advisories",
+        "observed_message": "All channels configured correctly · {count} advisories"
+      }
+    }
+  },
+  "supplied_history": [
+    {
+      "memory_type": "procedural",
+      "anchor_path": "src/products/components/ProductDoctor/utils",
+      "trigger": "When extending mapper input fields or updating its test fixtures.",
+      "claim": "In this episode, the mapper test switched from a cast of ProductDetailsQuery product data to a typed ProductDiagnosticInput fixture with productType.isShippingRequired defaulting to true. It checks false for a non-shippable product and includes true in full-output expectations.",
+      "inspect_paths": [
+        "src/products/components/ProductDoctor/utils/mapProductToDiagnosticData.test.ts",
+        "src/products/components/ProductDoctor/utils/mapProductToDiagnosticData.ts"
+      ],
+      "source_episodes": [
+        "saleor__5da406cc86f0"
+      ]
+    },
+    {
+      "memory_type": "semantic",
+      "anchor_path": "src/products/components/ProductDoctor/utils",
+      "trigger": "Investigating Product Doctor availability warnings or changing which checks apply to non-shippable products.",
+      "claim": "In this episode, runAvailabilityChecks kept core and warehouse checks applicable to non-shippable products, while shipping checks were gated by both product.isShippingRequired and skipShippingChecks. The skip options are documented as permission-related safeguards against warnings caused by unavailable data.",
+      "inspect_paths": [
+        "src/products/components/ProductDoctor/utils/availabilityChecks.ts",
+        "src/products/components/ProductDoctor/utils/types.ts",
+        "src/products/components/ProductDoctor/utils/availabilityChecks.test.ts"
+      ],
+      "source_episodes": [
+        "saleor__528981c53ef2"
+      ]
+    },
+    {
+      "memory_type": "procedural",
+      "anchor_path": "src/products/components/ProductDoctor/utils",
+      "trigger": "Extending tests for Product Doctor availability checks.",
+      "claim": "The historical test change added availabilityChecks.test.ts with typed product/channel fixtures and a mock IntlShape that verifies message placeholders. Its cases distinguish shipping-zone and warehouse warnings, core checks, shippable versus non-shippable products, and both skip options; this describes this test addition, not a repository-wide convention.",
+      "inspect_paths": [
+        "src/products/components/ProductDoctor/utils/availabilityChecks.test.ts",
+        "src/products/components/ProductDoctor/utils/availabilityChecks.ts",
+        "src/products/components/ProductDoctor/utils/types.ts"
+      ],
+      "source_episodes": [
+        "saleor__528981c53ef2"
+      ]
+    },
+    {
+      "memory_type": "semantic",
+      "anchor_path": "src/products/components/ProductDoctor/utils",
+      "trigger": "When inspecting ProductDoctor availability checks or their tests",
+      "claim": "The availability-check test imports runAvailabilityChecks from the adjacent production module and shares diagnostic data types from ./types. The observed production and test changes both mark type-only imports from react-intl and ./types explicitly; this episode alone does not establish a repository-wide convention.",
+      "inspect_paths": [
+        "src/products/components/ProductDoctor/utils/availabilityChecks.ts",
+        "src/products/components/ProductDoctor/utils/availabilityChecks.test.ts",
+        "src/products/components/ProductDoctor/utils/types.ts"
+      ],
+      "source_episodes": [
+        "saleor__1862b44826ea"
+      ]
+    }
+  ]
+}

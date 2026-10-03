@@ -1,0 +1,2253 @@
+{
+  "schema": "rq2_observable_trace_process_summary",
+  "protocol": "full_50_episode_trace_receipts",
+  "trace_runs": 100,
+  "agents": {
+    "codex": 50,
+    "opencode": 50
+  },
+  "observable_totals": {
+    "codex": {
+      "read_diff": 50,
+      "read_gold_test_file": 34,
+      "made_successful_file_write": 43,
+      "public_label_counts": {
+        "positive": 43,
+        "negative": 7
+      }
+    },
+    "opencode": {
+      "read_diff": 50,
+      "read_gold_test_file": 33,
+      "made_successful_file_write": 44,
+      "public_label_counts": {
+        "positive": 43,
+        "negative": 6,
+        "null": 1
+      }
+    }
+  },
+  "conditional_static_missing": {
+    "codex": {
+      "read_gold_test_file": {
+        "runs": 34,
+        "mean_missing_fraction": 0.29576798633892054,
+        "runs_with_any_write": 33,
+        "runs_with_source_confirmed_behaviors": 34
+      },
+      "made_successful_file_write": {
+        "runs": 43,
+        "mean_missing_fraction": 0.31936962945854874,
+        "runs_with_any_write": 43,
+        "runs_with_source_confirmed_behaviors": 43
+      }
+    },
+    "opencode": {
+      "read_gold_test_file": {
+        "runs": 33,
+        "mean_missing_fraction": 0.347860062298565,
+        "runs_with_any_write": 33,
+        "runs_with_source_confirmed_behaviors": 33
+      },
+      "made_successful_file_write": {
+        "runs": 44,
+        "mean_missing_fraction": 0.3772222913125787,
+        "runs_with_any_write": 44,
+        "runs_with_source_confirmed_behaviors": 43
+      }
+    }
+  },
+  "interpretation": [
+    "A successful read is evidence of a recorded client receipt, not comprehension.",
+    "Gold test files are a developer-patch reference surface, not a complete affected-test oracle.",
+    "Conditional missing fractions are descriptive and confounded by task difficulty and patch production.",
+    "Public silence does not establish that an agent failed to understand a behavior."
+  ],
+  "runs": [
+    {
+      "episode_id": "affine__78022b0dbbdc",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+      ],
+      "successful_read_events": 21,
+      "successful_write_events": 8,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.6666666666666666,
+      "complete_fraction": 0.2222222222222222,
+      "source_confirmed_behavior_count": 9
+    },
+    {
+      "episode_id": "affine__78022b0dbbdc",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/components/ai-chat-messages/ai-chat-messages.spec.ts"
+      ],
+      "successful_read_events": 15,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.7777777777777778,
+      "complete_fraction": 0.2222222222222222,
+      "source_confirmed_behavior_count": 9
+    },
+    {
+      "episode_id": "affine__7b8ec4dc34fc",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 4,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "affine__7b8ec4dc34fc",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/frontend/core/src/blocksuite/ai/runtime/chat/use-element.spec.tsx"
+      ],
+      "successful_read_events": 5,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.25,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "affine__85e2c5eb86b2",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "affine__85e2c5eb86b2",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 2,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "affine__e5ef8885a002",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 13,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.7272727272727273,
+      "complete_fraction": 0.2727272727272727,
+      "source_confirmed_behavior_count": 11
+    },
+    {
+      "episode_id": "affine__e5ef8885a002",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 1,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 11
+    },
+    {
+      "episode_id": "affine__f09468ce3923",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 4,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "affine__f09468ce3923",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 2,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "cal.com__e8d5475ff046",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/features/ee/round-robin/roundRobinManualReassignment.test.ts"
+      ],
+      "successful_read_events": 24,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.42857142857142855,
+      "complete_fraction": 0.14285714285714285,
+      "source_confirmed_behavior_count": 7
+    },
+    {
+      "episode_id": "cal.com__e8d5475ff046",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/features/ee/round-robin/roundRobinManualReassignment.test.ts",
+        "packages/lib/server/service/bookingLocationService.test.ts"
+      ],
+      "successful_read_events": 17,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": null,
+      "public_labels": [],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 7
+    },
+    {
+      "episode_id": "cal.com__fb57dd2b0722",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 15,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 9
+    },
+    {
+      "episode_id": "cal.com__fb57dd2b0722",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 9,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 9
+    },
+    {
+      "episode_id": "chatwoot__085847d2ad82",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "chatwoot__085847d2ad82",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js"
+      ],
+      "successful_read_events": 4,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "chatwoot__10c0dac4da6e",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/action.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js"
+      ],
+      "successful_read_events": 28,
+      "successful_write_events": 8,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "chatwoot__10c0dac4da6e",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/action.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js"
+      ],
+      "successful_read_events": 23,
+      "successful_write_events": 5,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.75,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "chatwoot__1f4f8ae24e79",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+      ],
+      "successful_read_events": 17,
+      "successful_write_events": 4,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "chatwoot__1f4f8ae24e79",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+      ],
+      "successful_read_events": 12,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.75,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "chatwoot__d685fab6687f",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js"
+      ],
+      "successful_read_events": 4,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.6666666666666666,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "chatwoot__d685fab6687f",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.6666666666666666,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "chatwoot__ea482c18673e",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/api/specs/contacts.spec.js",
+        "app/javascript/dashboard/components-next/NewConversation/helpers/specs/composeConversationHelper.spec.js"
+      ],
+      "successful_read_events": 13,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.6666666666666666,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "chatwoot__ea482c18673e",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/components-next/NewConversation/helpers/specs/composeConversationHelper.spec.js"
+      ],
+      "successful_read_events": 15,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.6666666666666666,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "chatwoot__f13c4f53baae",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/composables/spec/useMacros.spec.js"
+      ],
+      "successful_read_events": 5,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "chatwoot__f13c4f53baae",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/composables/spec/useMacros.spec.js"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "chatwoot__f4e41c76efda",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/store/modules/specs/conversations/mutations.spec.js"
+      ],
+      "successful_read_events": 17,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "chatwoot__f4e41c76efda",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 5,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "chatwoot__fd10754bdb7c",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/composables/spec/useAutomation.spec.js"
+      ],
+      "successful_read_events": 12,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "chatwoot__fd10754bdb7c",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/javascript/dashboard/composables/spec/useAutomation.spec.js"
+      ],
+      "successful_read_events": 9,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "documenso__306a5155bd12",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 16,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.8,
+      "complete_fraction": 0.1,
+      "source_confirmed_behavior_count": 10
+    },
+    {
+      "episode_id": "documenso__306a5155bd12",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 10,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.8,
+      "complete_fraction": 0.1,
+      "source_confirmed_behavior_count": 10
+    },
+    {
+      "episode_id": "formbricks__9fddd4dd44da",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 9,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "formbricks__9fddd4dd44da",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 9,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.5,
+      "complete_fraction": 0.25,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "grafana__5bee1295a0bd",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 11,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "grafana__5bee1295a0bd",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 9,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "grafana__b71de9305549",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "public/app/features/provisioning/utils/data.test.ts"
+      ],
+      "successful_read_events": 10,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "grafana__b71de9305549",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "public/app/features/provisioning/utils/data.test.ts"
+      ],
+      "successful_read_events": 8,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "grafana__c1dcf4965a3a",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 15,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.9411764705882353,
+      "complete_fraction": 0.058823529411764705,
+      "source_confirmed_behavior_count": 17
+    },
+    {
+      "episode_id": "grafana__c1dcf4965a3a",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 20,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.9411764705882353,
+      "complete_fraction": 0.058823529411764705,
+      "source_confirmed_behavior_count": 17
+    },
+    {
+      "episode_id": "grafana__d6ec6f0e13dc",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "public/app/features/provisioning/components/Dashboards/DeleteProvisionedDashboardForm.test.tsx",
+        "public/app/features/provisioning/components/Folders/DeleteProvisionedFolderForm.test.tsx"
+      ],
+      "successful_read_events": 11,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.8181818181818182,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 11
+    },
+    {
+      "episode_id": "grafana__d6ec6f0e13dc",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "public/app/features/provisioning/components/Dashboards/DeleteProvisionedDashboardForm.test.tsx",
+        "public/app/features/provisioning/components/Dashboards/SaveProvisionedDashboardForm.test.tsx",
+        "public/app/features/provisioning/components/Folders/DeleteProvisionedFolderForm.test.tsx",
+        "public/app/features/provisioning/components/Folders/NewProvisionedFolderForm.test.tsx",
+        "public/app/features/provisioning/components/Folders/RenameProvisionedFolderForm.test.tsx"
+      ],
+      "successful_read_events": 14,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.8181818181818182,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 11
+    },
+    {
+      "episode_id": "hoppscotch__7854259a9bcd",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts"
+      ],
+      "successful_read_events": 10,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "hoppscotch__7854259a9bcd",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts"
+      ],
+      "successful_read_events": 9,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "hoppscotch__8c22bb36311e",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection.service.spec.ts",
+        "packages/hoppscotch-backend/src/user-request/user-request.service.spec.ts"
+      ],
+      "successful_read_events": 15,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.8333333333333334,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "hoppscotch__8c22bb36311e",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection.service.spec.ts",
+        "packages/hoppscotch-backend/src/user-request/user-request.service.spec.ts"
+      ],
+      "successful_read_events": 19,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.5,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "hoppscotch__bb87bf999811",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/published-docs/published-docs.service.spec.ts",
+        "packages/hoppscotch-backend/src/user-environment/user-environments.service.spec.ts"
+      ],
+      "successful_read_events": 27,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.9411764705882353,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 17
+    },
+    {
+      "episode_id": "hoppscotch__bb87bf999811",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/published-docs/published-docs.service.spec.ts",
+        "packages/hoppscotch-backend/src/user-environment/user-environments.service.spec.ts"
+      ],
+      "successful_read_events": 20,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.6470588235294118,
+      "complete_fraction": 0.058823529411764705,
+      "source_confirmed_behavior_count": 17
+    },
+    {
+      "episode_id": "hoppscotch__fd297fc8a43c",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection.service.spec.ts"
+      ],
+      "successful_read_events": 10,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "hoppscotch__fd297fc8a43c",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection.service.spec.ts"
+      ],
+      "successful_read_events": 13,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "payload__8c75eded8723",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 11,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.875,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 8
+    },
+    {
+      "episode_id": "payload__8c75eded8723",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 6,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 8
+    },
+    {
+      "episode_id": "rallly__98899fd68897",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 10,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.6666666666666666,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "rallly__98899fd68897",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 13,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.16666666666666666,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "rallly__f1c87a008978",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "apps/web/src/app/api/private/[...route]/route.test.ts"
+      ],
+      "successful_read_events": 10,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "rallly__f1c87a008978",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "apps/web/src/app/api/private/[...route]/route.test.ts"
+      ],
+      "successful_read_events": 20,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "requestly__b8ba3c46037c",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/src/features/apiClient/hooks/useMigrationSegment.test.ts"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "requestly__b8ba3c46037c",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "app/src/features/apiClient/hooks/useMigrationSegment.test.ts"
+      ],
+      "successful_read_events": 5,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__0756cd8dad07",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts",
+        "src/extensions/views/EditManifestExtension/components/AppDetailsPage/AppDetailsPage.test.tsx",
+        "src/extensions/views/InstalledExtensions/hooks/useInstalledExtensions.test.tsx"
+      ],
+      "successful_read_events": 16,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.6,
+      "complete_fraction": 0.4,
+      "source_confirmed_behavior_count": 5
+    },
+    {
+      "episode_id": "saleor__0756cd8dad07",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/extensions/hooks/useExtensions.test.ts",
+        "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts"
+      ],
+      "successful_read_events": 22,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.8,
+      "complete_fraction": 0.2,
+      "source_confirmed_behavior_count": 5
+    },
+    {
+      "episode_id": "saleor__1644075d81b2",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 2,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative"
+      ],
+      "missing_fraction": null,
+      "complete_fraction": null,
+      "source_confirmed_behavior_count": 0
+    },
+    {
+      "episode_id": "saleor__1644075d81b2",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 12,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": null,
+      "complete_fraction": null,
+      "source_confirmed_behavior_count": 0
+    },
+    {
+      "episode_id": "saleor__47f89d573219",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+      ],
+      "successful_read_events": 10,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__47f89d573219",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+      ],
+      "successful_read_events": 15,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.5,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__4bb7ec3ba959",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+      ],
+      "successful_read_events": 20,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__4bb7ec3ba959",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+      ],
+      "successful_read_events": 23,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.5,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__4f7f7c98c454",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/products/components/ProductDoctor/hooks/useProductAvailabilityDiagnostics.test.tsx"
+      ],
+      "successful_read_events": 26,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.6,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 5
+    },
+    {
+      "episode_id": "saleor__4f7f7c98c454",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/products/components/ProductDoctor/hooks/useProductAvailabilityDiagnostics.test.tsx"
+      ],
+      "successful_read_events": 28,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.8,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 5
+    },
+    {
+      "episode_id": "saleor__9ead5c85b9f7",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/components/Sidebar/menu/utils.test.ts"
+      ],
+      "successful_read_events": 9,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__9ead5c85b9f7",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/components/Sidebar/menu/utils.test.ts"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "saleor__a11d1fc587f5",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+      ],
+      "successful_read_events": 21,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 5
+    },
+    {
+      "episode_id": "saleor__a11d1fc587f5",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+      ],
+      "successful_read_events": 28,
+      "successful_write_events": 3,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.4,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 5
+    },
+    {
+      "episode_id": "saleor__ae64c2e14023",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/orders/components/OrderSummary/OrderSummary.test.tsx"
+      ],
+      "successful_read_events": 8,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.8181818181818182,
+      "complete_fraction": 0.18181818181818182,
+      "source_confirmed_behavior_count": 11
+    },
+    {
+      "episode_id": "saleor__ae64c2e14023",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "src/orders/components/OrderSummary/OrderSummary.test.tsx",
+        "src/orders/components/OrderSummary/OrderValue.test.tsx"
+      ],
+      "successful_read_events": 25,
+      "successful_write_events": 3,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.6363636363636364,
+      "complete_fraction": 0.2727272727272727,
+      "source_confirmed_behavior_count": 11
+    },
+    {
+      "episode_id": "strapi__5e4ede06fb2d",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "strapi__5e4ede06fb2d",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+      ],
+      "successful_read_events": 5,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.3333333333333333,
+      "complete_fraction": 0.6666666666666666,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "strapi__88ec45fea990",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts"
+      ],
+      "successful_read_events": 3,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "strapi__88ec45fea990",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts"
+      ],
+      "successful_read_events": 6,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "strapi__a9e68a17b9ab",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+      ],
+      "successful_read_events": 14,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.1,
+      "complete_fraction": 0.2,
+      "source_confirmed_behavior_count": 10
+    },
+    {
+      "episode_id": "strapi__a9e68a17b9ab",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+      ],
+      "successful_read_events": 11,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.1,
+      "complete_fraction": 0.3,
+      "source_confirmed_behavior_count": 10
+    },
+    {
+      "episode_id": "strapi__b6c1376f714e",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 9,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.125,
+      "source_confirmed_behavior_count": 8
+    },
+    {
+      "episode_id": "strapi__b6c1376f714e",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+      ],
+      "successful_read_events": 12,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.25,
+      "source_confirmed_behavior_count": 8
+    },
+    {
+      "episode_id": "strapi__fac079537c4b",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 3,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 0.6666666666666666,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "strapi__fac079537c4b",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 4,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.3333333333333333,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "supabase__42451f2250ea",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 18,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.3333333333333333,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "supabase__42451f2250ea",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 6,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.3333333333333333,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "supabase__5494f1c356ac",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "apps/studio/lib/semver.test.ts"
+      ],
+      "successful_read_events": 4,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "supabase__5494f1c356ac",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 1,
+      "successful_write_events": 0,
+      "made_successful_file_write": false,
+      "public_label": "negative",
+      "public_labels": [
+        "negative"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "typebot__f7aa0c0f71d0",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "integrations/google-analytics/src/client.test.ts"
+      ],
+      "successful_read_events": 4,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.6666666666666666,
+      "complete_fraction": 0.16666666666666666,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "typebot__f7aa0c0f71d0",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 5,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.6666666666666666,
+      "complete_fraction": 0.16666666666666666,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "vendure__7cadeff6bbb1",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+      ],
+      "successful_read_events": 20,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.75,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "vendure__7cadeff6bbb1",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+      ],
+      "successful_read_events": 20,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.5,
+      "complete_fraction": 0.5,
+      "source_confirmed_behavior_count": 4
+    },
+    {
+      "episode_id": "vendure__8536f6be58a9",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+      ],
+      "successful_read_events": 13,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "vendure__8536f6be58a9",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+      ],
+      "successful_read_events": 13,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 1
+    },
+    {
+      "episode_id": "vendure__8c85fd9909f6",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/dashboard/src/lib/framework/form-engine/form-schema-tools.spec.ts",
+        "packages/dashboard/src/lib/framework/form-engine/utils.spec.ts"
+      ],
+      "successful_read_events": 12,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "positive"
+      ],
+      "missing_fraction": 0.16666666666666666,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "vendure__8c85fd9909f6",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/dashboard/src/lib/framework/form-engine/form-schema-tools.spec.ts",
+        "packages/dashboard/src/lib/framework/form-engine/utils.spec.ts"
+      ],
+      "successful_read_events": 20,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.5,
+      "complete_fraction": 0.3333333333333333,
+      "source_confirmed_behavior_count": 6
+    },
+    {
+      "episode_id": "vendure__8de0011be91d",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/core/src/service/helpers/order-calculator/order-calculator.spec.ts"
+      ],
+      "successful_read_events": 12,
+      "successful_write_events": 2,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "vendure__8de0011be91d",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": true,
+      "gold_test_files_read": [
+        "packages/core/src/service/helpers/order-calculator/order-calculator.spec.ts"
+      ],
+      "successful_read_events": 11,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 0.0,
+      "complete_fraction": 1.0,
+      "source_confirmed_behavior_count": 2
+    },
+    {
+      "episode_id": "vendure__dc705b45caa2",
+      "agent": "codex",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 16,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 3
+    },
+    {
+      "episode_id": "vendure__dc705b45caa2",
+      "agent": "opencode",
+      "read_diff": true,
+      "read_gold_test_file": false,
+      "gold_test_files_read": [],
+      "successful_read_events": 14,
+      "successful_write_events": 1,
+      "made_successful_file_write": true,
+      "public_label": "positive",
+      "public_labels": [
+        "positive"
+      ],
+      "missing_fraction": 1.0,
+      "complete_fraction": 0.0,
+      "source_confirmed_behavior_count": 3
+    }
+  ]
+}

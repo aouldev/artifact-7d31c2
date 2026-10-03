@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "source_summary_sha256": "ca818805b6b3f0a64b2858dd62dad4d42d94607ddf56c12ea5711de5cd5c0c73",
+  "selected_output_sha256": {
+    "codex_stateless": "4ad5921f5bb565f5b2df1bfff7d102c810e672106928391065995f0b4f0e92bb",
+    "opencode_stateless": "c702ffbdce1fa42d07999508f0167905289dae53ab5d3d0e61809d043550a351",
+    "codex_continuous": "10db175ebf02500c3b84fe4717f70c0d721d4a44685df60c7055d21471c2ceb8",
+    "codex_online": "9f4612462d27d51051f60adc404984f4fcc3e4aede6cffbb85d1a86fdac87948",
+    "opencode_online": "5b6e5225f7a4a0f5d62a49f18acff91d9b85a35c09edd01cb970faa4b4f0e6a1",
+    "opencode_continuous": "437e87e2c2dba0e583d653753e35b068592d08b1e2a1d3941b85701436423781"
+  },
+  "reference_positive_episodes": 50,
+  "positive_trace_scope": {
+    "codex_stateless": {
+      "usable_n": 50,
+      "unknown_n": 0,
+      "read_any_test_n": 47,
+      "repo_file_read_n": {
+        "known_n": 50,
+        "median": 3.0,
+        "sum": 178
+      }
+    },
+    "opencode_stateless": {
+      "usable_n": 50,
+      "unknown_n": 0,
+      "read_any_test_n": 44,
+      "repo_file_read_n": {
+        "known_n": 50,
+        "median": 4.0,
+        "sum": 185
+      }
+    },
+    "codex_continuous": {
+      "usable_n": 48,
+      "unknown_n": 2,
+      "read_any_test_n": 37,
+      "repo_file_read_n": {
+        "known_n": 48,
+        "median": 2.0,
+        "sum": 147
+      }
+    },
+    "codex_online": {
+      "usable_n": 50,
+      "unknown_n": 0,
+      "read_any_test_n": 43,
+      "repo_file_read_n": {
+        "known_n": 50,
+        "median": 4.0,
+        "sum": 231
+      }
+    },
+    "opencode_online": {
+      "usable_n": 49,
+      "unknown_n": 1,
+      "read_any_test_n": 42,
+      "repo_file_read_n": {
+        "known_n": 49,
+        "median": 5,
+        "sum": 248
+      }
+    },
+    "opencode_continuous": {
+      "usable_n": 49,
+      "unknown_n": 1,
+      "read_any_test_n": 39,
+      "repo_file_read_n": {
+        "known_n": 49,
+        "median": 2,
+        "sum": 116
+      }
+    }
+  },
+  "paired_distinct_file_reads_vs_stateless": {
+    "codex_continuous": {
+      "paired_n": 39,
+      "repo_file_read_n": {
+        "known_n": 39,
+        "median": 0,
+        "sum": -11
+      }
+    },
+    "codex_online": {
+      "paired_n": 38,
+      "repo_file_read_n": {
+        "known_n": 38,
+        "median": 1.5,
+        "sum": 48
+      }
+    },
+    "opencode_continuous": {
+      "paired_n": 36,
+      "repo_file_read_n": {
+        "known_n": 36,
+        "median": -0.5,
+        "sum": -50
+      }
+    },
+    "opencode_online": {
+      "paired_n": 35,
+      "repo_file_read_n": {
+        "known_n": 35,
+        "median": 2,
+        "sum": 50
+      }
+    }
+  },
+  "trace_exclusions": [
+    {
+      "condition": "codex_continuous",
+      "episode_id": "documenso__306a5155bd12",
+      "reason": "public_production_input_mismatch"
+    },
+    {
+      "condition": "codex_continuous",
+      "episode_id": "saleor__ae64c2e14023",
+      "reason": "public_production_input_mismatch"
+    },
+    {
+      "condition": "opencode_online",
+      "episode_id": "vendure__7cadeff6bbb1",
+      "reason": "selected_trace_unavailable"
+    },
+    {
+      "condition": "opencode_continuous",
+      "episode_id": "cal.com__e8d5475ff046",
+      "reason": "selected_trace_unavailable"
+    }
+  ],
+  "counting_rule": "Successful client-visible reads of distinct current-repository files; exclude searches, failed reads and training-document reads.",
+  "interpretation": "Observed inspection scope, not comprehension or behavioral completeness.",
+  "additional_case_execution": {
+    "condition": "opencode_online",
+    "episode_id": "saleor__a11d1fc587f5",
+    "prediction_sha256": "5b6e5225f7a4a0f5d62a49f18acff91d9b85a35c09edd01cb970faa4b4f0e6a1",
+    "patch_sha256": "25de199a848910f22557bd0e5112919acfc970811a8411e0e1088517bf0ae279",
+    "test_content_sha256": {
+      "src/products/components/ProductDoctor/PublicApiVerificationBadge.test.tsx": "db81953958ddaf773d6d979fd288629b430a4b2cdb19ad8984fb01dc35c96851",
+      "src/products/components/ProductDoctor/utils/channelUtils.test.ts": "119e010a264bac569a1310f81c2994a2d4877f2a1946e78f9f3c063a22127f95"
+    },
+    "argv": [
+      "corepack",
+      "pnpm",
+      "jest",
+      "--runInBand",
+      "--runTestsByPath",
+      "src/products/components/ProductDoctor/PublicApiVerificationBadge.test.tsx",
+      "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 15.724380291998386,
+    "passed_test_n": 18,
+    "passed_suite_n": 2,
+    "included_in_formal_metrics": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "repo": "affine",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "affine_frontend_common_vitest_unit",
+      "path_regex": "^packages/(common|frontend)/.*\\.(unit\\.)?spec\\.[tj]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "vitest",
+        "run",
+        "{{test_file}}",
+        "--environment",
+        "happy-dom",
+        "--coverage.enabled",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    },
+    {
+      "name": "affine_frontend_common_vitest_raw_v8",
+      "path_regex": "^packages/(common|frontend)/.*\\.(unit\\.)?spec\\.[tj]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "vitest",
+        "run",
+        "{{test_file}}",
+        "--environment",
+        "happy-dom",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

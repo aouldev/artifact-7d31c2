@@ -1,0 +1,210 @@
+{
+  "scope": "Selected maintenance calls and successful Online seed/reflection calls",
+  "cohort_episodes": 1673,
+  "missing_values": "unknown; excluded from aggregates",
+  "time_scope": "actor process; excludes workspace preparation and evaluation",
+  "conditions": {
+    "codex_stateless": {
+      "selected_output_sha256": "4ad5921f5bb565f5b2df1bfff7d102c810e672106928391065995f0b4f0e92bb",
+      "episodes": 1673,
+      "token_observation_unit": "episode",
+      "token_observation_denominator": 1673,
+      "token_definition": "input + output; cache and reasoning are subsets",
+      "tokens": {
+        "known_n": 1671,
+        "sum": 301793942,
+        "mean": 180606.78755236385,
+        "median": 132600,
+        "p90": 352738
+      },
+      "time_seconds": {
+        "known_n": 1671,
+        "sum": 222700.93630517295,
+        "mean": 133.27404925504067,
+        "median": 93.09082345900242,
+        "p90": 298.02232741599437
+      }
+    },
+    "codex_continuous": {
+      "selected_output_sha256": "10db175ebf02500c3b84fe4717f70c0d721d4a44685df60c7055d21471c2ceb8",
+      "episodes": 1673,
+      "token_observation_unit": "repository_session",
+      "token_observation_denominator": 23,
+      "token_definition": "input + output; cache and reasoning are subsets",
+      "tokens": {
+        "known_n": 23,
+        "sum": 1024200701,
+        "mean": 44530465.26086956,
+        "median": 39023111,
+        "p90": 66978753
+      },
+      "time_seconds": {
+        "known_n": 1673,
+        "sum": 151597.34244847298,
+        "mean": 90.61407199550088,
+        "median": 64.57315182685852,
+        "p90": 189.97913813591003
+      }
+    },
+    "codex_online": {
+      "selected_output_sha256": "9f4612462d27d51051f60adc404984f4fcc3e4aede6cffbb85d1a86fdac87948",
+      "episodes": 1673,
+      "token_observation_unit": "episode",
+      "token_observation_denominator": 1673,
+      "token_definition": "input + output; cache and reasoning are subsets",
+      "tokens": {
+        "known_n": 1673,
+        "sum": 432444013,
+        "mean": 258484.16796174538,
+        "median": 184944,
+        "p90": 507363
+      },
+      "time_seconds": {
+        "known_n": 1673,
+        "sum": 260122.60986351967,
+        "mean": 155.4827315382664,
+        "median": 122.48802399635315,
+        "p90": 308.2111270427704
+      }
+    },
+    "opencode_stateless": {
+      "selected_output_sha256": "c702ffbdce1fa42d07999508f0167905289dae53ab5d3d0e61809d043550a351",
+      "episodes": 1673,
+      "token_observation_unit": "episode",
+      "token_observation_denominator": 1673,
+      "token_definition": "adapter-reported total",
+      "tokens": {
+        "known_n": 1667,
+        "sum": 124988535,
+        "mean": 74978.12537492502,
+        "median": 48513,
+        "p90": 157983
+      },
+      "time_seconds": {
+        "known_n": 1671,
+        "sum": 422852.8032483587,
+        "mean": 253.05374221924558,
+        "median": 219.91808268500608,
+        "p90": 513.2593026930117
+      }
+    },
+    "opencode_continuous": {
+      "selected_output_sha256": "437e87e2c2dba0e583d653753e35b068592d08b1e2a1d3941b85701436423781",
+      "episodes": 1673,
+      "token_observation_unit": "episode",
+      "token_observation_denominator": 1673,
+      "token_definition": "adapter-reported total",
+      "tokens": {
+        "known_n": 1669,
+        "sum": 758925785,
+        "mean": 454718.8645895746,
+        "median": 372098,
+        "p90": 774640
+      },
+      "time_seconds": {
+        "known_n": 1673,
+        "sum": 299804.8019811694,
+        "mean": 179.20191391582125,
+        "median": 112.8403062590005,
+        "p90": 356.73606278799707
+      }
+    },
+    "opencode_online": {
+      "selected_output_sha256": "5b6e5225f7a4a0f5d62a49f18acff91d9b85a35c09edd01cb970faa4b4f0e6a1",
+      "episodes": 1673,
+      "token_observation_unit": "episode",
+      "token_observation_denominator": 1673,
+      "token_definition": "adapter-reported total",
+      "tokens": {
+        "known_n": 1673,
+        "sum": 126616807,
+        "mean": 75682.49073520621,
+        "median": 56126,
+        "p90": 154411
+      },
+      "time_seconds": {
+        "known_n": 1673,
+        "sum": 299106.24219683645,
+        "mean": 178.78436473212005,
+        "median": 122.80894672300201,
+        "p90": 341.0435943650082
+      }
+    }
+  },
+  "online_phases": {
+    "codex": {
+      "seed": {
+        "calls": 154,
+        "tokens": {
+          "known_n": 154,
+          "sum": 7441442,
+          "mean": 48321.05194805195,
+          "median": 24101.5,
+          "p90": 107185
+        },
+        "time_seconds": {
+          "known_n": 154,
+          "sum": 7192.002250909805,
+          "mean": 46.70131331759614,
+          "median": 26.950724482536316,
+          "p90": 132.2423300743103
+        }
+      },
+      "reflection": {
+        "calls": 1673,
+        "tokens": {
+          "known_n": 1672,
+          "sum": 34769372,
+          "mean": 20795.07894736842,
+          "median": 19216.0,
+          "p90": 26137
+        },
+        "time_seconds": {
+          "known_n": 1672,
+          "sum": 50530.02450084686,
+          "mean": 30.221306519645253,
+          "median": 22.50842297077179,
+          "p90": 55.00249981880188
+        }
+      },
+      "known_actor_seed_reflection_tokens": 474654827
+    },
+    "opencode": {
+      "seed": {
+        "calls": 154,
+        "tokens": {
+          "known_n": 154,
+          "sum": 3080364,
+          "mean": 20002.363636363636,
+          "median": 16133.0,
+          "p90": 37476
+        },
+        "time_seconds": {
+          "known_n": 154,
+          "sum": 8397.880655220099,
+          "mean": 54.53169256636428,
+          "median": 47.23325883399957,
+          "p90": 87.94218187399383
+        }
+      },
+      "reflection": {
+        "calls": 1673,
+        "tokens": {
+          "known_n": 1672,
+          "sum": 14567382,
+          "mean": 8712.549043062201,
+          "median": 7003.5,
+          "p90": 14089
+        },
+        "time_seconds": {
+          "known_n": 1672,
+          "sum": 70134.0512626291,
+          "mean": 41.94620290827095,
+          "median": 32.46543703499992,
+          "p90": 80.48072483000578
+        }
+      },
+      "known_actor_seed_reflection_tokens": 144264553
+    }
+  }
+}

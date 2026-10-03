@@ -1,0 +1,79 @@
+{
+  "schema": "rq2_patch_behavior_summary",
+  "source_confirmed_behavior_rows": 239,
+  "episodes_with_source_confirmed_behaviors": 49,
+  "patch_semantics_counts": {
+    "developer": {
+      "partial": 65,
+      "missing": 62,
+      "complete": 112
+    },
+    "codex": {
+      "complete": 60,
+      "missing": 135,
+      "partial": 40,
+      "unknown": 4
+    },
+    "opencode": {
+      "complete": 53,
+      "missing": 141,
+      "partial": 41,
+      "unknown": 4
+    }
+  },
+  "paired_comparison": {
+    "included_episodes": 46,
+    "excluded_episodes_with_unknown_labels": [
+      {
+        "episode_id": "chatwoot__085847d2ad82",
+        "reason": "unknown_patch_semantics",
+        "unknown_counts": {
+          "developer": 0,
+          "codex": 3,
+          "opencode": 3
+        }
+      },
+      {
+        "episode_id": "rallly__f1c87a008978",
+        "reason": "unknown_patch_semantics",
+        "unknown_counts": {
+          "developer": 0,
+          "codex": 0,
+          "opencode": 1
+        }
+      },
+      {
+        "episode_id": "vendure__7cadeff6bbb1",
+        "reason": "unknown_patch_semantics",
+        "unknown_counts": {
+          "developer": 0,
+          "codex": 1,
+          "opencode": 0
+        }
+      }
+    ],
+    "selection": "Include episodes with at least one source-confirmed behavior and no unknown patch label for any actor. Episodes absent from the behavior table are not in the comparison.",
+    "unit": "Difference in missing-share proportions, agent minus developer, with each paired episode weighted equally.",
+    "bootstrap": "Resample paired episodes with replacement; use percentile indices floor(0.025*draws) and floor(0.975*draws)-1 in sorted bootstrap means.",
+    "differences_agent_minus_developer": {
+      "codex": {
+        "n_episodes": 46,
+        "mean": 0.18663401460716036,
+        "ci95_low": 0.06955013230588677,
+        "ci95_high": 0.304174416802294,
+        "positive_fraction": 0.4782608695652174,
+        "seed": 20260930,
+        "draws": 20000
+      },
+      "opencode": {
+        "n_episodes": 46,
+        "mean": 0.26788758981853616,
+        "ci95_low": 0.15374940490030004,
+        "ci95_high": 0.38271359927370163,
+        "positive_fraction": 0.5869565217391305,
+        "seed": 20260930,
+        "draws": 20000
+      }
+    }
+  }
+}

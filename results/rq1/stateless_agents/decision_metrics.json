@@ -1,0 +1,73 @@
+{
+  "status": "reported",
+  "cohort": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "agents": {
+    "codex": {
+      "accuracy": 0.7650926479378363,
+      "macro_f1": 0.5212318128760578,
+      "balanced_accuracy": 0.8110844115834874,
+      "per_label": {
+        "positive": {
+          "precision": 0.10023310023310024,
+          "recall": 0.86,
+          "f1": 0.17954070981210857,
+          "support": 50
+        },
+        "negative": {
+          "precision": 0.9943729903536977,
+          "recall": 0.7621688231669748,
+          "f1": 0.862922915940007,
+          "support": 1623
+        }
+      },
+      "gold_counts": {
+        "negative": 1623,
+        "positive": 50
+      },
+      "prediction_counts": {
+        "negative": 1244,
+        "positive": 429
+      },
+      "invalid_predictions": 0,
+      "evaluated_count": 1673,
+      "missing_predictions": 0,
+      "extra_predictions": 0
+    },
+    "opencode": {
+      "accuracy": 0.7692767483562463,
+      "macro_f1": 0.5239479022917329,
+      "balanced_accuracy": 0.8132409118915589,
+      "per_label": {
+        "positive": {
+          "precision": 0.1018957345971564,
+          "recall": 0.86,
+          "f1": 0.1822033898305085,
+          "support": 50
+        },
+        "negative": {
+          "precision": 0.9944044764188649,
+          "recall": 0.7664818237831177,
+          "f1": 0.8656924147529574,
+          "support": 1623
+        }
+      },
+      "gold_counts": {
+        "negative": 1623,
+        "positive": 50
+      },
+      "prediction_counts": {
+        "negative": 1251,
+        "positive": 422
+      },
+      "invalid_predictions": 0,
+      "evaluated_count": 1673,
+      "missing_predictions": 43,
+      "extra_predictions": 0
+    }
+  },
+  "scope": "k75_evaluation"
+}

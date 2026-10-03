@@ -1,0 +1,32 @@
+{
+  "repo": "medusa",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "medusa_package_jest_direct_binary_coverage",
+      "path_regex": "^packages/(cli|core|medusa|medusa-test-utils|modules)/(?!.*(/dist/|/integration-tests/)).*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearestPackageDir}}",
+      "argv": [
+        "{{repoRoot}}/node_modules/.bin/jest",
+        "--runInBand",
+        "--runTestsByPath",
+        "{{assetPathFromCwd}}",
+        "--coverage",
+        "--coverageReporters=json",
+        "--coverageReporters=lcov",
+        "--coverageDirectory",
+        "{{coverageDir}}",
+        "--forceExit"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

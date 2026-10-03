@@ -1,0 +1,134 @@
+{
+  "scope": "Codex Continuous selected history access",
+  "cohort_n": 1673,
+  "trace_usable_n": 1673,
+  "event_incidence": {
+    "n_tool_calls": {
+      "episodes": 1670,
+      "denominator": 1673,
+      "calls_or_files": 16280
+    },
+    "n_successful_tool_calls": {
+      "episodes": 1670,
+      "denominator": 1673,
+      "calls_or_files": 16152
+    },
+    "n_failed_tool_calls": {
+      "episodes": 97,
+      "denominator": 1673,
+      "calls_or_files": 128
+    },
+    "n_unfinished_tool_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "n_unknown_tool_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "train_schema_reads": {
+      "episodes": 557,
+      "denominator": 1673,
+      "calls_or_files": 1120
+    },
+    "train_artifact_reads": {
+      "episodes": 3,
+      "denominator": 1673,
+      "calls_or_files": 12
+    },
+    "train_artifact_searches": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_list_calls": {
+      "episodes": 17,
+      "denominator": 1673,
+      "calls_or_files": 17
+    },
+    "memory_file_read_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_search_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_read_tool_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_nonempty_content_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_content_unknown_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_write_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "memory_delete_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "repo_read_calls": {
+      "episodes": 1568,
+      "denominator": 1673,
+      "calls_or_files": 12176
+    },
+    "input_read_calls": {
+      "episodes": 1667,
+      "denominator": 1673,
+      "calls_or_files": 2435
+    },
+    "repo_write_calls": {
+      "episodes": 326,
+      "denominator": 1673,
+      "calls_or_files": 375
+    },
+    "repo_delete_calls": {
+      "episodes": 0,
+      "denominator": 1673,
+      "calls_or_files": 0
+    },
+    "unique_repo_read_files": {
+      "episodes": 1010,
+      "denominator": 1673,
+      "calls_or_files": 2244
+    }
+  },
+  "memory_state": {
+    "memory_files_before": {
+      "known_n": 1673,
+      "nonzero_n": 0
+    },
+    "memory_files_after": {
+      "known_n": 1673,
+      "nonzero_n": 0
+    },
+    "memory_files_added": {
+      "known_n": 1673,
+      "nonzero_n": 0
+    },
+    "memory_files_deleted": {
+      "known_n": 1673,
+      "nonzero_n": 0
+    },
+    "memory_files_modified": {
+      "known_n": 1673,
+      "nonzero_n": 0
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "repo": "formkit",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "formkit_root_vitest",
+      "path_regex": "^packages/.*/__tests__/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {}
+    },
+    {
+      "name": "formkit_root_vitest_raw_v8",
+      "path_regex": "^packages/.*/__tests__/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file}}"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      }
+    },
+    {
+      "name": "formkit_playwright_browser_raw",
+      "path_regex": "^e2e/.*\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "./node_modules/.bin/playwright",
+        "test",
+        "--config",
+        "{{output_dir}}/formkit_playwright_coverage.config.cjs",
+        "{{test_file}}",
+        "--project=chromium"
+      ],
+      "env": {
+        "NODE_OPTIONS": "--loader {{output_dir}}/formkit_workspace_alias_loader.mjs -r {{output_dir}}/playwright_browser_coverage_shim.cjs",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}",
+        "REPO_TEST_EVOLUTION_REPO_ROOT": "{{repo_root}}",
+        "CI": "1"
+      },
+      "timeout_ms": 300000
+    }
+  ],
+  "validation": {
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

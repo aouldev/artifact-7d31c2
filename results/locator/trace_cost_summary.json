@@ -1,0 +1,14 @@
+{
+  "status": "reported",
+  "scope": "locator trace analysis",
+  "cohort": {
+    "positive_validation_episodes": 103,
+    "applicable_episodes": 74,
+    "new_test_only_episodes": 29
+  },
+  "median_tool_output_ratio_codex_to_opencode": 2.4448088277306925,
+  "opencode_median_search_wall_fraction": 0.6785835536326443,
+  "opencode_runtime_search_wall_spearman": 0.9633617178822659,
+  "applicable_opencode_timeout_count": 1,
+  "timeout_search_wall_seconds": 1563.807
+}

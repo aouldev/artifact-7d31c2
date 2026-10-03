@@ -1,0 +1,53 @@
+{
+  "repo": "supabase",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "supabase_studio_vitest_coverage",
+      "path_regex": "^apps/studio/(tests|components|hooks|scripts|lib|data)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "apps/studio",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "vitest",
+        "--run",
+        "{{test_file_from_cwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    },
+    {
+      "name": "supabase_studio_vitest_raw_v8",
+      "path_regex": "^apps/studio/(tests|components|hooks|scripts|lib|data)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "apps/studio",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "vitest",
+        "--run",
+        "{{test_file_from_cwd}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

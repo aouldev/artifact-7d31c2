@@ -1,0 +1,22 @@
+{
+  "kind": "rq2_behavior_source_review",
+  "date": "2026-09-29",
+  "sample": {
+    "behaviors": 60,
+    "episodes": 30,
+    "repositories": 14
+  },
+  "source_review": {
+    "status_counts": {
+      "reviewed": 60
+    },
+    "necessity_counts": {
+      "required": 60
+    },
+    "responsibility_counts": {
+      "local": 30,
+      "cross_boundary": 30
+    }
+  },
+  "interpretation": "The source-only review checks necessity and responsibility boundaries for 60 sampled behaviors. It does not measure inter-rater agreement or establish final-suite protection."
+}

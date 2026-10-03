@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "artifact_id": "benchmark_release",
+  "frozen_at": "2026-09-29",
+  "repositories": 23,
+  "counts": {
+    "total": 16907,
+    "train": 11823,
+    "validation": 5084,
+    "total_labels": {
+      "positive": 288,
+      "negative": 16619
+    },
+    "train_labels": {
+      "positive": 185,
+      "negative": 11638
+    },
+    "validation_labels": {
+      "positive": 103,
+      "negative": 4981
+    }
+  },
+  "split_policy": "repository-local chronological split; first 70 percent rounded down per repository is train",
+  "labels": {
+    "public": [
+      "positive",
+      "negative"
+    ],
+    "validation_answers": "withheld from public package",
+    "negative_semantics": "no corresponding test-side maintenance observed under the construction protocol"
+  },
+  "files": {
+    "train": "train.jsonl",
+    "validation": "validation.jsonl"
+  },
+  "sha256": {
+    "train": "09220fa2a3bd58d6273752ccdf8a5ff3cd981557c3c5f8227a8c96148b78329f",
+    "validation": "47ca089b3e0125f53ae191a4e4e3dc84cd95d5021e75c9894f7b2360d05871f1"
+  }
+}

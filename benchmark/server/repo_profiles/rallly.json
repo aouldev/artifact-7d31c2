@@ -1,0 +1,121 @@
+{
+  "repo": "rallly",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "rallly_api_vitest",
+      "path_regex": "^apps/api/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "apps/api",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "timeout_ms": 600000
+    },
+    {
+      "name": "rallly_api_vitest_raw_v8",
+      "path_regex": "^apps/api/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "apps/api",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      },
+      "timeout_ms": 600000
+    },
+    {
+      "name": "rallly_package_vitest",
+      "path_regex": "^apps/web/src/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "apps/web",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    },
+    {
+      "name": "rallly_package_vitest_raw_v8",
+      "path_regex": "^apps/web/src/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "apps/web",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "{{test_file_from_cwd}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000,
+    "commands": [
+      {
+        "argv": [
+          "corepack",
+          "enable"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "install",
+          "--frozen-lockfile"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "--filter",
+          "@rallly/database",
+          "exec",
+          "prisma",
+          "generate"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 300000
+      }
+    ]
+  }
+}

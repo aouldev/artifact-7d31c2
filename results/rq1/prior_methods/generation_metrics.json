@@ -1,0 +1,212 @@
+{
+  "status": "reported",
+  "cohort": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "methods": {
+    "ceprot": {
+      "tn": {
+        "conditional_denominator": 6,
+        "csr": 0.5,
+        "csr_pass_count": 3,
+        "csr_denominator": 6,
+        "tps": 0.0,
+        "tps_pass_count": 0,
+        "tps_denominator": 6,
+        "ucr": 0.0,
+        "ucr_pass_count": 0,
+        "ucr_denominator": 6
+      },
+      "tu": {
+        "conditional_denominator": 7,
+        "csr": 0.2857142857142857,
+        "csr_pass_count": 2,
+        "csr_denominator": 7,
+        "tps": 0.0,
+        "tps_pass_count": 0,
+        "tps_denominator": 7,
+        "ucr": 0.0,
+        "ucr_pass_count": 0,
+        "ucr_denominator": 7
+      }
+    },
+    "reaccept": {
+      "tn": {
+        "conditional_denominator": 45,
+        "csr": 0.8,
+        "csr_pass_count": 36,
+        "csr_denominator": 45,
+        "tps": 0.5333333333333333,
+        "tps_pass_count": 24,
+        "tps_denominator": 45,
+        "ucr": 0.5333333333333333,
+        "ucr_pass_count": 24,
+        "ucr_denominator": 45
+      },
+      "tu": {
+        "conditional_denominator": 41,
+        "csr": 0.7317073170731707,
+        "csr_pass_count": 30,
+        "csr_denominator": 41,
+        "tps": 0.3902439024390244,
+        "tps_pass_count": 16,
+        "tps_denominator": 41,
+        "ucr": 0.3902439024390244,
+        "ucr_pass_count": 16,
+        "ucr_denominator": 41
+      }
+    }
+  },
+  "legacy_evaluator": {
+    "status": "reported_legacy",
+    "methods": {
+      "ceprot": {
+        "tn": {
+          "evaluated_count": 1673,
+          "gold_positive_count": 50,
+          "dynamic_attempt_count": 6,
+          "csr": 1.0,
+          "csr_configured_count": 3,
+          "tps": 0.0,
+          "tps_attempt_count": 6,
+          "ucr": 0.0,
+          "update_accuracy": 0.0,
+          "ucr_attempt_count": 0,
+          "coverage_evaluable_count": 0,
+          "ucr_evaluable": null,
+          "coverage_status": "implemented",
+          "coverage_status_counts": {
+            "not_run": 6
+          },
+          "end_to_end_success_rate": 0.0,
+          "stage_counts": {
+            "intent_tn": 1602,
+            "locator_unresolved": 11,
+            "intent_fn": 44,
+            "intent_fp": 10,
+            "test_failed": 6
+          },
+          "csr_pass_count": 3,
+          "tps_pass_count": 0,
+          "ucr_pass_count": 0,
+          "ucr_denominator": 50
+        },
+        "tu": {
+          "evaluated_count": 1673,
+          "gold_positive_count": 50,
+          "dynamic_attempt_count": 7,
+          "csr": 0.6666666666666666,
+          "csr_configured_count": 3,
+          "tps": 0.0,
+          "tps_attempt_count": 7,
+          "ucr": 0.0,
+          "update_accuracy": 0.0,
+          "ucr_attempt_count": 0,
+          "coverage_evaluable_count": 0,
+          "ucr_evaluable": null,
+          "coverage_status": "implemented",
+          "coverage_status_counts": {
+            "not_run": 7
+          },
+          "end_to_end_success_rate": 0.0,
+          "stage_counts": {
+            "intent_tn": 1602,
+            "locator_unresolved": 11,
+            "intent_fn": 43,
+            "intent_fp": 10,
+            "test_failed": 7
+          },
+          "csr_pass_count": 2,
+          "tps_pass_count": 0,
+          "ucr_pass_count": 0,
+          "ucr_denominator": 50
+        }
+      },
+      "reaccept": {
+        "tn": {
+          "evaluated_count": 1673,
+          "gold_positive_count": 50,
+          "dynamic_attempt_count": 46,
+          "csr": 0.972972972972973,
+          "csr_configured_count": 37,
+          "tps": 0.5217391304347826,
+          "tps_attempt_count": 46,
+          "ucr": 0.48,
+          "update_accuracy": 0.48,
+          "ucr_attempt_count": 24,
+          "coverage_evaluable_count": 24,
+          "ucr_evaluable": 1.0,
+          "coverage_status": "implemented",
+          "coverage_status_counts": {
+            "not_run": 22,
+            "parsed": 22,
+            "parsed_file": 2
+          },
+          "end_to_end_success_rate": 0.48,
+          "stage_counts": {
+            "intent_fp": 426,
+            "intent_tn": 1186,
+            "locator_unresolved": 11,
+            "test_failed": 22,
+            "passed": 24,
+            "intent_fn": 4
+          },
+          "csr_pass_count": 36,
+          "tps_pass_count": 24,
+          "ucr_pass_count": 24,
+          "ucr_denominator": 50
+        },
+        "tu": {
+          "evaluated_count": 1673,
+          "gold_positive_count": 50,
+          "dynamic_attempt_count": 42,
+          "csr": 0.9090909090909091,
+          "csr_configured_count": 33,
+          "tps": 0.38095238095238093,
+          "tps_attempt_count": 42,
+          "ucr": 0.32,
+          "update_accuracy": 0.32,
+          "ucr_attempt_count": 16,
+          "coverage_evaluable_count": 16,
+          "ucr_evaluable": 1.0,
+          "coverage_status": "implemented",
+          "coverage_status_counts": {
+            "not_run": 26,
+            "parsed": 14,
+            "parsed_file": 2
+          },
+          "end_to_end_success_rate": 0.32,
+          "stage_counts": {
+            "intent_fp": 425,
+            "intent_tn": 1187,
+            "locator_unresolved": 11,
+            "test_failed": 26,
+            "passed": 16,
+            "intent_fn": 8
+          },
+          "csr_pass_count": 30,
+          "tps_pass_count": 16,
+          "ucr_pass_count": 16,
+          "ucr_denominator": 50
+        }
+      }
+    },
+    "aggregation_scope": "original_evaluator_denominators"
+  },
+  "protocol": "conditional_generation",
+  "reference_set": {
+    "size": 49,
+    "episode_ids_file": "conditional_generation_working_set.txt"
+  },
+  "aggregation": {
+    "denominator": "D_m = E ∩ TP_m",
+    "shared_by": [
+      "csr",
+      "tps",
+      "ucr"
+    ],
+    "numerator_source": "legacy_evaluator_pass_counts"
+  }
+}

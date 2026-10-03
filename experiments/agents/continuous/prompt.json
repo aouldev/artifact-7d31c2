@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "condition": "continuous",
+  "prompt_file": "PROMPT.md",
+  "prompt_sha256": "6950f5f1ffa991d1642fcaf01c94e9ed5fedd86b9234b67e08c65952ce8f6abd",
+  "history_prompt_file": "HISTORY_PROMPT.md",
+  "history_prompt_sha256": "060d1037c30a2eeeff70fe5b27534574b51594a8da18f5dce49202db0c63a08b",
+  "placeholders": [
+    "EPISODE_JSON"
+  ],
+  "memory_namespace": "memory/ read-write; train/ optional read-only",
+  "session_scope": "one ordered repository stream",
+  "workspace_write_policy": "all_repo_paths_except_episode_prod_files"
+}

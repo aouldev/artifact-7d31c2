@@ -1,0 +1,298 @@
+{
+  "scope": "Two illustrative behavior-level Saleor diagnostics",
+  "rows": [
+    {
+      "episode_id": "saleor__47f89d573219",
+      "behavior_id": "attribute_type_forwarding",
+      "normal_source_sha256": {
+        "src/components/ConditionalFilter/API/Handler.ts": "dc7a648c7a7a0c5b46296e1c18f2de12e478cf56614b1829cc2ad198c24d04aa",
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "514e0ec41d7428fa37e03b9d07b86c494565dd864c7ec5571f4cd6a8f0078fa9"
+      },
+      "mutant_source_sha256": {
+        "src/components/ConditionalFilter/API/Handler.ts": "dc7a648c7a7a0c5b46296e1c18f2de12e478cf56614b1829cc2ad198c24d04aa",
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "1046fa23db77453c64798241a5f9bef63126b08c98d595b5fe2a069cedcd067c"
+      },
+      "admission_probe": {
+        "normal": {
+          "exit_code": 0,
+          "total": 1,
+          "passed": 1,
+          "failed": 0,
+          "runtime_error_suites": 0
+        },
+        "mutant": {
+          "exit_code": 1,
+          "total": 1,
+          "passed": 0,
+          "failed": 1,
+          "runtime_error_suites": 0
+        }
+      },
+      "suite_runs": {
+        "old": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "ba71524524f3f62b4dcd59293b70c9e9e39041a261a99acea9f4cd4030e88475",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "4e21cf36726225469b74876396c21ee7c3cba245a28d7bcc8bd6c71d18f24eb9"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 23,
+            "passed": 23,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 0,
+            "total": 23,
+            "passed": 23,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": []
+        },
+        "developer": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "ba71524524f3f62b4dcd59293b70c9e9e39041a261a99acea9f4cd4030e88475",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "47ed340593f30e6d6e0b9ca97569ea51cb61c2bae0c07c0118f086a5aa4a5134"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 24,
+            "passed": 24,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 1,
+            "total": 24,
+            "passed": 23,
+            "failed": 1,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": [
+            {
+              "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts",
+              "name": "AttributeQueryVarsBuilder createOptionFetcher should return static boolean options without API call for BOOLEAN attributes"
+            }
+          ]
+        },
+        "codex": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "c2fbbbe4a88f9cd3d0e6ab6e3cd64a9f88f9ce42fc555b3b753d72ca2355761f",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts": "365d2358b482678dd336fc79566171b46378d77a7e32bb23d6bd2fe8991e59df",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "4e21cf36726225469b74876396c21ee7c3cba245a28d7bcc8bd6c71d18f24eb9"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 21,
+            "passed": 21,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 1,
+            "total": 21,
+            "passed": 20,
+            "failed": 1,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": [
+            {
+              "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts",
+              "name": "AttributeQueryVarsBuilder boolean attributes creates a fetcher that returns boolean options without querying attribute choices"
+            }
+          ]
+        },
+        "opencode": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "585c94a8edbf02bc8ef19264a427d1b0f70f48194cd292bdcd433b98453168c9",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "4e21cf36726225469b74876396c21ee7c3cba245a28d7bcc8bd6c71d18f24eb9"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 25,
+            "passed": 25,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 0,
+            "total": 25,
+            "passed": 25,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": []
+        }
+      }
+    },
+    {
+      "episode_id": "saleor__47f89d573219",
+      "behavior_id": "boolean_static_choices",
+      "normal_source_sha256": {
+        "src/components/ConditionalFilter/API/Handler.ts": "dc7a648c7a7a0c5b46296e1c18f2de12e478cf56614b1829cc2ad198c24d04aa",
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "514e0ec41d7428fa37e03b9d07b86c494565dd864c7ec5571f4cd6a8f0078fa9"
+      },
+      "mutant_source_sha256": {
+        "src/components/ConditionalFilter/API/Handler.ts": "84b7ecdeee138dfacda2a6a8b2c988a484b2d38ce230a14ea121349846e67b03",
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "514e0ec41d7428fa37e03b9d07b86c494565dd864c7ec5571f4cd6a8f0078fa9"
+      },
+      "admission_probe": {
+        "normal": {
+          "exit_code": 0,
+          "total": 1,
+          "passed": 1,
+          "failed": 0,
+          "runtime_error_suites": 0
+        },
+        "mutant": {
+          "exit_code": 1,
+          "total": 1,
+          "passed": 0,
+          "failed": 1,
+          "runtime_error_suites": 0
+        }
+      },
+      "suite_runs": {
+        "old": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "ba71524524f3f62b4dcd59293b70c9e9e39041a261a99acea9f4cd4030e88475",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "4e21cf36726225469b74876396c21ee7c3cba245a28d7bcc8bd6c71d18f24eb9"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 23,
+            "passed": 23,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 0,
+            "total": 23,
+            "passed": 23,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": []
+        },
+        "developer": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "ba71524524f3f62b4dcd59293b70c9e9e39041a261a99acea9f4cd4030e88475",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "47ed340593f30e6d6e0b9ca97569ea51cb61c2bae0c07c0118f086a5aa4a5134"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 24,
+            "passed": 24,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 1,
+            "total": 24,
+            "passed": 23,
+            "failed": 1,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": [
+            {
+              "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts",
+              "name": "AttributeQueryVarsBuilder createOptionFetcher should return static boolean options without API call for BOOLEAN attributes"
+            }
+          ]
+        },
+        "codex": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "c2fbbbe4a88f9cd3d0e6ab6e3cd64a9f88f9ce42fc555b3b753d72ca2355761f",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts": "365d2358b482678dd336fc79566171b46378d77a7e32bb23d6bd2fe8991e59df",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "4e21cf36726225469b74876396c21ee7c3cba245a28d7bcc8bd6c71d18f24eb9"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 21,
+            "passed": 21,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 1,
+            "total": 21,
+            "passed": 19,
+            "failed": 2,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": [
+            {
+              "path": "src/components/ConditionalFilter/API/Handler.test.ts",
+              "name": "AttributeChoicesHandler returns static options for boolean attributes without querying choices"
+            },
+            {
+              "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts",
+              "name": "AttributeQueryVarsBuilder boolean attributes creates a fetcher that returns boolean options without querying attribute choices"
+            }
+          ]
+        },
+        "opencode": {
+          "test_files": [
+            "src/components/ConditionalFilter/API/Handler.test.ts",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts"
+          ],
+          "test_sha256": {
+            "src/components/ConditionalFilter/API/Handler.test.ts": "585c94a8edbf02bc8ef19264a427d1b0f70f48194cd292bdcd433b98453168c9",
+            "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts": "4e21cf36726225469b74876396c21ee7c3cba245a28d7bcc8bd6c71d18f24eb9"
+          },
+          "normal": {
+            "exit_code": 0,
+            "total": 25,
+            "passed": 25,
+            "failed": 0,
+            "runtime_error_suites": 0
+          },
+          "mutant": {
+            "exit_code": 1,
+            "total": 25,
+            "passed": 24,
+            "failed": 1,
+            "runtime_error_suites": 0
+          },
+          "newly_failed_assertions": [
+            {
+              "path": "src/components/ConditionalFilter/API/Handler.test.ts",
+              "name": "AttributeChoicesHandler returns static boolean options without querying attribute choices"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

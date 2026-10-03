@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "scope": "native generation evaluation production dependency recovery",
+  "source_summary_sha256": "f32fe34d8180115374991aa3f99c4b7cd865e6ca78099f7f90bcc90f373f2441",
+  "episode_count": 5,
+  "agent_inputs_changed": false,
+  "selected_agent_patches_changed": false,
+  "comparison_rule": "Reference and all applicable agent conditions use the same recovered production state within each episode.",
+  "episodes": [
+    {
+      "episode_id": "affine__78022b0dbbdc",
+      "original_production_commit": "e222f06e940270bd7d3334d4eeaa0b628b78e546",
+      "companion_paths": [
+        "packages/frontend/core/src/blocksuite/ai/provider/event-source.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/index.ts"
+      ],
+      "companion_patch_sha256": "d964fac850c1e2cc91106e6f8414279938ad6b745838ee69b2f32824678cff28",
+      "additional_dependencies": [
+        {
+          "paths": {
+            "packages/frontend/core/src/blocksuite/ai/provider/setup-provider.tsx": "1c70085dcacc8fa7e754b3eae73c5966de15e919d525595ff28a05be13d0f1cb"
+          },
+          "source_commit": "e222f06e940270bd7d3334d4eeaa0b628b78e546"
+        },
+        {
+          "paths": {
+            "packages/frontend/core/src/blocksuite/ai/runtime/request/index.ts": "242af4dd9bdade7fc66e034b384364bb37a999a9cf83ce01a7b68ea4b47afc59"
+          },
+          "source_commit": "e222f06e940270bd7d3334d4eeaa0b628b78e546"
+        }
+      ],
+      "supplied_production_preserved": true,
+      "conditions": [
+        "codex_stateless",
+        "codex_continuous",
+        "codex_online",
+        "opencode_stateless",
+        "opencode_continuous",
+        "opencode_online"
+      ]
+    },
+    {
+      "episode_id": "affine__e5ef8885a002",
+      "original_production_commit": "0f5778ac894eb97845ce2ad20e695671363cedaf",
+      "companion_paths": [
+        "blocksuite/affine/data-view/src/view-presets/calendar/index.ts",
+        "blocksuite/affine/data-view/src/view-presets/calendar/types.ts",
+        "blocksuite/affine/data-view/src/view-presets/calendar/effect.ts",
+        "blocksuite/affine/data-view/src/view-presets/calendar/pc/effect.ts"
+      ],
+      "companion_patch_sha256": "d46983459351abca442491c24588e21b7d98d869e5991492da3ff821fd768432",
+      "additional_dependencies": [],
+      "supplied_production_preserved": true,
+      "conditions": [
+        "codex_stateless",
+        "codex_continuous",
+        "codex_online",
+        "opencode_continuous",
+        "opencode_online"
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__bb87bf999811",
+      "original_production_commit": "803e4633a27be10d80e752d62bd0dab09ed2924a",
+      "companion_paths": [
+        "packages/hoppscotch-backend/prisma/schema.prisma",
+        "packages/hoppscotch-backend/src/published-docs/input-type.args.ts",
+        "packages/hoppscotch-backend/prisma/migrations/20251207122817_add_slug_to_published_docs/migration.sql",
+        "packages/hoppscotch-backend/prisma/migrations/20260209063744_published_doc_environment/migration.sql"
+      ],
+      "companion_patch_sha256": "3a6fb74bb5f20cdc024cf6be8ebcd9e56845c973253a2ebde87522d06f463316",
+      "additional_dependencies": [],
+      "supplied_production_preserved": true,
+      "conditions": [
+        "codex_stateless",
+        "codex_continuous",
+        "codex_online",
+        "opencode_stateless",
+        "opencode_continuous",
+        "opencode_online"
+      ]
+    },
+    {
+      "episode_id": "rallly__f1c87a008978",
+      "original_production_commit": "2042ec8089579943b04bbb372eeeaf1c139aba79",
+      "companion_paths": [
+        "packages/api-core/package.json",
+        "packages/api-core/tsconfig.json",
+        "packages/api-core/src/auth/api-key.ts",
+        "packages/api-core/src/polls/data.ts",
+        "packages/api-core/src/polls/mutations.ts"
+      ],
+      "companion_patch_sha256": "a1cb008b0937a59ca118b08adb0490b95e53d789f459026dc66c288437f9dc0f",
+      "additional_dependencies": [],
+      "supplied_production_preserved": true,
+      "conditions": [
+        "codex_continuous",
+        "codex_online",
+        "opencode_stateless",
+        "opencode_online"
+      ]
+    },
+    {
+      "episode_id": "cal.com__fb57dd2b0722",
+      "original_production_commit": "22663014697b33a5b34bff240bd929d325aaf13b",
+      "companion_paths": [
+        "packages/prisma/schema.prisma",
+        "packages/prisma/migrations/20250812084523_add_system_segment_id/migration.sql",
+        "apps/web/app/(use-page-wrapper)/(main-nav)/bookings/[status]/page.tsx",
+        "apps/web/public/static/locales/en/common.json",
+        "packages/features/data-table/lib/parsers.ts",
+        "packages/lib/server/repository/filterSegment.ts",
+        "packages/lib/server/repository/filterSegment.type.ts"
+      ],
+      "companion_patch_sha256": "7fc8e4c1601f9cdc60e6b6fa90f5e939da3a2985c3a7b18d561c18014de16bb9",
+      "additional_dependencies": [],
+      "supplied_production_preserved": true,
+      "conditions": [
+        "codex_online",
+        "opencode_online"
+      ]
+    }
+  ],
+  "reproduction_boundary": "This record identifies original production commits and dependency paths. Private prepared snapshots and reference test patches are not distributed."
+}

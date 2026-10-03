@@ -1,0 +1,20 @@
+{
+  "status": "reported",
+  "scope": "single validation episode",
+  "condition_scope": "episode-wide normalized module-name match against any recorded production path",
+  "episode_id": "saleor__7d6c231fbcee",
+  "base_commit": "59abebb628fc20e46d19034009f5e817685e52a6",
+  "change_commit": "01c6fca3a6c87824a65e45bb4ebb75bcc347a4ca",
+  "targets": [
+    {
+      "test_path": "src/discounts/components/DiscountRules/DiscountRules.test.tsx",
+      "has_old_test_source": true,
+      "module_name_correspondence": true
+    },
+    {
+      "test_path": "src/discounts/components/DiscountRules/componenets/RulesList/components/RuleSummary/utils.test.ts",
+      "has_old_test_source": false,
+      "module_name_correspondence": true
+    }
+  ]
+}

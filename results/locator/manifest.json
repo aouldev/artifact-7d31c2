@@ -1,0 +1,22 @@
+{
+  "scope": "locator results",
+  "status": "reported",
+  "files": {
+    "metrics.json": {
+      "bytes": 2518,
+      "sha256": "5351eaae9706d16e07867d29dc717f077246ff0e0f6382a2e88eac9c739bcc8f"
+    },
+    "per_episode_metrics.jsonl": {
+      "bytes": 219485,
+      "sha256": "79cf7ba5cf745d9bf1df9ea165bf40f8db4f97d09daacd1de58c1be637e63efa"
+    },
+    "public_episodes.jsonl": {
+      "bytes": 55157,
+      "sha256": "0dfd253a2981edfbd60d94fb12d0619501f4ffe3ef5f864551edbc93abaa622d"
+    },
+    "trace_cost_summary.json": {
+      "bytes": 466,
+      "sha256": "4c7dc894312088818470823f9e5d8b9f348f8f8c42438e149356a17a4f071798"
+    }
+  }
+}

@@ -1,0 +1,1145 @@
+Upstream source: https://github.com/strapi/strapi
+Reference revision: 7861fc41cbe5094cefdd3a1f341c466b069678ce
+
+
+========================================================================
+Source file: LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+ 
+Portions of the Strapi software are licensed as follows:
+ 
+* If you are accessing or using any component of the software that resides under an "ee/" directory, then you are deemed to be using our “Enterprise Edition” of the software and you understand and agree that the software is not licensed under the "MIT Expat" license as set forth below but instead, all the software you access is licensed under the license defined in "strapi/packages/core/admin/ee/LICENSE" and located at https://github.com/strapi/strapi/blob/a76b557047e9ef1c168dbf1b6cf879bcc3022de6/packages/core/admin/ee/LICENSE, unless (a) you or the company you represent has signed an alternative agreement referencing this code, then such signed agreement applies or (b) you are using the software in connection with a subscription to our cloud offering, then the terms of the agreement relevant to the cloud offering which you have assented to apply and the software licenses included in that agreement shall apply.
+ 
+* If (a) you are not accessing or using the software that resides under an “ee/” directory and therefore you are only accessing or using our “Community Edition” of the Software and (b) you have no registered account on our cloud offering, then we are providing you the software under the "MIT Expat" license as set forth below.
+ 
+MIT Expat License
+ 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/admin-test-utils/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/admin-test-utils/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/cli/cloud/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/cli/cloud/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/cli/create-strapi-app/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/cli/create-strapi-app/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/admin/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/admin/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/admin/ee/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/admin/ee/LICENSE
+========================================================================
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software. Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.  BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.  IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS; IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/content-manager/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-manager/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/content-manager/admin/src/history/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-manager/admin/src/history/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+* All software that resides within this directory and its subdirectories, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/content-manager/admin/src/preview/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-manager/admin/src/preview/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+* All software that resides within this directory and its subdirectories, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/content-manager/server/src/history/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-manager/server/src/history/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+* All software that resides within this directory and its subdirectories, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/content-manager/server/src/preview/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-manager/server/src/preview/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+* All software that resides within this directory and its subdirectories, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/content-releases/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-releases/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+* All software that resides within this directory and its subdirectories, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/content-type-builder/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/content-type-builder/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/core/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/core/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/data-transfer/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/data-transfer/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/database/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/database/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/email/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/email/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/openapi/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/openapi/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/review-workflows/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/review-workflows/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+* All software that resides within this directory and its subdirectories, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+
+========================================================================
+Source file: packages/core/strapi/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/strapi/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/types/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/types/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/upload/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/upload/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/core/utils/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/core/utils/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/plugins/color-picker/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/plugins/color-picker/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/plugins/documentation/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/plugins/documentation/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/plugins/graphql/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/plugins/graphql/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/plugins/i18n/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/plugins/i18n/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/plugins/users-permissions/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/plugins/users-permissions/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/providers/email-nodemailer/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/providers/email-nodemailer/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+Source file: packages/providers/upload-aws-s3/LICENSE
+Source URL: https://github.com/strapi/strapi/blob/7861fc41cbe5094cefdd3a1f341c466b069678ce/packages/providers/upload-aws-s3/LICENSE
+========================================================================
+
+Copyright (c) 2015-present Strapi Solutions SAS
+
+Portions of the Strapi software are licensed as follows:
+
+* All software that resides under an "ee/" directory (the “EE Software”), if that directory exists, is licensed under the license defined below.
+
+Enterprise License
+
+If you or the company you represent has entered into a written agreement referencing the Enterprise Edition of the Strapi source code available at
+https://github.com/strapi/strapi, then such agreement applies to your use of the Enterprise Edition of the Strapi Software. If you or the company you
+represent is using the Enterprise Edition of the Strapi Software in connection with a subscription to our cloud offering, then the agreement you have
+agreed to with respect to our cloud offering and the licenses included in such agreement apply to your use of the Enterprise Edition of the Strapi Software.
+Otherwise, the Strapi Enterprise Software License Agreement (found here https://strapi.io/enterprise-terms) applies to your use of the Enterprise Edition of the Strapi Software.
+
+BY ACCESSING OR USING THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE RELEVANT REFERENCED AGREEMENT.
+IF YOU ARE NOT AUTHORIZED TO ACCEPT THESE TERMS ON BEHALF OF THE COMPANY YOU REPRESENT OR IF YOU DO NOT AGREE TO ALL OF THE RELEVANT TERMS AND CONDITIONS REFERENCED AND YOU
+HAVE NOT OTHERWISE EXECUTED A WRITTEN AGREEMENT WITH STRAPI, YOU ARE NOT AUTHORIZED TO ACCESS OR USE OR ALLOW ANY USER TO ACCESS OR USE ANY PART OF
+THE ENTERPRISE EDITION OF THE STRAPI SOFTWARE.  YOUR ACCESS RIGHTS ARE CONDITIONAL ON YOUR CONSENT TO THE RELEVANT REFERENCED TERMS TO THE EXCLUSION OF ALL OTHER TERMS;
+IF THE RELEVANT REFERENCED TERMS ARE CONSIDERED AN OFFER BY YOU, ACCEPTANCE IS EXPRESSLY LIMITED TO THE RELEVANT REFERENCED TERMS.
+
+* All software outside of the above-mentioned directories or restrictions above is available under the "MIT Expat" license as set forth below.
+
+MIT Expat License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

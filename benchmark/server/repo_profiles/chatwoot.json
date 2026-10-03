@@ -1,0 +1,87 @@
+{
+  "repo": "chatwoot",
+  "workspace": "/workspace/repo",
+  "env": {
+    "BUNDLE_FROZEN": "1"
+  },
+  "validation": {
+    "compile": {
+      "argv": [
+        "bin/vite",
+        "build"
+      ],
+      "cwd": "{{repo_root}}",
+      "timeout_ms": 600000
+    },
+    "infer_compile": true
+  },
+  "runners": [
+    {
+      "name": "chatwoot_vitest_coverage",
+      "path_regex": "^app/javascript/.*\\.(test|spec)\\.[cm]?[jt]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "{{test_file}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "timeout_ms": 600000
+    },
+    {
+      "name": "chatwoot_vitest_raw_v8",
+      "path_regex": "^app/javascript/.*\\.(test|spec)\\.[cm]?[jt]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "{{test_file}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_V8_COVERAGE": "{{output_dir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "install": {
+    "commands": [
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "install",
+          "--frozen-lockfile"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 600000
+      },
+      {
+        "argv": [
+          "bundle",
+          "install",
+          "--jobs",
+          "4",
+          "--retry",
+          "3"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 1800000
+      }
+    ],
+    "timeout_ms": 1800000
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "condition": "online",
+  "status": "reference_runner_not_result_freeze",
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "clients": {
+    "codex": {
+      "version": "codex-cli 0.144.6",
+      "actor_timeout_seconds": 600,
+      "writer_timeout_seconds": 600
+    },
+    "opencode": {
+      "version": "1.17.18",
+      "actor_timeout_seconds": 1800,
+      "writer_timeout_seconds": 1800
+    }
+  },
+  "provider": {
+    "name": "official_chatgpt_oauth",
+    "custom_endpoint": false,
+    "api_key_adapter": false,
+    "provider_switching": false,
+    "fallback_models": false
+  },
+  "memory": {
+    "actor_namespace": "read-only memory/ plus memory_read",
+    "initial_records": "external host-managed catalogue",
+    "reflection_prompt": "REFLECTION_PROMPT.md",
+    "actor_output_is_memory_evidence": false,
+    "automatic_catalog_update": false
+  },
+  "session": {
+    "actor_scope": "one independent episode session",
+    "repository_snapshot": "reset to each episode base commit"
+  },
+  "retry_policy": {
+    "in_process": false,
+    "automatic_provider_switch": false,
+    "quality_driven_retry": false
+  },
+  "workspace_write_policy": "all_repo_paths_except_episode_prod_files"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "verified",
+  "scope": "all_recorded_target_paths",
+  "condition_definitions": {
+    "old_test_source": "a historical source is available for the recorded test target",
+    "module_name_correspondence": "the normalized test module name matches any recorded production module in the same episode"
+  },
+  "positive_episode_count": 288,
+  "analysis_episode_count": 288,
+  "recorded_target_count": 896,
+  "relation_counts": {
+    "related": 730,
+    "uncertain": 1,
+    "unrelated": 140,
+    "partially_related": 25
+  },
+  "conditions": [
+    {
+      "condition": "old_test_source",
+      "all": 177,
+      "some": 32,
+      "none": 79,
+      "episode_denominator": 288,
+      "target_denominator": 896,
+      "episodes_omitting": 111,
+      "episode_percent": 38.54,
+      "targets_not_satisfying": 177,
+      "target_percent": 19.75
+    },
+    {
+      "condition": "module_name_correspondence",
+      "all": 200,
+      "some": 34,
+      "none": 54,
+      "episode_denominator": 288,
+      "target_denominator": 896,
+      "episodes_omitting": 88,
+      "episode_percent": 30.56,
+      "targets_not_satisfying": 346,
+      "target_percent": 38.62
+    }
+  ]
+}

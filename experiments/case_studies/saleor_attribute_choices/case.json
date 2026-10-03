@@ -1,0 +1,39 @@
+{
+  "episode_id": "saleor__47f89d573219",
+  "repo": "saleor",
+  "base_commit": "bf4a407a7921d4d6cf64ab74526d357267da8a16",
+  "cohort_path": "../../../data/k75_evaluation_cohort/validation.jsonl",
+  "prod_diff_sha256": "a52c197142e1de124f1b4485af99ca44ad9ec8f4653c6bf20874bf232829edc3",
+  "production_paths": [
+    "src/components/ConditionalFilter/API/Handler.ts",
+    "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts"
+  ],
+  "normal_source_sha256": {
+    "src/components/ConditionalFilter/API/Handler.ts": "dc7a648c7a7a0c5b46296e1c18f2de12e478cf56614b1829cc2ad198c24d04aa",
+    "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.ts": "514e0ec41d7428fa37e03b9d07b86c494565dd864c7ec5571f4cd6a8f0078fa9"
+  },
+  "suite_slice": [
+    "src/components/ConditionalFilter/API/Handler.test.ts",
+    "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.test.ts",
+    "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts"
+  ],
+  "patches": {
+    "developer": {
+      "path": "patches/developer.patch",
+      "sha256": "263074a117bfb1ee380001753fe2f241a7a52d7ec78edcb8505df86a3d7e9e88"
+    },
+    "codex": {
+      "path": "patches/codex.patch",
+      "sha256": "ccc7806f99f3ea2d270ef09242175601ddade222c992653dfe137f9f1ffc1228"
+    },
+    "opencode": {
+      "path": "patches/opencode.patch",
+      "sha256": "f15a77788ea3c5217ae0fcadde98c53f5f3a43d99cbb48234f468e86ef416e99"
+    }
+  },
+  "fixture": {
+    "path": "src/extensions/data/extensions.json",
+    "content": "{\"extensionCategories\":[]}\n"
+  },
+  "recorded_node_version": "v22.21.1"
+}

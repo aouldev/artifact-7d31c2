@@ -1,0 +1,125 @@
+{
+  "repo": "cal.com",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "calcom_playwright_system_segments_no_coverage",
+      "path_regex": "^apps/web/playwright/system-segments\\.e2e\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "bash",
+        "-lc",
+        "set -euo pipefail; : \"${DATABASE_URL:?Set DATABASE_URL}\" \"${DATABASE_DIRECT_URL:?Set DATABASE_DIRECT_URL}\"; yarn prisma migrate deploy; yarn db-seed; yarn playwright install chromium; if [ ! -f apps/web/.next/BUILD_ID ]; then NODE_OPTIONS='--max-old-space-size=6144' yarn workspace @calcom/web build; fi; yarn playwright test --config playwright.config.ts {{test_name}} --project=@calcom/web --workers=1 --retries=0 --reporter=line"
+      ],
+      "env": {
+        "NEXT_PUBLIC_WEBAPP_URL": "http://localhost:3000",
+        "WEBAPP_URL": "http://localhost:3000",
+        "NEXTAUTH_URL": "http://localhost:3000",
+        "NEXT_PUBLIC_LICENSE_CONSENT": "agree",
+        "NEXT_PUBLIC_IS_E2E": "1",
+        "TASKER_ENABLE_EMAILS": "0",
+        "CI": "1",
+        "PLAYWRIGHT_HEADLESS": "1"
+      },
+      "timeout_ms": 1200000
+    },
+    {
+      "name": "calcom_playwright_browser_raw",
+      "path_regex": "^apps/web/playwright/(?!system-segments\\.e2e\\.ts$).*\\.e2e\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "bash",
+        "-lc",
+        "set -euo pipefail; : \"${DATABASE_URL:?Set DATABASE_URL}\" \"${DATABASE_DIRECT_URL:?Set DATABASE_DIRECT_URL}\"; yarn prisma migrate deploy; yarn db-seed; yarn playwright install chromium; if [ ! -f apps/web/.next/BUILD_ID ]; then NODE_OPTIONS='--max-old-space-size=6144' yarn workspace @calcom/web build; fi; NODE_OPTIONS='-r {{output_dir}}/playwright_browser_coverage_shim.cjs' yarn playwright test --config playwright.config.ts {{test_name}} --project=@calcom/web --workers=1 --retries=0 --reporter=line"
+      ],
+      "env": {
+        "NEXT_PUBLIC_WEBAPP_URL": "http://localhost:3000",
+        "WEBAPP_URL": "http://localhost:3000",
+        "NEXTAUTH_URL": "http://localhost:3000",
+        "NEXT_PUBLIC_LICENSE_CONSENT": "agree",
+        "NEXT_PUBLIC_IS_E2E": "1",
+        "TASKER_ENABLE_EMAILS": "0",
+        "CI": "1",
+        "PLAYWRIGHT_HEADLESS": "1",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}"
+      },
+      "timeout_ms": 1200000
+    },
+    {
+      "name": "calcom_vitest_unit_root_coverage",
+      "path_regex": "^(apps|packages)/(?!.*(/playwright/|\\.e2e\\.)).*\\.(test|spec)\\.[cm]?[jt]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "vitest",
+        "run",
+        "{{assetPath}}",
+        "--passWithNoTests=false",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{coverageDir}}"
+      ],
+      "env": {
+        "INTEGRATION_TEST_MODE": "true",
+        "NEXT_PUBLIC_WEBAPP_URL": "http://app.cal.local:3000"
+      },
+      "timeout_ms": 600000
+    },
+    {
+      "name": "calcom_vitest_unit_raw_v8",
+      "path_regex": "^(apps|packages)/(?!.*(/playwright/|\\.e2e\\.)).*\\.(test|spec)\\.[cm]?[jt]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "vitest",
+        "run",
+        "{{assetPath}}",
+        "--passWithNoTests=false",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "INTEGRATION_TEST_MODE": "true",
+        "NEXT_PUBLIC_WEBAPP_URL": "http://app.cal.local:3000",
+        "NODE_V8_COVERAGE": "{{coverageDir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "commands": [
+      {
+        "argv": [
+          "corepack",
+          "enable"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 120000
+      },
+      {
+        "argv": [
+          "corepack",
+          "yarn",
+          "install",
+          "--immutable"
+        ],
+        "cwd": "{{repo_root}}",
+        "env": {
+          "YARN_ENABLE_SCRIPTS": "false"
+        },
+        "timeout_ms": 300000
+      }
+    ],
+    "timeout_ms": 300000
+  }
+}

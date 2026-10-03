@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "scope": "recorded_target_condition_coverage",
+  "source_summary_sha256": "c19e2a8b76981ba4aa8acb89c2d7b6b4b08e78c3579911aedcdeecd5da152aea",
+  "main": [
+    {
+      "condition": "Old test source",
+      "all": 177,
+      "some": 32,
+      "none": 79,
+      "episode_denominator": 288,
+      "target_denominator": 896,
+      "episodes_omitting": 111,
+      "episode_percent": 38.54,
+      "targets_not_satisfying": 177,
+      "target_percent": 19.75
+    },
+    {
+      "condition": "Module-name correspondence",
+      "all": 200,
+      "some": 34,
+      "none": 54,
+      "episode_denominator": 288,
+      "target_denominator": 896,
+      "episodes_omitting": 88,
+      "episode_percent": 30.56,
+      "targets_not_satisfying": 346,
+      "target_percent": 38.62
+    }
+  ],
+  "variants": {
+    "related_only": [
+      {
+        "condition": "Old test source",
+        "all": 170,
+        "some": 29,
+        "none": 81,
+        "episode_denominator": 280,
+        "target_denominator": 730,
+        "episodes_omitting": 110,
+        "episode_percent": 39.29,
+        "targets_not_satisfying": 172,
+        "target_percent": 23.56
+      },
+      {
+        "condition": "Module-name correspondence",
+        "all": 200,
+        "some": 30,
+        "none": 50,
+        "episode_denominator": 280,
+        "target_denominator": 730,
+        "episodes_omitting": 80,
+        "episode_percent": 28.57,
+        "targets_not_satisfying": 215,
+        "target_percent": 29.45
+      }
+    ],
+    "without_typebot": [
+      {
+        "condition": "Old test source",
+        "all": 163,
+        "some": 32,
+        "none": 75,
+        "episode_denominator": 270,
+        "target_denominator": 712,
+        "episodes_omitting": 107,
+        "episode_percent": 39.63,
+        "targets_not_satisfying": 173,
+        "target_percent": 24.3
+      },
+      {
+        "condition": "Module-name correspondence",
+        "all": 192,
+        "some": 28,
+        "none": 50,
+        "episode_denominator": 270,
+        "target_denominator": 712,
+        "episodes_omitting": 78,
+        "episode_percent": 28.89,
+        "targets_not_satisfying": 222,
+        "target_percent": 31.18
+      }
+    ],
+    "strict_basename": [
+      {
+        "condition": "Old test source",
+        "all": 177,
+        "some": 32,
+        "none": 79,
+        "episode_denominator": 288,
+        "target_denominator": 896,
+        "episodes_omitting": 111,
+        "episode_percent": 38.54,
+        "targets_not_satisfying": 177,
+        "target_percent": 19.75
+      },
+      {
+        "condition": "Module-name correspondence",
+        "all": 198,
+        "some": 34,
+        "none": 56,
+        "episode_denominator": 288,
+        "target_denominator": 896,
+        "episodes_omitting": 90,
+        "episode_percent": 31.25,
+        "targets_not_satisfying": 381,
+        "target_percent": 42.52
+      }
+    ]
+  },
+  "interpretation": "Coverage of recorded targets; unsatisfied conditions alone do not establish a missed maintenance requirement.",
+  "reproduction_boundary": "Frozen aggregate export. Arithmetic and main-scope agreement can be checked from this package; rerunning provenance classification requires the underlying historical source review."
+}

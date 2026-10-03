@@ -1,0 +1,92 @@
+{
+  "repo": "vendure",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "vendure_dashboard_playwright_browser_raw",
+      "path_regex": "^packages/dashboard/e2e/tests/.*\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "node",
+        "{{output_dir}}/vendure_dashboard_playwright_runner.cjs",
+        "{{test_file}}"
+      ],
+      "env": {
+        "NODE_OPTIONS": "-r {{output_dir}}/playwright_browser_coverage_shim.cjs",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}",
+        "REPO_TEST_EVOLUTION_PLAYWRIGHT_TIMEOUT_MS": "1800000",
+        "CI": "1",
+        "VITE_TEST_PORT": "5174"
+      },
+      "timeout_ms": 1800000
+    },
+    {
+      "name": "vendure_dashboard_vitest",
+      "path_regex": "^packages/dashboard/(src|vite/tests)/.*\\.spec\\.ts$",
+      "cwd": "{{nearest_package_dir}}",
+      "argv": [
+        "npm",
+        "exec",
+        "--",
+        "vitest",
+        "--run",
+        "{{test_file_from_cwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {
+        "NODE_OPTIONS": "-r {{output_dir}}/vendure_core_dashboard_test_shim.cjs"
+      },
+      "timeout_ms": 600000
+    },
+    {
+      "name": "vendure_package_vitest",
+      "path_regex": "^packages/(core|cli)/src/.*\\.spec\\.ts$",
+      "cwd": "{{nearest_package_dir}}",
+      "argv": [
+        "npm",
+        "exec",
+        "--",
+        "vitest",
+        "--run",
+        "{{test_file_from_cwd}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 300000,
+    "commands": [
+      {
+        "argv": [
+          "npm",
+          "ci"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "npm",
+          "run",
+          "build",
+          "--workspace",
+          "@vendure/common"
+        ],
+        "cwd": "{{repo_root}}"
+      }
+    ]
+  }
+}

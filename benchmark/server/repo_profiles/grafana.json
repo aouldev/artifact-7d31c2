@@ -1,0 +1,62 @@
+{
+  "repo": "grafana",
+  "workspace": "/workspace/repo",
+  "env": {
+    "NODE_OPTIONS": "--max-old-space-size=8192"
+  },
+  "runners": [
+    {
+      "name": "grafana_plugin_jest_local",
+      "path_regex": "^public/app/plugins/(datasource|panel)/[^/]+/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearest_package_dir}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "jest",
+        "--runInBand",
+        "--runTestsByPath",
+        "{{test_file_from_cwd}}",
+        "--coverage",
+        "--coverageReporters=json",
+        "--coverageReporters=lcov",
+        "--coverageDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {}
+    },
+    {
+      "name": "grafana_root_jest",
+      "path_regex": "^(packages|public|pkg)/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "jest",
+        "--runInBand",
+        "--runTestsByPath",
+        "{{test_file}}",
+        "--coverage",
+        "--coverageReporters=json",
+        "--coverageReporters=lcov",
+        "--coverageDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {}
+    }
+  ],
+  "validation": {
+    "compile": {
+      "argv": [
+        "bash",
+        "-lc",
+        "make -C apps/dashboard generate && corepack yarn run typecheck"
+      ],
+      "cwd": "{{repo_root}}",
+      "timeout_ms": 1200000
+    },
+    "infer_compile": false
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

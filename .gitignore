@@ -1,0 +1,28 @@
+# Local and generated files
+_internal/
+.venv/
+.venv-*/
+*.egg-info/
+/build/
+/dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Never publish runtime caches or private evaluation outputs
+benchmark/server/storage/
+benchmark/server/workspace/
+benchmark/workspace/
+benchmark/participant/runs/
+benchmark/server/data/
+benchmark/releases/
+
+# Local credentials and machine files
+.env
+auth.json
+.DS_Store
+*.log
+
+# Generated figure previews are written to a caller-selected output directory.
+analysis/figures/out/

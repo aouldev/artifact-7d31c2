@@ -1,0 +1,123 @@
+{
+  "status": "reported",
+  "cohort": {
+    "episodes": 1673,
+    "positive": 50,
+    "negative": 1623
+  },
+  "agents": {
+    "codex": {
+      "conditional_denominator": 43,
+      "csr": 0.6511627906976745,
+      "csr_pass_count": 28,
+      "csr_denominator": 43,
+      "tps": 0.5581395348837209,
+      "tps_pass_count": 24,
+      "tps_denominator": 43,
+      "ucr": 0.5581395348837209,
+      "ucr_pass_count": 24,
+      "ucr_denominator": 43
+    },
+    "opencode": {
+      "conditional_denominator": 42,
+      "csr": 0.7142857142857143,
+      "csr_pass_count": 30,
+      "csr_denominator": 42,
+      "tps": 0.5714285714285714,
+      "tps_pass_count": 24,
+      "tps_denominator": 42,
+      "ucr": 0.5714285714285714,
+      "ucr_pass_count": 24,
+      "ucr_denominator": 42
+    }
+  },
+  "legacy_evaluator": {
+    "status": "reported_legacy",
+    "agents": {
+      "codex": {
+        "evaluated_count": 1673,
+        "gold_positive_count": 50,
+        "dynamic_attempt_count": 43,
+        "csr": 0.8108108108108109,
+        "csr_configured_count": 37,
+        "tps": 0.6,
+        "tps_attempt_count": 35,
+        "ucr": 0.42,
+        "update_accuracy": 0.42,
+        "ucr_attempt_count": 21,
+        "coverage_evaluable_count": 21,
+        "ucr_evaluable": 1.0,
+        "coverage_status": "implemented",
+        "coverage_status_counts": {
+          "not_run": 22,
+          "parsed": 19,
+          "parsed_file": 2
+        },
+        "end_to_end_success_rate": 0.42,
+        "stage_counts": {
+          "intent_tn": 1237,
+          "intent_fp": 386,
+          "test_failed": 14,
+          "intent_fn": 7,
+          "passed": 21,
+          "compile_failed": 7,
+          "install_failed": 1
+        },
+        "csr_pass_count": 30,
+        "tps_pass_count": 21,
+        "ucr_pass_count": 21,
+        "ucr_denominator": 50
+      },
+      "opencode": {
+        "evaluated_count": 1673,
+        "gold_positive_count": 50,
+        "dynamic_attempt_count": 43,
+        "csr": 0.7777777777777778,
+        "csr_configured_count": 36,
+        "tps": 0.6363636363636364,
+        "tps_attempt_count": 33,
+        "ucr": 0.42,
+        "update_accuracy": 0.42,
+        "ucr_attempt_count": 21,
+        "coverage_evaluable_count": 21,
+        "ucr_evaluable": 1.0,
+        "coverage_status": "implemented",
+        "coverage_status_counts": {
+          "not_run": 22,
+          "parsed": 18,
+          "parsed_file": 3
+        },
+        "end_to_end_success_rate": 0.42,
+        "stage_counts": {
+          "intent_tn": 1244,
+          "intent_fp": 379,
+          "test_failed": 12,
+          "passed": 21,
+          "intent_fn": 7,
+          "compile_failed": 8,
+          "install_failed": 2
+        },
+        "csr_pass_count": 28,
+        "tps_pass_count": 21,
+        "ucr_pass_count": 21,
+        "ucr_denominator": 50
+      }
+    },
+    "aggregation_scope": "original_evaluator_denominators"
+  },
+  "protocol": "conditional_generation",
+  "reference_set": {
+    "size": 49,
+    "episode_ids_file": "conditional_generation_working_set.txt"
+  },
+  "aggregation": {
+    "denominator": "D_m = E ∩ TP_m",
+    "shared_by": [
+      "csr",
+      "tps",
+      "ucr"
+    ],
+    "numerator_source": "native_target_test_results",
+    "records_file": "results/rq3/generation_records.jsonl"
+  }
+}

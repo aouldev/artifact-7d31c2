@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "condition": "continuous",
+  "status": "reference_runner_not_result_freeze",
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "clients": {
+    "codex": {
+      "version": "codex-cli 0.144.6",
+      "timeout_seconds": 600
+    },
+    "opencode": {
+      "version": "1.17.18",
+      "timeout_seconds": 1800
+    }
+  },
+  "provider": {
+    "name": "official_chatgpt_oauth",
+    "custom_endpoint": false,
+    "api_key_adapter": false,
+    "provider_switching": false,
+    "fallback_models": false
+  },
+  "session": {
+    "scope": "one ordered repository stream",
+    "continuation": "same client session across episodes",
+    "repo_snapshot": "reset to each episode base commit",
+    "memory": "persistent read-write memory/ namespace",
+    "train": "optional external read-only train/ namespace"
+  },
+  "history": {
+    "warmup": "external input",
+    "bundled_train_data": false
+  },
+  "retry_policy": {
+    "in_process": false,
+    "automatic_provider_switch": false,
+    "batch_recovery": "not included"
+  },
+  "workspace_write_policy": "all_repo_paths_except_episode_prod_files"
+}

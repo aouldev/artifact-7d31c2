@@ -1,0 +1,40 @@
+{
+  "protocol": "rq2_specification_guided_behavioral_mutation_v1",
+  "scope": "Two admitted, behavior-level Saleor diagnostics. These rows are illustrative validity evidence and are excluded from population estimates.",
+  "episode_id": "saleor__47f89d573219",
+  "suite_definition": "For each condition, the selected existing tests are identical between normal and mutant snapshots; the condition's test-file SHA-256 maps are identical. old is the base suite; other conditions apply only the recorded developer/Codex/OpenCode test patch.",
+  "status": "illustrative_diagnostic",
+  "rows": [
+    {
+      "behavior_id": "boolean_static_choices",
+      "mutation": "Disable the handler's BOOLEAN static-options branch.",
+      "admission": "admitted",
+      "admission_probe": {
+        "normal": "passed (1/1)",
+        "mutant": "failed (0/1): unchanged handler takes GraphQL path instead of returning static choices"
+      },
+      "outcomes": {
+        "old": "not_detected (23/23 normal; 23/23 mutant)",
+        "developer": "detected (24/24 normal; 23/24 mutant): builder BOOLEAN static-options assertion failed",
+        "codex": "detected (21/21 normal; 19/21 mutant): direct-handler and builder assertions failed",
+        "opencode": "detected (25/25 normal; 24/25 mutant): direct-handler assertion failed"
+      }
+    },
+    {
+      "behavior_id": "attribute_type_forwarding",
+      "mutation": "Pass undefined instead of the selected type at the builder-to-handler construction boundary; leave the handler unchanged.",
+      "admission": "admitted",
+      "admission_probe": {
+        "normal": "passed (1/1)",
+        "mutant": "failed (0/1): builder-created BOOLEAN handler takes GraphQL path instead of returning static choices"
+      },
+      "outcomes": {
+        "old": "not_detected (23/23 normal; 23/23 mutant)",
+        "developer": "detected (24/24 normal; 23/24 mutant): builder BOOLEAN static-options assertion failed",
+        "codex": "detected (21/21 normal; 20/21 mutant): builder BOOLEAN static-options assertion failed",
+        "opencode": "not_detected (25/25 normal; 25/25 mutant)"
+      },
+      "interpretation": "OpenCode's submitted direct-handler test detects a broken handler branch but cannot detect missing type propagation because it constructs AttributeChoicesHandler with BOOLEAN directly. This is a behavior-boundary distinction, not evidence that OpenCode has no relevant test."
+    }
+  ]
+}

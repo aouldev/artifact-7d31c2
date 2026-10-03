@@ -1,0 +1,280 @@
+diff --git a/src/components/ConditionalFilter/API/Handler.test.ts b/src/components/ConditionalFilter/API/Handler.test.ts
+index e9cbae0..f2de361 100644
+--- a/src/components/ConditionalFilter/API/Handler.test.ts
++++ b/src/components/ConditionalFilter/API/Handler.test.ts
+@@ -1,184 +1,73 @@
+-import { type ApolloClient, type ApolloQueryResult } from "@apollo/client";
+-import {
+-  _GetWarehouseChoicesDocument,
+-  type _GetWarehouseChoicesQuery,
+-  type _GetWarehouseChoicesQueryVariables,
+-} from "@dashboard/graphql";
++import { type ApolloClient } from "@apollo/client";
++import { AttributeInputTypeEnum } from "@dashboard/graphql";
++
++import { AttributeChoicesHandler } from "./Handler";
++
++describe("AttributeChoicesHandler", () => {
++  it("returns static options for boolean attributes without querying choices", async () => {
++    const query = jest.fn();
++    const client = { query } as unknown as ApolloClient<unknown>;
++    const handler = new AttributeChoicesHandler(
++      client,
++      "is-visible",
++      "",
++      AttributeInputTypeEnum.BOOLEAN,
++    );
+ 
+-import { WarehouseHandler } from "./Handler";
+-
+-describe("WarehouseHandler", () => {
+-  let mockClient: jest.Mocked<ApolloClient<unknown>>;
+-
+-  beforeEach(() => {
+-    mockClient = {
+-      query: jest.fn(),
+-    } as unknown as jest.Mocked<ApolloClient<unknown>>;
+-  });
+-
+-  it("fetches warehouses with correct query and variables", async () => {
+-    // Arrange
+-    const searchQuery = "main";
+-    const handler = new WarehouseHandler(mockClient, searchQuery);
+-
+-    const mockResponse: _GetWarehouseChoicesQuery = {
+-      __typename: "Query" as const,
+-      warehouses: {
+-        __typename: "WarehouseCountableConnection",
+-        edges: [
+-          {
+-            __typename: "WarehouseCountableEdge",
+-            node: {
+-              __typename: "Warehouse",
+-              id: "WRH123",
+-              name: "Main Warehouse",
+-              slug: "main-warehouse",
+-            },
+-          },
+-          {
+-            __typename: "WarehouseCountableEdge",
+-            node: {
+-              __typename: "Warehouse",
+-              id: "WRH456",
+-              name: "Main Distribution Center",
+-              slug: "main-distribution",
+-            },
+-          },
+-        ],
+-      },
+-    };
+-
+-    mockClient.query.mockResolvedValueOnce({
+-      data: mockResponse,
+-    } as ApolloQueryResult<_GetWarehouseChoicesQuery>);
+-
+-    // Act
+     const result = await handler.fetch();
+ 
+-    // Assert
+-    expect(mockClient.query).toHaveBeenCalledWith({
+-      query: _GetWarehouseChoicesDocument,
+-      variables: {
+-        first: 5,
+-        query: searchQuery,
+-      } as _GetWarehouseChoicesQueryVariables,
+-    });
+-
+     expect(result).toEqual([
+-      {
+-        label: "Main Warehouse",
+-        value: "WRH123",
+-        slug: "main-warehouse",
+-        originalSlug: undefined,
+-      },
+-      {
+-        label: "Main Distribution Center",
+-        value: "WRH456",
+-        slug: "main-distribution",
+-        originalSlug: undefined,
+-      },
++      { label: "Yes", value: "true", slug: "true" },
++      { label: "No", value: "false", slug: "false" },
+     ]);
++    expect(query).not.toHaveBeenCalled();
+   });
+ 
+-  it("handles empty search query", async () => {
+-    // Arrange
+-    const handler = new WarehouseHandler(mockClient, "");
+-
+-    const mockResponse: _GetWarehouseChoicesQuery = {
+-      __typename: "Query" as const,
+-      warehouses: {
+-        __typename: "WarehouseCountableConnection",
+-        edges: [
+-          {
+-            __typename: "WarehouseCountableEdge",
+-            node: {
+-              __typename: "Warehouse",
+-              id: "WRH1",
+-              name: "Warehouse 1",
+-              slug: "warehouse-1",
+-            },
++  it("fetches attribute choices for non-boolean attributes", async () => {
++    const query = jest.fn().mockResolvedValue({
++      data: {
++        attribute: {
++          choices: {
++            edges: [
++              {
++                node: {
++                  id: "choice-id",
++                  name: "Choice",
++                  slug: "choice",
++                  originalSlug: null,
++                },
++              },
++            ],
+           },
+-        ],
++        },
+       },
+-    };
+-
+-    mockClient.query.mockResolvedValueOnce({
+-      data: mockResponse,
+-    } as ApolloQueryResult<_GetWarehouseChoicesQuery>);
++    });
++    const client = { query } as unknown as ApolloClient<unknown>;
++    const handler = new AttributeChoicesHandler(
++      client,
++      "dropdown-attr",
++      "cho",
++      AttributeInputTypeEnum.DROPDOWN,
++    );
+ 
+-    // Act
+     const result = await handler.fetch();
+ 
+-    // Assert
+-    expect(mockClient.query).toHaveBeenCalledWith({
+-      query: _GetWarehouseChoicesDocument,
+-      variables: {
+-        first: 5,
+-        query: "",
+-      },
+-    });
+-
++    expect(query).toHaveBeenCalledWith(
++      expect.objectContaining({
++        variables: {
++          slug: "dropdown-attr",
++          first: 5,
++          query: "cho",
++        },
++      }),
++    );
+     expect(result).toEqual([
+       {
+-        label: "Warehouse 1",
+-        value: "WRH1",
+-        slug: "warehouse-1",
+-        originalSlug: undefined,
++        label: "Choice",
++        value: "choice-id",
++        slug: "choice",
++        originalSlug: null,
+       },
+     ]);
+   });
+-
+-  it("handles empty response with no warehouses", async () => {
+-    // Arrange
+-    const handler = new WarehouseHandler(mockClient, "nonexistent");
+-
+-    const mockResponse: _GetWarehouseChoicesQuery = {
+-      __typename: "Query" as const,
+-      warehouses: {
+-        __typename: "WarehouseCountableConnection",
+-        edges: [],
+-      },
+-    };
+-
+-    mockClient.query.mockResolvedValueOnce({
+-      data: mockResponse,
+-    } as ApolloQueryResult<_GetWarehouseChoicesQuery>);
+-
+-    // Act
+-    const result = await handler.fetch();
+-
+-    // Assert
+-    expect(result).toEqual([]);
+-  });
+-
+-  it("handles null warehouses response", async () => {
+-    // Arrange
+-    const handler = new WarehouseHandler(mockClient as unknown as ApolloClient<unknown>, "test");
+-
+-    const mockResponse: _GetWarehouseChoicesQuery = {
+-      __typename: "Query" as const,
+-      warehouses: null,
+-    };
+-
+-    mockClient.query.mockResolvedValueOnce({
+-      data: mockResponse,
+-    } as ApolloQueryResult<_GetWarehouseChoicesQuery>);
+-
+-    // Act
+-    const result = await handler.fetch();
+-
+-    // Assert
+-    expect(result).toEqual([]);
+-  });
+-
+-  it("propagates apollo client query errors", async () => {
+-    // Arrange
+-    const handler = new WarehouseHandler(mockClient as unknown as ApolloClient<unknown>, "test");
+-    const error = new Error("Network error");
+-
+-    mockClient.query.mockRejectedValueOnce(error);
+-
+-    // Act & Assert
+-    await expect(handler.fetch()).rejects.toThrow("Network error");
+-  });
+ });
+diff --git a/src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts b/src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts
+new file mode 100644
+index 0000000..5b57d17
+--- /dev/null
++++ b/src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts
+@@ -0,0 +1,30 @@
++import { type ApolloClient } from "@apollo/client";
++import { AttributeInputTypeEnum } from "@dashboard/graphql";
++
++import { Condition } from "../../FilterElement/Condition";
++import { ExpressionValue, FilterElement } from "../../FilterElement/FilterElement";
++import { AttributeQueryVarsBuilder } from "./AttributeQueryVarsBuilder";
++
++describe("AttributeQueryVarsBuilder boolean attributes", () => {
++  it("creates a fetcher that returns boolean options without querying attribute choices", async () => {
++    const query = jest.fn();
++    const client = { query } as unknown as ApolloClient<unknown>;
++    const element = new FilterElement(
++      new ExpressionValue("attribute", "Attribute", "attribute"),
++      Condition.createEmpty(),
++      false,
++      undefined,
++      new ExpressionValue("is-visible", "Is visible", AttributeInputTypeEnum.BOOLEAN),
++    );
++    const builder = new AttributeQueryVarsBuilder();
++
++    const handler = builder.createOptionFetcher(client, "", element);
++    const result = await handler.fetch();
++
++    expect(result).toEqual([
++      { label: "Yes", value: "true", slug: "true" },
++      { label: "No", value: "false", slug: "false" },
++    ]);
++    expect(query).not.toHaveBeenCalled();
++  });
++});

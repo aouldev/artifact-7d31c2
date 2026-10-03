@@ -1,0 +1,14 @@
+{
+  "scope": "RQ1 stateless agents",
+  "status": "reported",
+  "files": {
+    "decision_metrics.json": {
+      "bytes": 1775,
+      "sha256": "8f1008f4a06bd68a668dc33c308ba6ce16195821c90a9f9235f29ab8c9593f82"
+    },
+    "generation_metrics.json": {
+      "bytes": 3278,
+      "sha256": "88a559cd2b4017967148572cb8268f954dfaec670ed56d09d8a2c662a09e6c32"
+    }
+  }
+}

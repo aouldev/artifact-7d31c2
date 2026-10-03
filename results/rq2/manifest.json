@@ -1,0 +1,66 @@
+{
+  "scope": "RQ2 behavior and process evidence",
+  "status": "curated_derived_records",
+  "cohort": "K75 evaluation cohort",
+  "model": "gpt-5.5",
+  "reasoning_effort": "low",
+  "rq2": {
+    "source_confirmed_behavior_rows": 239,
+    "process_coding_behavior_rows": 239,
+    "paired_episodes": 46,
+    "trace_runs": 100,
+    "behavior_review_cards": 60,
+    "mutation_cases": 2,
+    "behavior_source_anchor_records": 470
+  },
+  "files": {
+    "behavior_labels.csv": {
+      "bytes": 53865,
+      "sha256": "665cd0570c1fd778086a141a5e879c13370681709085a7fffc6736b96fd026ad"
+    },
+    "behavior_review_summary.json": {
+      "bytes": 562,
+      "sha256": "a50426467952c6bb3656dd6679c0dc1eca0bdb439d81a138657fce412ab158df"
+    },
+    "episode_missing_share.csv": {
+      "bytes": 3576,
+      "sha256": "a472497169d4cf26122797418da9898cd642ffff6ea62f10ce0023fde7e2075d"
+    },
+    "mutation_case_summary.json": {
+      "bytes": 2433,
+      "sha256": "11cb642a4ac1de13c24528f4e139bb094dbe3b6240fa81c21f49f3bdf9e03661"
+    },
+    "public_plan_labels.jsonl": {
+      "bytes": 242176,
+      "sha256": "8bf7fcf5f277493472137b492ebd77e1213b721dd609198a8dea89301c85d855"
+    },
+    "public_process_summary.json": {
+      "bytes": 6446,
+      "sha256": "390cba62816bd1e554534dc624e30e7c71b586923f8a0095c5a811dbc263112e"
+    },
+    "trace_process_summary.json": {
+      "bytes": 65792,
+      "sha256": "934a1f7b21357d56925ff717a23abf3114a0c199f8bf7bd1feae3e7755196274"
+    },
+    "behavior_summary.json": {
+      "bytes": 2302,
+      "sha256": "f49a11add33abc036bf6b15039d9d3d2e267c1afe263cfc22af5b2f329948085"
+    },
+    "file_write_timeline.json": {
+      "bytes": 72821,
+      "sha256": "fc47f5eb27af351575d7b96ecd7745e25f86496a4bf83b90238f488fec8c3778"
+    },
+    "behavior_catalog.jsonl": {
+      "bytes": 269738,
+      "sha256": "26b4faf181d64fced3f821bfbf9a03a8ef62a4f87bba0ee20b37de2a89462c3d"
+    },
+    "source_review_cards.jsonl": {
+      "bytes": 96499,
+      "sha256": "8b0b3cb082c127563c2fb56a92b309cae5cb80a86f35d740abf3b03efa12395b"
+    },
+    "mutation_execution.json": {
+      "bytes": 12958,
+      "sha256": "b0d6decd1eb37f15fbc8d0869b313ff38d2b9c07b21ba389e47bcae3ae97fb2a"
+    }
+  }
+}

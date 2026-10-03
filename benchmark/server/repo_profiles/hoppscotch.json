@@ -1,0 +1,77 @@
+{
+  "repo": "hoppscotch",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "hoppscotch_backend_jest_package",
+      "path_regex": "^packages/hoppscotch-backend/src/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "packages/hoppscotch-backend",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "jest",
+        "--runInBand",
+        "--runTestsByPath",
+        "{{assetPathFromCwd}}",
+        "--coverage",
+        "--coverageReporters=json",
+        "--coverageReporters=lcov",
+        "--coverageDirectory",
+        "{{coverageDir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "compile": {
+      "argv": [
+        "bash",
+        "-lc",
+        "corepack pnpm --filter @hoppscotch/data run build && corepack pnpm run typecheck"
+      ],
+      "cwd": "{{repo_root}}",
+      "timeout_ms": 1200000
+    },
+    "infer_compile": false
+  },
+  "install": {
+    "commands": [
+      {
+        "argv": [
+          "corepack",
+          "enable"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 120000
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "install",
+          "--frozen-lockfile",
+          "--ignore-scripts"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 300000
+      },
+      {
+        "argv": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "prisma",
+          "generate",
+          "--schema",
+          "prisma/schema.prisma"
+        ],
+        "cwd": "packages/hoppscotch-backend",
+        "env": {},
+        "timeout_ms": 180000
+      }
+    ],
+    "timeout_ms": 300000
+  }
+}

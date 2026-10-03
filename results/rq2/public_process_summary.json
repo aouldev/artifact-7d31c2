@@ -1,0 +1,203 @@
+{
+  "schema": "rq2_manual_public_preedit_process",
+  "scope": "Pre-edit public-message coding for the selected scored attempts.",
+  "comparison_behavior_rows": 239,
+  "process_coding_behavior_rows": 239,
+  "method": {
+    "population": "All 50 positive episodes and both selected scored attempts; 239 source-confirmed behaviors (478 behavior-agent records).",
+    "time_window": "All public assistant messages strictly before the first successful file mutation (including deletion). If no mutation exists, use the entire recorded run. Later rationales are inspected but cannot establish a pre-edit plan.",
+    "specific_statement": "Must name at least one behavior-specific action, expected outcome, or changed relationship attributable to the behavior. Merely naming a file/component, promising general coverage, or listing an unexplained flag is insufficient. A statement about part of a multi-condition contract is counted with an explicit scope_note, never called full understanding.",
+    "plan": "A specific statement that also commits to a concrete test or assertion change. Behavior recognition alone, a search intention, a hypothetical test possibility, or a post-edit claim is not a pre-edit test plan.",
+    "negative_coding": "No qualifying statement means none observed in recorded public messages, not failure to understand. An empty client trace is unavailable, not silence. All per-run public messages are read before recording an empty statements list.",
+    "delivery": "Join the existing patch_semantics without changing labels. Missing concerns the submitted patch; unchanged-suite protection and dynamic consequences remain unknown.",
+    "receipt_evidence": "Existing exact source-anchor matches are a separate code-line availability measure, not a semantic-completeness or comprehension label.",
+    "aggregation": "Report behavior-agent counts, episodes, repositories and production families. Inspect successful and omitted outputs under identical statement criteria. Do not interpret these observational associations as causes."
+  },
+  "summary": {
+    "codex": {
+      "all": {
+        "records": 239,
+        "episodes": 49,
+        "repos": 15,
+        "production_families": 42,
+        "patch_labels": {
+          "complete": 60,
+          "missing": 135,
+          "partial": 40,
+          "unknown": 4
+        }
+      },
+      "specific_behavior_stated_before_edit": {
+        "records": 49,
+        "episodes": 28,
+        "repos": 12,
+        "production_families": 24,
+        "patch_labels": {
+          "partial": 4,
+          "missing": 11,
+          "unknown": 4,
+          "complete": 30
+        }
+      },
+      "specific_behavior_stated_before_edit_missing": {
+        "records": 11,
+        "episodes": 7,
+        "repos": 7,
+        "production_families": 7,
+        "patch_labels": {
+          "missing": 11
+        }
+      },
+      "specific_test_plan_before_edit": {
+        "records": 40,
+        "episodes": 24,
+        "repos": 11,
+        "production_families": 22,
+        "patch_labels": {
+          "partial": 4,
+          "missing": 3,
+          "unknown": 4,
+          "complete": 29
+        }
+      },
+      "specific_test_plan_before_edit_missing": {
+        "records": 3,
+        "episodes": 3,
+        "repos": 3,
+        "production_families": 3,
+        "patch_labels": {
+          "missing": 3
+        }
+      },
+      "trace_unavailable": {
+        "records": 0,
+        "episodes": 0,
+        "repos": 0,
+        "production_families": 0,
+        "patch_labels": {}
+      },
+      "no_specific_preedit_statement": {
+        "records": 190,
+        "episodes": 35,
+        "repos": 15,
+        "production_families": 31,
+        "patch_labels": {
+          "complete": 30,
+          "missing": 124,
+          "partial": 36
+        }
+      },
+      "planned_missing_with_successful_edit": {
+        "records": 2,
+        "episodes": 2,
+        "repos": 2,
+        "production_families": 2,
+        "patch_labels": {
+          "missing": 2
+        }
+      },
+      "planned_missing_with_developer_check": {
+        "records": 3,
+        "episodes": 3,
+        "repos": 3,
+        "production_families": 3,
+        "patch_labels": {
+          "missing": 3
+        }
+      }
+    },
+    "opencode": {
+      "all": {
+        "records": 239,
+        "episodes": 49,
+        "repos": 15,
+        "production_families": 42,
+        "patch_labels": {
+          "complete": 53,
+          "missing": 141,
+          "partial": 41,
+          "unknown": 4
+        }
+      },
+      "specific_behavior_stated_before_edit": {
+        "records": 66,
+        "episodes": 40,
+        "repos": 12,
+        "production_families": 35,
+        "patch_labels": {
+          "complete": 36,
+          "missing": 12,
+          "unknown": 3,
+          "partial": 15
+        }
+      },
+      "specific_behavior_stated_before_edit_missing": {
+        "records": 12,
+        "episodes": 12,
+        "repos": 8,
+        "production_families": 12,
+        "patch_labels": {
+          "missing": 12
+        }
+      },
+      "specific_test_plan_before_edit": {
+        "records": 51,
+        "episodes": 34,
+        "repos": 11,
+        "production_families": 30,
+        "patch_labels": {
+          "complete": 33,
+          "missing": 4,
+          "unknown": 3,
+          "partial": 11
+        }
+      },
+      "specific_test_plan_before_edit_missing": {
+        "records": 4,
+        "episodes": 4,
+        "repos": 3,
+        "production_families": 4,
+        "patch_labels": {
+          "missing": 4
+        }
+      },
+      "trace_unavailable": {
+        "records": 0,
+        "episodes": 0,
+        "repos": 0,
+        "production_families": 0,
+        "patch_labels": {}
+      },
+      "no_specific_preedit_statement": {
+        "records": 173,
+        "episodes": 38,
+        "repos": 15,
+        "production_families": 34,
+        "patch_labels": {
+          "missing": 129,
+          "complete": 17,
+          "partial": 26,
+          "unknown": 1
+        }
+      },
+      "planned_missing_with_successful_edit": {
+        "records": 4,
+        "episodes": 4,
+        "repos": 3,
+        "production_families": 4,
+        "patch_labels": {
+          "missing": 4
+        }
+      },
+      "planned_missing_with_developer_check": {
+        "records": 3,
+        "episodes": 3,
+        "repos": 2,
+        "production_families": 3,
+        "patch_labels": {
+          "missing": 3
+        }
+      }
+    }
+  }
+}

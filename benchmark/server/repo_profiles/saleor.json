@@ -1,0 +1,46 @@
+{
+  "repo": "saleor",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "saleor_playwright_browser_raw",
+      "path_regex": "^playwright/tests/.*\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "exec",
+        "playwright",
+        "test",
+        "--config",
+        "playwright.config.ts",
+        "{{test_file}}"
+      ],
+      "env": {
+        "NODE_OPTIONS": "-r {{output_dir}}/playwright_browser_coverage_shim.cjs",
+        "REPO_TEST_EVOLUTION_BROWSER_COVERAGE_DIR": "{{output_dir}}",
+        "CI": "1"
+      },
+      "timeout_ms": 180000
+    },
+    {
+      "name": "saleor_root_jest",
+      "path_regex": "^src/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "bash",
+        "-lc",
+        "mkdir -p src/extensions/data; test -f src/extensions/data/extensions.json || printf '{\"extensionCategories\":[]}\\n' > src/extensions/data/extensions.json; corepack pnpm jest --runInBand --runTestsByPath \"{{test_file}}\" --coverage --coverageReporters=json --coverageReporters=lcov --coverageDirectory \"{{output_dir}}\""
+      ],
+      "env": {},
+      "timeout_ms": 300000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

@@ -1,0 +1,2115 @@
+{
+  "schema": "rq2_file_write_timeline",
+  "protocol": {
+    "successful_write": "selected client event: tool=write_file and client_response_success=true",
+    "categories": {
+      "no_write": "zero successful write events",
+      "single_write": "exactly one successful write event",
+      "same_file_followup": "multiple successful writes, all to one normalized file",
+      "new_file_followup": "multiple successful writes touching at least two normalized files"
+    },
+    "scope_boundary": "File-edit facts only; no semantic coverage or comprehension inference."
+  },
+  "summary": {
+    "total_runs": 100,
+    "no_write": 13,
+    "with_writes": 87,
+    "single_write": 60,
+    "same_file_followup": 16,
+    "new_file_followup": 11,
+    "continued_after_first_write": 27
+  },
+  "by_agent": {
+    "codex": {
+      "runs": 50,
+      "no_write": 7,
+      "with_writes": 43,
+      "single_write": 32,
+      "same_file_followup": 5,
+      "new_file_followup": 6
+    },
+    "opencode": {
+      "runs": 50,
+      "no_write": 6,
+      "with_writes": 44,
+      "single_write": 28,
+      "same_file_followup": 11,
+      "new_file_followup": 5
+    }
+  },
+  "rows": [
+    {
+      "episode_id": "affine__78022b0dbbdc",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 8,
+      "successful_write_files": [
+        "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/runtime/request/copilot-client.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/copilot-client.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/request.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/setup-provider.spec.ts"
+      ],
+      "first_successful_write_file": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts",
+      "later_new_files": [
+        "packages/frontend/core/src/blocksuite/ai/runtime/request/copilot-client.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/copilot-client.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/request.spec.ts",
+        "packages/frontend/core/src/blocksuite/ai/provider/setup-provider.spec.ts"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 23,
+          "event_line": 42,
+          "path": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+        },
+        {
+          "event_index": 25,
+          "event_line": 45,
+          "path": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+        },
+        {
+          "event_index": 26,
+          "event_line": 47,
+          "path": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+        },
+        {
+          "event_index": 37,
+          "event_line": 68,
+          "path": "packages/frontend/core/src/blocksuite/ai/runtime/request/copilot-client.spec.ts"
+        },
+        {
+          "event_index": 42,
+          "event_line": 76,
+          "path": "packages/frontend/core/src/blocksuite/ai/provider/copilot-client.spec.ts"
+        },
+        {
+          "event_index": 47,
+          "event_line": 85,
+          "path": "packages/frontend/core/src/blocksuite/ai/provider/request.spec.ts"
+        },
+        {
+          "event_index": 48,
+          "event_line": 87,
+          "path": "packages/frontend/core/src/blocksuite/ai/provider/setup-provider.spec.ts"
+        },
+        {
+          "event_index": 57,
+          "event_line": 104,
+          "path": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "affine__78022b0dbbdc",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+      ],
+      "first_successful_write_file": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 22,
+          "event_line": 42,
+          "path": "packages/frontend/core/src/blocksuite/ai/components/ai-chat-content/ai-chat-content.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "affine__7b8ec4dc34fc",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "affine__7b8ec4dc34fc",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/frontend/core/src/blocksuite/ai/runtime/chat/use-element.spec.tsx"
+      ],
+      "first_successful_write_file": "packages/frontend/core/src/blocksuite/ai/runtime/chat/use-element.spec.tsx",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 23,
+          "event_line": 35,
+          "path": "packages/frontend/core/src/blocksuite/ai/runtime/chat/use-element.spec.tsx"
+        },
+        {
+          "event_index": 27,
+          "event_line": 45,
+          "path": "packages/frontend/core/src/blocksuite/ai/runtime/chat/use-element.spec.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "affine__85e2c5eb86b2",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/frontend/core/src/blocksuite/__tests__/markdown-utils.spec.ts"
+      ],
+      "first_successful_write_file": "packages/frontend/core/src/blocksuite/__tests__/markdown-utils.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 18,
+          "event_line": 35,
+          "path": "packages/frontend/core/src/blocksuite/__tests__/markdown-utils.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "affine__85e2c5eb86b2",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "affine__e5ef8885a002",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "blocksuite/affine/data-view/src/__tests__/calendar.unit.spec.ts"
+      ],
+      "first_successful_write_file": "blocksuite/affine/data-view/src/__tests__/calendar.unit.spec.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 29,
+          "event_line": 53,
+          "path": "blocksuite/affine/data-view/src/__tests__/calendar.unit.spec.ts"
+        },
+        {
+          "event_index": 37,
+          "event_line": 68,
+          "path": "blocksuite/affine/data-view/src/__tests__/calendar.unit.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "affine__e5ef8885a002",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "affine__f09468ce3923",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "affine__f09468ce3923",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "cal.com__e8d5475ff046",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/lib/server/service/bookingLocationService.test.ts"
+      ],
+      "first_successful_write_file": "packages/lib/server/service/bookingLocationService.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 42,
+          "event_line": 79,
+          "path": "packages/lib/server/service/bookingLocationService.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "cal.com__e8d5475ff046",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/lib/server/service/bookingLocationService.test.ts"
+      ],
+      "first_successful_write_file": "packages/lib/server/service/bookingLocationService.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 41,
+          "event_line": 91,
+          "path": "packages/lib/server/service/bookingLocationService.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "cal.com__fb57dd2b0722",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "cal.com__fb57dd2b0722",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "chatwoot__085847d2ad82",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 15,
+          "event_line": 29,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__085847d2ad82",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 9,
+          "event_line": 15,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/getters.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__10c0dac4da6e",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 8,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/action.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js",
+      "later_new_files": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/action.spec.js"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 32,
+          "event_line": 60,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js"
+        },
+        {
+          "event_index": 34,
+          "event_line": 63,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js"
+        },
+        {
+          "event_index": 39,
+          "event_line": 73,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js"
+        },
+        {
+          "event_index": 40,
+          "event_line": 75,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/action.spec.js"
+        },
+        {
+          "event_index": 42,
+          "event_line": 78,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js"
+        },
+        {
+          "event_index": 43,
+          "event_line": 80,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js"
+        },
+        {
+          "event_index": 45,
+          "event_line": 84,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js"
+        },
+        {
+          "event_index": 46,
+          "event_line": 86,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__10c0dac4da6e",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 5,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/reorderAction.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js",
+      "later_new_files": [
+        "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js",
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/reorderAction.spec.js"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 26,
+          "event_line": 58,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/mutations.spec.js"
+        },
+        {
+          "event_index": 28,
+          "event_line": 62,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js"
+        },
+        {
+          "event_index": 34,
+          "event_line": 76,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/mutation.spec.js"
+        },
+        {
+          "event_index": 39,
+          "event_line": 87,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/reorderAction.spec.js"
+        },
+        {
+          "event_index": 44,
+          "event_line": 100,
+          "path": "app/javascript/dashboard/store/modules/helpCenterCategories/specs/actions.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__1f4f8ae24e79",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 4,
+      "successful_write_files": [
+        "app/javascript/dashboard/helper/specs/snoozeDateParser.spec.js",
+        "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/helper/specs/snoozeDateParser.spec.js",
+      "later_new_files": [
+        "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 27,
+          "event_line": 51,
+          "path": "app/javascript/dashboard/helper/specs/snoozeDateParser.spec.js"
+        },
+        {
+          "event_index": 29,
+          "event_line": 54,
+          "path": "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+        },
+        {
+          "event_index": 31,
+          "event_line": 58,
+          "path": "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+        },
+        {
+          "event_index": 33,
+          "event_line": 61,
+          "path": "app/javascript/dashboard/helper/specs/snoozeDateParser.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__1f4f8ae24e79",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 24,
+          "event_line": 50,
+          "path": "app/javascript/dashboard/helper/specs/snoozeHelpers.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__d685fab6687f",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 11,
+          "event_line": 21,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__d685fab6687f",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 19,
+          "event_line": 33,
+          "path": "app/javascript/dashboard/store/modules/helpCenterArticles/specs/getters.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__ea482c18673e",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/api/specs/contacts.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/api/specs/contacts.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 46,
+          "path": "app/javascript/dashboard/api/specs/contacts.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__ea482c18673e",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/components-next/NewConversation/helpers/specs/composeConversationHelper.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/components-next/NewConversation/helpers/specs/composeConversationHelper.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 27,
+          "event_line": 55,
+          "path": "app/javascript/dashboard/components-next/NewConversation/helpers/specs/composeConversationHelper.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__f13c4f53baae",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/composables/spec/useMacros.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/composables/spec/useMacros.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 14,
+          "event_line": 26,
+          "path": "app/javascript/dashboard/composables/spec/useMacros.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__f13c4f53baae",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/composables/spec/useMacros.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/composables/spec/useMacros.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 12,
+          "event_line": 24,
+          "path": "app/javascript/dashboard/composables/spec/useMacros.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__f4e41c76efda",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/conversations/specs/addConversation.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/conversations/specs/addConversation.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 26,
+          "event_line": 50,
+          "path": "app/javascript/dashboard/store/modules/conversations/specs/addConversation.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__f4e41c76efda",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/store/modules/conversations/specs/mutations.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/store/modules/conversations/specs/mutations.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 9,
+          "event_line": 17,
+          "path": "app/javascript/dashboard/store/modules/conversations/specs/mutations.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__fd10754bdb7c",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/composables/spec/useAutomation.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/composables/spec/useAutomation.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 26,
+          "event_line": 48,
+          "path": "app/javascript/dashboard/composables/spec/useAutomation.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "chatwoot__fd10754bdb7c",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/javascript/dashboard/composables/spec/useAutomation.spec.js"
+      ],
+      "first_successful_write_file": "app/javascript/dashboard/composables/spec/useAutomation.spec.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 45,
+          "path": "app/javascript/dashboard/composables/spec/useAutomation.spec.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "documenso__306a5155bd12",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/app-tests/e2e/command-menu/document-search.spec.ts"
+      ],
+      "first_successful_write_file": "packages/app-tests/e2e/command-menu/document-search.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 42,
+          "event_line": 81,
+          "path": "packages/app-tests/e2e/command-menu/document-search.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "documenso__306a5155bd12",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/app-tests/e2e/command-menu/document-search.spec.ts"
+      ],
+      "first_successful_write_file": "packages/app-tests/e2e/command-menu/document-search.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 51,
+          "path": "packages/app-tests/e2e/command-menu/document-search.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "formbricks__9fddd4dd44da",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "formbricks__9fddd4dd44da",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "apps/web/modules/projects/settings/lib/project.test.ts"
+      ],
+      "first_successful_write_file": "apps/web/modules/projects/settings/lib/project.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 29,
+          "event_line": 59,
+          "path": "apps/web/modules/projects/settings/lib/project.test.ts"
+        },
+        {
+          "event_index": 31,
+          "event_line": 63,
+          "path": "apps/web/modules/projects/settings/lib/project.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__5bee1295a0bd",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "grafana__5bee1295a0bd",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "public/app/features/provisioning/Config/CommitMessageTemplateField.test.tsx"
+      ],
+      "first_successful_write_file": "public/app/features/provisioning/Config/CommitMessageTemplateField.test.tsx",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 19,
+          "event_line": 33,
+          "path": "public/app/features/provisioning/Config/CommitMessageTemplateField.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__b71de9305549",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "public/app/features/provisioning/utils/data.test.ts"
+      ],
+      "first_successful_write_file": "public/app/features/provisioning/utils/data.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 18,
+          "event_line": 34,
+          "path": "public/app/features/provisioning/utils/data.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__b71de9305549",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "public/app/features/provisioning/utils/data.test.ts"
+      ],
+      "first_successful_write_file": "public/app/features/provisioning/utils/data.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 13,
+          "event_line": 29,
+          "path": "public/app/features/provisioning/utils/data.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__c1dcf4965a3a",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx"
+      ],
+      "first_successful_write_file": "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 24,
+          "event_line": 47,
+          "path": "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__c1dcf4965a3a",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx"
+      ],
+      "first_successful_write_file": "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 21,
+          "event_line": 55,
+          "path": "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx"
+        },
+        {
+          "event_index": 28,
+          "event_line": 74,
+          "path": "public/app/features/alerting/unified/components/rule-editor/notificaton-preview/NotificationPreview.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__d6ec6f0e13dc",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "public/app/features/provisioning/utils/commitMessage.test.ts"
+      ],
+      "first_successful_write_file": "public/app/features/provisioning/utils/commitMessage.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 51,
+          "path": "public/app/features/provisioning/utils/commitMessage.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "grafana__d6ec6f0e13dc",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "public/app/features/provisioning/utils/commitMessage.test.ts"
+      ],
+      "first_successful_write_file": "public/app/features/provisioning/utils/commitMessage.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 22,
+          "event_line": 54,
+          "path": "public/app/features/provisioning/utils/commitMessage.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__7854259a9bcd",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 16,
+          "event_line": 31,
+          "path": "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__7854259a9bcd",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 15,
+          "event_line": 31,
+          "path": "packages/hoppscotch-backend/src/access-token/access-token.service.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__8c22bb36311e",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection.idor.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/user-collection/user-collection.idor.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 27,
+          "event_line": 49,
+          "path": "packages/hoppscotch-backend/src/user-collection/user-collection.idor.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__8c22bb36311e",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/user-request/user-request.service.spec.ts",
+        "packages/hoppscotch-backend/src/user-collection/user-collection.idor.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/user-request/user-request.service.spec.ts",
+      "later_new_files": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection.idor.spec.ts"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 27,
+          "event_line": 71,
+          "path": "packages/hoppscotch-backend/src/user-request/user-request.service.spec.ts"
+        },
+        {
+          "event_index": 33,
+          "event_line": 85,
+          "path": "packages/hoppscotch-backend/src/user-collection/user-collection.idor.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__bb87bf999811",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/user-environment/user-environments.service.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/user-environment/user-environments.service.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 35,
+          "event_line": 68,
+          "path": "packages/hoppscotch-backend/src/user-environment/user-environments.service.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__bb87bf999811",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/published-docs/published-docs.service.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/published-docs/published-docs.service.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 30,
+          "event_line": 60,
+          "path": "packages/hoppscotch-backend/src/published-docs/published-docs.service.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__fd297fc8a43c",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 21,
+          "event_line": 41,
+          "path": "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "hoppscotch__fd297fc8a43c",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts"
+      ],
+      "first_successful_write_file": "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 24,
+          "event_line": 60,
+          "path": "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts"
+        },
+        {
+          "event_index": 27,
+          "event_line": 67,
+          "path": "packages/hoppscotch-backend/src/user-collection/user-collection-export.service.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "payload__8c75eded8723",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/typescript-plugin/src/helpers.spec.ts"
+      ],
+      "first_successful_write_file": "packages/typescript-plugin/src/helpers.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 21,
+          "event_line": 41,
+          "path": "packages/typescript-plugin/src/helpers.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "payload__8c75eded8723",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "rallly__98899fd68897",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "apps/api/src/utils/time-slots.test.ts"
+      ],
+      "first_successful_write_file": "apps/api/src/utils/time-slots.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 22,
+          "event_line": 40,
+          "path": "apps/api/src/utils/time-slots.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "rallly__98899fd68897",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "apps/api/src/utils/time-slots.test.ts"
+      ],
+      "first_successful_write_file": "apps/api/src/utils/time-slots.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 31,
+          "event_line": 51,
+          "path": "apps/api/src/utils/time-slots.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "rallly__f1c87a008978",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "rallly__f1c87a008978",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "apps/web/src/test/setup.ts"
+      ],
+      "first_successful_write_file": "apps/web/src/test/setup.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 34,
+          "event_line": 68,
+          "path": "apps/web/src/test/setup.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "requestly__b8ba3c46037c",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/src/features/apiClient/hooks/useMigrationSegment.test.ts"
+      ],
+      "first_successful_write_file": "app/src/features/apiClient/hooks/useMigrationSegment.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 13,
+          "event_line": 24,
+          "path": "app/src/features/apiClient/hooks/useMigrationSegment.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "requestly__b8ba3c46037c",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "app/src/features/apiClient/hooks/useMigrationSegment.test.ts"
+      ],
+      "first_successful_write_file": "app/src/features/apiClient/hooks/useMigrationSegment.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 13,
+          "event_line": 23,
+          "path": "app/src/features/apiClient/hooks/useMigrationSegment.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__0756cd8dad07",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts",
+        "src/extensions/views/InstalledExtensions/hooks/useInstalledExtensions.test.tsx"
+      ],
+      "first_successful_write_file": "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts",
+      "later_new_files": [
+        "src/extensions/views/InstalledExtensions/hooks/useInstalledExtensions.test.tsx"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 28,
+          "event_line": 54,
+          "path": "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts"
+        },
+        {
+          "event_index": 30,
+          "event_line": 57,
+          "path": "src/extensions/views/InstalledExtensions/hooks/useInstalledExtensions.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__0756cd8dad07",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts",
+        "src/extensions/views/customExtensionHiddenPermissions.test.ts"
+      ],
+      "first_successful_write_file": "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts",
+      "later_new_files": [
+        "src/extensions/views/customExtensionHiddenPermissions.test.ts"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 36,
+          "event_line": 78,
+          "path": "src/extensions/views/AddCustomExtension/hooks/usePermissions.test.ts"
+        },
+        {
+          "event_index": 38,
+          "event_line": 82,
+          "path": "src/extensions/views/customExtensionHiddenPermissions.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__1644075d81b2",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "saleor__1644075d81b2",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/graphql/types.generated.test.ts"
+      ],
+      "first_successful_write_file": "src/graphql/types.generated.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 51,
+          "path": "src/graphql/types.generated.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__47f89d573219",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "src/components/ConditionalFilter/API/Handler.test.ts",
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts"
+      ],
+      "first_successful_write_file": "src/components/ConditionalFilter/API/Handler.test.ts",
+      "later_new_files": [
+        "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 21,
+          "event_line": 39,
+          "path": "src/components/ConditionalFilter/API/Handler.test.ts"
+        },
+        {
+          "event_index": 22,
+          "event_line": 41,
+          "path": "src/components/ConditionalFilter/FiltersQueryBuilder/queryVarsBuilders/AttributeQueryVarsBuilder.boolean.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__47f89d573219",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "src/components/ConditionalFilter/API/Handler.test.ts"
+      ],
+      "first_successful_write_file": "src/components/ConditionalFilter/API/Handler.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 19,
+          "event_line": 31,
+          "path": "src/components/ConditionalFilter/API/Handler.test.ts"
+        },
+        {
+          "event_index": 24,
+          "event_line": 42,
+          "path": "src/components/ConditionalFilter/API/Handler.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__4bb7ec3ba959",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/products/components/ProductDoctor/AvailabilityChannelItem.deliveryConfiguration.test.tsx"
+      ],
+      "first_successful_write_file": "src/products/components/ProductDoctor/AvailabilityChannelItem.deliveryConfiguration.test.tsx",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 29,
+          "event_line": 58,
+          "path": "src/products/components/ProductDoctor/AvailabilityChannelItem.deliveryConfiguration.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__4bb7ec3ba959",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/products/components/ProductDoctor/AvailabilityChannelItem.test.tsx"
+      ],
+      "first_successful_write_file": "src/products/components/ProductDoctor/AvailabilityChannelItem.test.tsx",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 34,
+          "event_line": 62,
+          "path": "src/products/components/ProductDoctor/AvailabilityChannelItem.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__4f7f7c98c454",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/products/components/ProductDoctor/hooks/useProductAvailabilityDiagnostics.test.tsx"
+      ],
+      "first_successful_write_file": "src/products/components/ProductDoctor/hooks/useProductAvailabilityDiagnostics.test.tsx",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 40,
+          "event_line": 75,
+          "path": "src/products/components/ProductDoctor/hooks/useProductAvailabilityDiagnostics.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__4f7f7c98c454",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/products/components/ProductDoctor/utils/issueBadge.test.ts"
+      ],
+      "first_successful_write_file": "src/products/components/ProductDoctor/utils/issueBadge.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 40,
+          "event_line": 72,
+          "path": "src/products/components/ProductDoctor/utils/issueBadge.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__9ead5c85b9f7",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/components/Sidebar/menu/utils.test.ts"
+      ],
+      "first_successful_write_file": "src/components/Sidebar/menu/utils.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 18,
+          "event_line": 34,
+          "path": "src/components/Sidebar/menu/utils.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__9ead5c85b9f7",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/components/Sidebar/menu/utils.test.ts"
+      ],
+      "first_successful_write_file": "src/components/Sidebar/menu/utils.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 14,
+          "event_line": 30,
+          "path": "src/components/Sidebar/menu/utils.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__a11d1fc587f5",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+      ],
+      "first_successful_write_file": "src/products/components/ProductDoctor/utils/channelUtils.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 27,
+          "event_line": 53,
+          "path": "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__a11d1fc587f5",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 3,
+      "successful_write_files": [
+        "src/products/components/ProductDoctor/utils/channelUtils.test.ts",
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+      ],
+      "first_successful_write_file": "src/products/components/ProductDoctor/utils/channelUtils.test.ts",
+      "later_new_files": [
+        "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 30,
+          "event_line": 56,
+          "path": "src/products/components/ProductDoctor/utils/channelUtils.test.ts"
+        },
+        {
+          "event_index": 31,
+          "event_line": 59,
+          "path": "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+        },
+        {
+          "event_index": 40,
+          "event_line": 80,
+          "path": "src/products/components/ProductDoctor/AvailabilityCard.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__ae64c2e14023",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts"
+      ],
+      "first_successful_write_file": "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 19,
+          "event_line": 35,
+          "path": "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts"
+        },
+        {
+          "event_index": 22,
+          "event_line": 40,
+          "path": "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "saleor__ae64c2e14023",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 3,
+      "successful_write_files": [
+        "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts",
+        "src/orders/components/OrderSummary/OrderValue.test.tsx"
+      ],
+      "first_successful_write_file": "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts",
+      "later_new_files": [
+        "src/orders/components/OrderSummary/OrderValue.test.tsx"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 23,
+          "event_line": 37,
+          "path": "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts"
+        },
+        {
+          "event_index": 28,
+          "event_line": 50,
+          "path": "src/orders/components/OrderSummary/getLineDiscountsSummary.test.ts"
+        },
+        {
+          "event_index": 41,
+          "event_line": 85,
+          "path": "src/orders/components/OrderSummary/OrderValue.test.tsx"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__5e4ede06fb2d",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+      ],
+      "first_successful_write_file": "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 14,
+          "event_line": 27,
+          "path": "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__5e4ede06fb2d",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+      ],
+      "first_successful_write_file": "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 11,
+          "event_line": 21,
+          "path": "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+        },
+        {
+          "event_index": 13,
+          "event_line": 25,
+          "path": "packages/core/openapi/__tests__/routes/plugins-route-provider.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__88ec45fea990",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts"
+      ],
+      "first_successful_write_file": "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 11,
+          "event_line": 21,
+          "path": "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__88ec45fea990",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts"
+      ],
+      "first_successful_write_file": "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 15,
+          "event_line": 25,
+          "path": "packages/core/content-manager/server/src/services/utils/configuration/__tests__/settings.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__a9e68a17b9ab",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+      ],
+      "first_successful_write_file": "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 27,
+          "event_line": 51,
+          "path": "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__a9e68a17b9ab",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+      ],
+      "first_successful_write_file": "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 22,
+          "event_line": 44,
+          "path": "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+        },
+        {
+          "event_index": 26,
+          "event_line": 54,
+          "path": "packages/providers/email-nodemailer/src/__tests__/email-address.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__b6c1376f714e",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+      ],
+      "first_successful_write_file": "packages/providers/email-nodemailer/src/__tests__/index.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 21,
+          "event_line": 40,
+          "path": "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+        },
+        {
+          "event_index": 23,
+          "event_line": 43,
+          "path": "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__b6c1376f714e",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+      ],
+      "first_successful_write_file": "packages/providers/email-nodemailer/src/__tests__/index.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 43,
+          "path": "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+        },
+        {
+          "event_index": 28,
+          "event_line": 50,
+          "path": "packages/providers/email-nodemailer/src/__tests__/index.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__fac079537c4b",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        ".github/actions/check-pr-status/__tests__/action.test.js"
+      ],
+      "first_successful_write_file": ".github/actions/check-pr-status/__tests__/action.test.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 10,
+          "event_line": 20,
+          "path": ".github/actions/check-pr-status/__tests__/action.test.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "strapi__fac079537c4b",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        ".github/actions/check-pr-status/__tests__/action.test.js"
+      ],
+      "first_successful_write_file": ".github/actions/check-pr-status/__tests__/action.test.js",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 9,
+          "event_line": 15,
+          "path": ".github/actions/check-pr-status/__tests__/action.test.js"
+        }
+      ]
+    },
+    {
+      "episode_id": "supabase__42451f2250ea",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "e2e/studio/features/table-editor-data-api.spec.ts"
+      ],
+      "first_successful_write_file": "e2e/studio/features/table-editor-data-api.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 35,
+          "event_line": 67,
+          "path": "e2e/studio/features/table-editor-data-api.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "supabase__42451f2250ea",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "apps/studio/hooks/misc/useDataApiGrantTogglesEnabled.test.ts"
+      ],
+      "first_successful_write_file": "apps/studio/hooks/misc/useDataApiGrantTogglesEnabled.test.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 20,
+          "event_line": 32,
+          "path": "apps/studio/hooks/misc/useDataApiGrantTogglesEnabled.test.ts"
+        },
+        {
+          "event_index": 22,
+          "event_line": 36,
+          "path": "apps/studio/hooks/misc/useDataApiGrantTogglesEnabled.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "supabase__5494f1c356ac",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "apps/studio/lib/semver.test.ts"
+      ],
+      "first_successful_write_file": "apps/studio/lib/semver.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 13,
+          "event_line": 24,
+          "path": "apps/studio/lib/semver.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "supabase__5494f1c356ac",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 0,
+      "successful_write_files": [],
+      "first_successful_write_file": null,
+      "later_new_files": [],
+      "classification": "no_write",
+      "write_events": []
+    },
+    {
+      "episode_id": "typebot__f7aa0c0f71d0",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "integrations/google-analytics/src/client.test.ts"
+      ],
+      "first_successful_write_file": "integrations/google-analytics/src/client.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 18,
+          "event_line": 32,
+          "path": "integrations/google-analytics/src/client.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "typebot__f7aa0c0f71d0",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "integrations/google-analytics/src/client.test.ts"
+      ],
+      "first_successful_write_file": "integrations/google-analytics/src/client.test.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 15,
+          "event_line": 33,
+          "path": "integrations/google-analytics/src/client.test.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__7cadeff6bbb1",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+      ],
+      "first_successful_write_file": "packages/dashboard/e2e/tests/sales/orders.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 31,
+          "event_line": 59,
+          "path": "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__7cadeff6bbb1",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+      ],
+      "first_successful_write_file": "packages/dashboard/e2e/tests/sales/orders.spec.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 28,
+          "event_line": 72,
+          "path": "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+        },
+        {
+          "event_index": 32,
+          "event_line": 82,
+          "path": "packages/dashboard/e2e/tests/sales/orders.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__8536f6be58a9",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+      ],
+      "first_successful_write_file": "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 23,
+          "event_line": 44,
+          "path": "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+        },
+        {
+          "event_index": 29,
+          "event_line": 54,
+          "path": "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__8536f6be58a9",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+      ],
+      "first_successful_write_file": "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 20,
+          "event_line": 34,
+          "path": "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+        },
+        {
+          "event_index": 23,
+          "event_line": 41,
+          "path": "packages/cli/src/commands/add/plugin/create-new-plugin.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__8c85fd9909f6",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/dashboard/src/lib/framework/form-engine/form-schema-tools-defaults.spec.ts",
+        "packages/dashboard/src/lib/framework/form-engine/utils-nullable.spec.ts"
+      ],
+      "first_successful_write_file": "packages/dashboard/src/lib/framework/form-engine/form-schema-tools-defaults.spec.ts",
+      "later_new_files": [
+        "packages/dashboard/src/lib/framework/form-engine/utils-nullable.spec.ts"
+      ],
+      "classification": "new_file_followup",
+      "write_events": [
+        {
+          "event_index": 21,
+          "event_line": 41,
+          "path": "packages/dashboard/src/lib/framework/form-engine/form-schema-tools-defaults.spec.ts"
+        },
+        {
+          "event_index": 22,
+          "event_line": 43,
+          "path": "packages/dashboard/src/lib/framework/form-engine/utils-nullable.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__8c85fd9909f6",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/dashboard/src/lib/framework/form-engine/utils.spec.ts"
+      ],
+      "first_successful_write_file": "packages/dashboard/src/lib/framework/form-engine/utils.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 30,
+          "event_line": 56,
+          "path": "packages/dashboard/src/lib/framework/form-engine/utils.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__8de0011be91d",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 2,
+      "successful_write_files": [
+        "packages/core/src/service/helpers/order-calculator/order-calculator.shipping-lines.spec.ts"
+      ],
+      "first_successful_write_file": "packages/core/src/service/helpers/order-calculator/order-calculator.shipping-lines.spec.ts",
+      "later_new_files": [],
+      "classification": "same_file_followup",
+      "write_events": [
+        {
+          "event_index": 23,
+          "event_line": 44,
+          "path": "packages/core/src/service/helpers/order-calculator/order-calculator.shipping-lines.spec.ts"
+        },
+        {
+          "event_index": 25,
+          "event_line": 48,
+          "path": "packages/core/src/service/helpers/order-calculator/order-calculator.shipping-lines.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__8de0011be91d",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/core/src/service/helpers/order-calculator/order-calculator.stale-shipping.spec.ts"
+      ],
+      "first_successful_write_file": "packages/core/src/service/helpers/order-calculator/order-calculator.stale-shipping.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 19,
+          "event_line": 35,
+          "path": "packages/core/src/service/helpers/order-calculator/order-calculator.stale-shipping.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__dc705b45caa2",
+      "agent": "codex",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/core/src/common/constants.spec.ts"
+      ],
+      "first_successful_write_file": "packages/core/src/common/constants.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 30,
+          "event_line": 58,
+          "path": "packages/core/src/common/constants.spec.ts"
+        }
+      ]
+    },
+    {
+      "episode_id": "vendure__dc705b45caa2",
+      "agent": "opencode",
+      "trace_status": "available",
+      "successful_write_count": 1,
+      "successful_write_files": [
+        "packages/core/src/common/constants.spec.ts"
+      ],
+      "first_successful_write_file": "packages/core/src/common/constants.spec.ts",
+      "later_new_files": [],
+      "classification": "single_write",
+      "write_events": [
+        {
+          "event_index": 25,
+          "event_line": 53,
+          "path": "packages/core/src/common/constants.spec.ts"
+        }
+      ]
+    }
+  ]
+}

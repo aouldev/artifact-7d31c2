@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "source": "generation_records.jsonl",
+  "source_sha256": "7de28d8567c1037f4b4ba36143048f8cda0be56abde52c2fdd0bb80d24f4809d",
+  "scope": "intersection of condition-specific evaluable positive sets within each agent",
+  "agents": {
+    "codex": {
+      "episode_ids": [
+        "affine__78022b0dbbdc",
+        "affine__85e2c5eb86b2",
+        "affine__e5ef8885a002",
+        "cal.com__e8d5475ff046",
+        "chatwoot__085847d2ad82",
+        "chatwoot__10c0dac4da6e",
+        "chatwoot__1f4f8ae24e79",
+        "chatwoot__d685fab6687f",
+        "chatwoot__ea482c18673e",
+        "chatwoot__f13c4f53baae",
+        "chatwoot__f4e41c76efda",
+        "chatwoot__fd10754bdb7c",
+        "documenso__306a5155bd12",
+        "grafana__b71de9305549",
+        "grafana__c1dcf4965a3a",
+        "grafana__d6ec6f0e13dc",
+        "hoppscotch__7854259a9bcd",
+        "hoppscotch__8c22bb36311e",
+        "hoppscotch__bb87bf999811",
+        "hoppscotch__fd297fc8a43c",
+        "requestly__b8ba3c46037c",
+        "saleor__0756cd8dad07",
+        "saleor__47f89d573219",
+        "saleor__4bb7ec3ba959",
+        "saleor__4f7f7c98c454",
+        "saleor__9ead5c85b9f7",
+        "saleor__a11d1fc587f5",
+        "saleor__ae64c2e14023",
+        "strapi__5e4ede06fb2d",
+        "strapi__88ec45fea990",
+        "strapi__a9e68a17b9ab",
+        "strapi__fac079537c4b",
+        "supabase__42451f2250ea",
+        "supabase__5494f1c356ac",
+        "vendure__8536f6be58a9",
+        "vendure__8c85fd9909f6",
+        "vendure__dc705b45caa2"
+      ],
+      "denominator": 37,
+      "conditions": {
+        "codex_stateless": {
+          "csr": {
+            "passed": 24,
+            "denominator": 37
+          },
+          "tps": {
+            "passed": 20,
+            "denominator": 37
+          },
+          "ucr": {
+            "passed": 20,
+            "denominator": 37
+          }
+        },
+        "codex_continuous": {
+          "csr": {
+            "passed": 23,
+            "denominator": 37
+          },
+          "tps": {
+            "passed": 18,
+            "denominator": 37
+          },
+          "ucr": {
+            "passed": 18,
+            "denominator": 37
+          }
+        },
+        "codex_online": {
+          "csr": {
+            "passed": 22,
+            "denominator": 37
+          },
+          "tps": {
+            "passed": 16,
+            "denominator": 37
+          },
+          "ucr": {
+            "passed": 16,
+            "denominator": 37
+          }
+        }
+      }
+    },
+    "opencode": {
+      "episode_ids": [
+        "affine__78022b0dbbdc",
+        "chatwoot__085847d2ad82",
+        "chatwoot__10c0dac4da6e",
+        "chatwoot__1f4f8ae24e79",
+        "chatwoot__d685fab6687f",
+        "chatwoot__ea482c18673e",
+        "chatwoot__f13c4f53baae",
+        "chatwoot__f4e41c76efda",
+        "chatwoot__fd10754bdb7c",
+        "documenso__306a5155bd12",
+        "grafana__c1dcf4965a3a",
+        "hoppscotch__7854259a9bcd",
+        "hoppscotch__8c22bb36311e",
+        "hoppscotch__bb87bf999811",
+        "hoppscotch__fd297fc8a43c",
+        "requestly__b8ba3c46037c",
+        "saleor__47f89d573219",
+        "saleor__4bb7ec3ba959",
+        "saleor__4f7f7c98c454",
+        "saleor__9ead5c85b9f7",
+        "saleor__a11d1fc587f5",
+        "saleor__ae64c2e14023",
+        "strapi__5e4ede06fb2d",
+        "strapi__88ec45fea990",
+        "strapi__b6c1376f714e",
+        "strapi__fac079537c4b",
+        "supabase__42451f2250ea",
+        "vendure__8c85fd9909f6",
+        "vendure__8de0011be91d",
+        "vendure__dc705b45caa2"
+      ],
+      "denominator": 30,
+      "conditions": {
+        "opencode_stateless": {
+          "csr": {
+            "passed": 20,
+            "denominator": 30
+          },
+          "tps": {
+            "passed": 15,
+            "denominator": 30
+          },
+          "ucr": {
+            "passed": 15,
+            "denominator": 30
+          }
+        },
+        "opencode_continuous": {
+          "csr": {
+            "passed": 20,
+            "denominator": 30
+          },
+          "tps": {
+            "passed": 16,
+            "denominator": 30
+          },
+          "ucr": {
+            "passed": 16,
+            "denominator": 30
+          }
+        },
+        "opencode_online": {
+          "csr": {
+            "passed": 21,
+            "denominator": 30
+          },
+          "tps": {
+            "passed": 18,
+            "denominator": 30
+          },
+          "ucr": {
+            "passed": 18,
+            "denominator": 30
+          }
+        }
+      }
+    }
+  }
+}

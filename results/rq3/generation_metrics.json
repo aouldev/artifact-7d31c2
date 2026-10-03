@@ -1,0 +1,194 @@
+{
+  "scope": "RQ3 conditional generation",
+  "status": "complete",
+  "eligible_positive_episodes": 49,
+  "denominator": "D_m = E49 intersect TP_m",
+  "conditions": {
+    "codex_stateless": {
+      "agent": "Codex",
+      "condition": "Stateless",
+      "selected_output_sha256": "4ad5921f5bb565f5b2df1bfff7d102c810e672106928391065995f0b4f0e92bb",
+      "metrics": {
+        "csr": {
+          "passed": 28,
+          "failed": 15,
+          "pending": 0,
+          "denominator": 43,
+          "complete": true,
+          "rate": 0.6511627906976745
+        },
+        "tps": {
+          "passed": 24,
+          "failed": 19,
+          "pending": 0,
+          "denominator": 43,
+          "complete": true,
+          "rate": 0.5581395348837209
+        },
+        "ucr": {
+          "passed": 24,
+          "failed": 19,
+          "pending": 0,
+          "denominator": 43,
+          "complete": true,
+          "rate": 0.5581395348837209
+        }
+      }
+    },
+    "codex_continuous": {
+      "agent": "Codex",
+      "condition": "Agent-native memory",
+      "selected_output_sha256": "10db175ebf02500c3b84fe4717f70c0d721d4a44685df60c7055d21471c2ceb8",
+      "metrics": {
+        "csr": {
+          "passed": 27,
+          "failed": 17,
+          "pending": 0,
+          "denominator": 44,
+          "complete": true,
+          "rate": 0.6136363636363636
+        },
+        "tps": {
+          "passed": 22,
+          "failed": 22,
+          "pending": 0,
+          "denominator": 44,
+          "complete": true,
+          "rate": 0.5
+        },
+        "ucr": {
+          "passed": 22,
+          "failed": 22,
+          "pending": 0,
+          "denominator": 44,
+          "complete": true,
+          "rate": 0.5
+        }
+      }
+    },
+    "codex_online": {
+      "agent": "Codex",
+      "condition": "Task-specific memory",
+      "selected_output_sha256": "9f4612462d27d51051f60adc404984f4fcc3e4aede6cffbb85d1a86fdac87948",
+      "metrics": {
+        "csr": {
+          "passed": 26,
+          "failed": 18,
+          "pending": 0,
+          "denominator": 44,
+          "complete": true,
+          "rate": 0.5909090909090909
+        },
+        "tps": {
+          "passed": 19,
+          "failed": 25,
+          "pending": 0,
+          "denominator": 44,
+          "complete": true,
+          "rate": 0.4318181818181818
+        },
+        "ucr": {
+          "passed": 19,
+          "failed": 25,
+          "pending": 0,
+          "denominator": 44,
+          "complete": true,
+          "rate": 0.4318181818181818
+        }
+      }
+    },
+    "opencode_stateless": {
+      "agent": "OpenCode",
+      "condition": "Stateless",
+      "selected_output_sha256": "c702ffbdce1fa42d07999508f0167905289dae53ab5d3d0e61809d043550a351",
+      "metrics": {
+        "csr": {
+          "passed": 30,
+          "failed": 12,
+          "pending": 0,
+          "denominator": 42,
+          "complete": true,
+          "rate": 0.7142857142857143
+        },
+        "tps": {
+          "passed": 24,
+          "failed": 18,
+          "pending": 0,
+          "denominator": 42,
+          "complete": true,
+          "rate": 0.5714285714285714
+        },
+        "ucr": {
+          "passed": 24,
+          "failed": 18,
+          "pending": 0,
+          "denominator": 42,
+          "complete": true,
+          "rate": 0.5714285714285714
+        }
+      }
+    },
+    "opencode_continuous": {
+      "agent": "OpenCode",
+      "condition": "Agent-native memory",
+      "selected_output_sha256": "437e87e2c2dba0e583d653753e35b068592d08b1e2a1d3941b85701436423781",
+      "metrics": {
+        "csr": {
+          "passed": 26,
+          "failed": 13,
+          "pending": 0,
+          "denominator": 39,
+          "complete": true,
+          "rate": 0.6666666666666666
+        },
+        "tps": {
+          "passed": 20,
+          "failed": 19,
+          "pending": 0,
+          "denominator": 39,
+          "complete": true,
+          "rate": 0.5128205128205128
+        },
+        "ucr": {
+          "passed": 20,
+          "failed": 19,
+          "pending": 0,
+          "denominator": 39,
+          "complete": true,
+          "rate": 0.5128205128205128
+        }
+      }
+    },
+    "opencode_online": {
+      "agent": "OpenCode",
+      "condition": "Task-specific memory",
+      "selected_output_sha256": "5b6e5225f7a4a0f5d62a49f18acff91d9b85a35c09edd01cb970faa4b4f0e6a1",
+      "metrics": {
+        "csr": {
+          "passed": 26,
+          "failed": 15,
+          "pending": 0,
+          "denominator": 41,
+          "complete": true,
+          "rate": 0.6341463414634146
+        },
+        "tps": {
+          "passed": 21,
+          "failed": 20,
+          "pending": 0,
+          "denominator": 41,
+          "complete": true,
+          "rate": 0.5121951219512195
+        },
+        "ucr": {
+          "passed": 21,
+          "failed": 20,
+          "pending": 0,
+          "denominator": 41,
+          "complete": true,
+          "rate": 0.5121951219512195
+        }
+      }
+    }
+  }
+}

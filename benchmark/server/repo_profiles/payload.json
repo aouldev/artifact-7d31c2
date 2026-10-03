@@ -1,0 +1,63 @@
+{
+  "repo": "payload",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "payload_root_vitest_unit_project",
+      "path_regex": "^packages/.+\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "--project",
+        "unit",
+        "{{assetPath}}",
+        "--coverage.enabled",
+        "--coverage.reporter=json",
+        "--coverage.reporter=lcov",
+        "--coverage.reportsDirectory",
+        "{{coverageDir}}"
+      ],
+      "env": {
+        "NODE_OPTIONS": "--no-deprecation --no-experimental-strip-types",
+        "NODE_NO_WARNINGS": "1",
+        "DISABLE_LOGGING": "true"
+      },
+      "timeout_ms": 600000
+    },
+    {
+      "name": "payload_root_vitest_unit_raw_v8",
+      "path_regex": "^packages/.+\\.spec\\.ts$",
+      "cwd": "{{repo_root}}",
+      "argv": [
+        "corepack",
+        "pnpm",
+        "vitest",
+        "run",
+        "--project",
+        "unit",
+        "{{assetPath}}",
+        "--pool",
+        "threads",
+        "--no-file-parallelism",
+        "--no-isolate"
+      ],
+      "env": {
+        "NODE_OPTIONS": "--no-deprecation --no-experimental-strip-types",
+        "NODE_NO_WARNINGS": "1",
+        "DISABLE_LOGGING": "true",
+        "NODE_V8_COVERAGE": "{{coverageDir}}"
+      },
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 300000
+  }
+}

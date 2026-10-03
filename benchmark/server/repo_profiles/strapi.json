@@ -1,0 +1,73 @@
+{
+  "repo": "strapi",
+  "workspace": "/workspace/repo",
+  "env": {},
+  "runners": [
+    {
+      "name": "strapi_package_jest_unit",
+      "path_regex": "^packages/.*/src/.*__(tests|test)__/.*\\.(test|spec)\\.[tj]sx?$",
+      "cwd": "{{nearest_package_dir}}",
+      "argv": [
+        "corepack",
+        "yarn",
+        "test:unit",
+        "--runInBand",
+        "--runTestsByPath",
+        "{{test_file_from_cwd}}",
+        "--coverage",
+        "--coverageReporters=json",
+        "--coverageReporters=lcov",
+        "--coverageDirectory",
+        "{{output_dir}}"
+      ],
+      "env": {},
+      "timeout_ms": 600000
+    }
+  ],
+  "validation": {
+    "infer_compile": true
+  },
+  "install": {
+    "timeout_ms": 300000,
+    "commands": [
+      {
+        "argv": [
+          "corepack",
+          "enable"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "corepack",
+          "yarn",
+          "install",
+          "--immutable"
+        ],
+        "cwd": "{{repo_root}}"
+      },
+      {
+        "argv": [
+          "corepack",
+          "yarn",
+          "workspace",
+          "@strapi/utils",
+          "build:code"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 300000
+      },
+      {
+        "argv": [
+          "corepack",
+          "yarn",
+          "workspace",
+          "@strapi/permissions",
+          "build:code"
+        ],
+        "cwd": "{{repo_root}}",
+        "timeout_ms": 300000
+      }
+    ]
+  }
+}

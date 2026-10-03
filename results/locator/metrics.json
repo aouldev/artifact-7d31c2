@@ -1,0 +1,94 @@
+{
+  "status": "verified",
+  "cohort": {
+    "positive_episodes": 103,
+    "applicable_episodes": 74,
+    "new_test_only_episodes": 29
+  },
+  "methods": {
+    "nc": {
+      "positive_count": 103,
+      "applicable_count": 74,
+      "new_test_only_count": 29,
+      "hit_at_5_count": 55,
+      "hit_at_5": 0.7432432432432432,
+      "all_recall_at_20_count": 51,
+      "all_recall_at_20": 0.6891891891891891,
+      "status_counts": {
+        "ok": 103
+      },
+      "applicable_status_counts": {
+        "ok": 74
+      },
+      "applicable_cost": {
+        "mean_runtime_seconds": 0.1458311464033417,
+        "median_runtime_seconds": 0.09544316632673144
+      }
+    },
+    "ncc": {
+      "positive_count": 103,
+      "applicable_count": 74,
+      "new_test_only_count": 29,
+      "hit_at_5_count": 58,
+      "hit_at_5": 0.7837837837837838,
+      "all_recall_at_20_count": 52,
+      "all_recall_at_20": 0.7027027027027027,
+      "status_counts": {
+        "ok": 103
+      },
+      "applicable_status_counts": {
+        "ok": 74
+      },
+      "applicable_cost": {
+        "mean_runtime_seconds": 0.14980373306929864,
+        "median_runtime_seconds": 0.09496800042688847
+      }
+    },
+    "codex": {
+      "positive_count": 103,
+      "applicable_count": 74,
+      "new_test_only_count": 29,
+      "hit_at_5_count": 68,
+      "hit_at_5": 0.918918918918919,
+      "all_recall_at_20_count": 66,
+      "all_recall_at_20": 0.8918918918918919,
+      "status_counts": {
+        "ok": 103
+      },
+      "applicable_status_counts": {
+        "ok": 74
+      },
+      "applicable_cost": {
+        "mean_runtime_seconds": 138.57327534056998,
+        "median_runtime_seconds": 88.23602187633514,
+        "mean_recorded_tokens": 251551.74324324325,
+        "token_coverage": 74,
+        "total_recorded_tokens": 18614829.0
+      }
+    },
+    "opencode": {
+      "positive_count": 103,
+      "applicable_count": 74,
+      "new_test_only_count": 29,
+      "hit_at_5_count": 70,
+      "hit_at_5": 0.9459459459459459,
+      "all_recall_at_20_count": 67,
+      "all_recall_at_20": 0.9054054054054054,
+      "status_counts": {
+        "ok": 98,
+        "timeout": 5
+      },
+      "applicable_status_counts": {
+        "ok": 73,
+        "timeout": 1
+      },
+      "applicable_cost": {
+        "mean_runtime_seconds": 579.0805170954885,
+        "median_runtime_seconds": 478.67755603790283,
+        "mean_recorded_tokens": 185883.95945945947,
+        "token_coverage": 74,
+        "total_recorded_tokens": 13755413.0
+      }
+    }
+  }
+}
