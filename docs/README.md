@@ -1,8 +1,7 @@
 # Replication documentation and additional evidence
 
 This directory is the entry point for protocol notes and additional evidence
-provided through the anonymous replication repository. No separate supplementary
-PDF is submitted. Core task definitions, evaluation denominators and main
+provided through the anonymous replication repository. Core task definitions, evaluation denominators and main
 findings remain in the paper.
 
 The documents point to the released machine-readable records under `data/` and
@@ -50,7 +49,7 @@ The RQ3 cost table displays maintenance-call tokens in millions and actor-proces
 time in seconds; Online seed and reflection consumption is reported separately
 in the [resource accounting protocol](history_and_memory_protocol.md).
 
-| Paper content or former appendix section | Readable document | Supporting result group |
+| Paper content | Readable document | Supporting result group |
 |---|---|---|
 | Construction, execution profiles and task schemas | [Construction protocol](benchmark_construction.md) | [Repository profiles](../benchmark/server/repo_profiles/README.md), [evaluator schema](../benchmark/server/schema.md) |
 | Test-maintenance patterns: classification and counting | [Annotation protocol](annotation_and_trajectory_protocol.md#maintenance-pattern-annotation) | [Characterization records](../results/benchmark_characterization/) |
@@ -61,7 +60,7 @@ in the [resource accounting protocol](history_and_memory_protocol.md).
 | History and memory analysis | [History protocol](history_and_memory_protocol.md) | [RQ3 records](../results/rq3/) |
 | Generation on shared positives | [Shared-positive comparison](history_and_memory_protocol.md#shared-positive-generation-comparison) | [Counts and episode IDs](../results/rq3/shared_positive_generation.json) |
 
-The four former appendix sections are available as linked Markdown documents.
+Protocol descriptions are available as linked Markdown documents.
 Frozen summaries expose their counting scope and evidence boundary. The
 repository does not distribute private evaluation Gold, every prepared
 snapshot, all annotation revision notes or raw model contexts.

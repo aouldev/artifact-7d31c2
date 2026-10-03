@@ -63,13 +63,12 @@ Online seed and reflection phases. Online history-availability records and the
 Saleor product-diagnostics case provide the evidence for the RQ3 history discussion.
 
 RQ2 also includes behavior definitions with source anchors, all 60 source-only
-review cards, and recorded mutation execution evidence. The two Saleor case
-studies include exact edits, admission probes, frozen test patches and a replay
+review cards, and recorded mutation execution evidence. One Saleor case contains
+two behavior-level mutations, with exact edits, admission probes, frozen test patches and a replay
 runner; see [the case instructions](experiments/case_studies/saleor_attribute_choices/README.md).
 
 [`docs/`](docs/README.md) is the entry point for replication protocols and
-additional evidence; no separate supplementary PDF is submitted. Its
-paper-to-repository guide maps the former appendix sections to construction,
+additional evidence. Its paper-to-repository guide links construction,
 annotation, target-condition sensitivity, locator and history documents,
 together with their supporting result records.
 
@@ -102,22 +101,15 @@ patterns, condition coverage, and a language-neutral requirement-level label
 table with its codebook. Internal evidence prose and annotation revision
 ledgers are not part of the public package.
 
-The RQ1 prior-method metrics are released as frozen result records under
-`results/rq1/prior_methods/`. Their original adapters and environment-specific
-setup are staging-only under `_internal/`; they are not presented as a
-standalone rerunnable package.
+The RQ1 prior-method metrics are frozen result records under
+`results/rq1/prior_methods/`. Their environment-specific adapters are not
+public rerun entry points.
 
-The public construction code is a runnable method demonstration. The
-repository-specific construction workers and retry logs remain under
-`_internal/` in the staging workspace. Eighteen evaluator configurations and a
+The public construction code is a runnable method demonstration. Eighteen evaluator configurations and a
 portable Node example are public under
 [`benchmark/server/repo_profiles/`](benchmark/server/repo_profiles/README.md).
 The small evaluator preload shims under `experiments/configs/shims/` are kept
 public because the benchmark server uses them.
-
-Release-building, hidden-Gold synchronization, oracle-submission, and
-leaderboard-generation utilities are also staging-only under
-`_internal/benchmark_release_scripts/`.
 
 The original implementation and associated documentation use the [MIT license](LICENSE).
 Repository-derived data and snippets retain their upstream terms; see

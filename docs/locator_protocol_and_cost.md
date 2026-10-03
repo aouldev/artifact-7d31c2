@@ -25,8 +25,8 @@ from the base snapshot.
 | Model | GPT-5.5 | GPT-5.5 |
 | Reasoning | low | default |
 | Completion budget | 900 seconds | 1,800 seconds |
-| Selected records using original official OAuth provider | 100 | 100 |
-| Updated-input records using AILink Responses API | 3 | 3 |
+| Selected episodes using official OAuth provider | 100 | 100 |
+| Selected episodes using AILink Responses API | 3 | 3 |
 
 Both agents use the same locator prompt with their own tools. The provider rows
 describe the selected historical locator records, rather than the provider

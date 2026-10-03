@@ -36,10 +36,13 @@ and 1,623 negative episodes. Its answer-free input and episode order are under
 
 ## Evaluation interfaces
 
-The benchmark separates identification from test-patch generation. These tasks
-provide the production diff, changed production paths, commit metadata, and
-access to the base snapshot. Target test paths, hidden labels, and developer
-test changes are withheld. The separate locator diagnostic receives changed
+The benchmark separates identification from test-patch generation. The main
+target-unknown interface provides the production diff, changed production paths,
+commit metadata, and access to the base snapshot. Developer-recorded test targets,
+validation labels, and reference test changes are hidden from the evaluated
+system. In the prior-method target-known control, developer-maintained targets
+are supplied for positive episodes; negatives in both conditions use locator
+candidates. The separate locator diagnostic receives changed
 production paths and commit metadata with read-only snapshot access, without
 the production diff. The released evaluator defines submission schemas and
 denominator rules.
