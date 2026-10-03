@@ -19,6 +19,10 @@ denominators before writing its SVG output.
 
 The scripts provide compact, data-backed previews and an auditable mapping
 from released result files to plots. Narrative diagrams and code-excerpt
-figures are maintained separately from these numerical renderers. Additional
-RQ-specific figures will be added only after their source data and renderers
-have been reviewed.
+figures are maintained separately from these numerical renderers.
+
+`results/benchmark_characterization/maintenance_history/` supplies the episode
+starts, UTC commit coordinates and roles, repository ranges, and counts for
+the paper's history figure. Its summary reports 29/44 episodes with production
+changes after the first test update, and the recorded-production-commit shares
+36/152 for Cal.com and 17/144 for Hoppscotch.

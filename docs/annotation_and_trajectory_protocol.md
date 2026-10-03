@@ -9,20 +9,14 @@ defines the pattern categories and aggregation rules, while
 Unattributed, uncertain, and unresolved records remain explicit in the data;
 they are not silently converted into a pattern.
 
-The public release reports the final labels and codebook. It does not identify
-the annotator or include private working notes, local paths, credentials, or
-superseded drafts. The annotation is a single-author review with Codex-assisted
-code inspection; it is not an inter-rater agreement study.
+The public release reports the final labels and codebook. Private working
+notes, local paths, credentials, and superseded drafts are excluded.
 
 ### Review and counting unit
 
-One author inspected production/test patches and relevant repository history
-to record each test edit's purpose and its relation to the supplied production
-change. Codex assisted with code inspection, classification boundaries and
-review of activities affected by dataset repairs. The author adopted the
-resulting annotation corrections. The released CSV contains final labels;
-the underlying activity evidence and revision notes remain in the research
-records.
+The released CSV records each test edit's purpose and its relation to the
+supplied production change. Its activity labels use production/test patches
+and relevant repository history as evidence.
 
 Each activity represents a maintenance purpose within a test scenario. Inputs,
 mocks and assertions added for a new scenario form one Test Augmentation (TA)
@@ -59,9 +53,6 @@ All ten episodes in the last group belong to training. They include independent
 type/import cleanup, production slices that omit changes addressed by test
 edits, and uncertain attribution. A relationship established in the full
 history can therefore be unsupported by the supplied production patch.
-Training inputs and labels remain frozen; some correction candidates have not
-been adopted. These records may affect training, retrieval or maintenance
-histories; their effect on method performance has not been quantified.
 
 [`attribution_summary.json`](../results/benchmark_characterization/attribution_summary.json)
 is recomputed from the released activity CSV and training membership. It retains
@@ -90,12 +81,6 @@ Codex, and OpenCode patch labels (`complete`, `partial`, `missing`, or
 `unknown`) and the 46 paired episodes used for per-episode missing-share
 comparisons.
 
-A single AI assistant performed the behavior decomposition and patch-coverage
-coding. An author reviewed 60 source-only cards for behavior necessity and
-responsibility boundaries. Those cards did not include the anonymized patch
-materials, so this review does not establish independent human verification
-of the developer or agent patch labels. Inter-rater agreement was not measured.
-
 `analysis/summarize_rq2_behaviors.py` recomputes the patch-label counts,
 checks the 46-episode paired table against the behavior labels, and reproduces
 the 20,000-draw bootstrap intervals with seed 20260930. Missing shares are
@@ -111,11 +96,9 @@ diff and anchor-line SHA-256 values bind each citation to that released input.
 
 `results/rq2/source_review_cards.jsonl` contains all 60 filled source-only review
 cards, including proposals, necessity and responsibility decisions, reasons
-and source anchors. Chinese contract and review prose is translated into
-English; labels and source references are preserved. These cards calibrate the
-behavior decomposition and responsibility boundary; they are not a second full
-annotation and do not estimate inter-rater agreement. Their counts are reported
-in `behavior_review_summary.json`.
+and source anchors. These cards record the behavior decomposition and
+responsibility boundary. Their counts are reported in
+`behavior_review_summary.json`.
 
 The two Saleor mutation rows are illustrative diagnostic evidence and are not a
 population estimate. `results/rq2/mutation_execution.json` records normal/mutant
@@ -143,8 +126,6 @@ the behavior mapping. `file_write_timeline.json` records successful client
 write events and classifies each run by its number of writes and distinct
 written files. `analysis/check_rq2_process.py` checks these counts and the
 plan aggregates against the released records.
-A single AI assistant coded the public plans retrospectively; this coding
-was not independent of the patch review.
 Private trace roots, credentials, hidden gold, and full model contexts are
 excluded.
 

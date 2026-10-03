@@ -1,0 +1,26 @@
+{
+  "scope": "released positive-episode history characterization",
+  "positive_episodes": 288,
+  "repositories_with_positive_episodes": 16,
+  "single_commit_episodes": 244,
+  "multi_commit_episodes": 44,
+  "distinct_repository_commits_in_positive_episodes": 328,
+  "production_continues_after_first_test": {
+    "episodes": 29,
+    "denominator": 44,
+    "share": 0.6590909090909091
+  },
+  "production_commit_positive_membership": {
+    "cal.com": {
+      "positive_member_commits": 36,
+      "recorded_production_commits": 152,
+      "share": 0.23684210526315788
+    },
+    "hoppscotch": {
+      "positive_member_commits": 17,
+      "recorded_production_commits": 144,
+      "share": 0.11805555555555555
+    }
+  },
+  "time_basis": "UTC committer timestamps; weeks start on Monday"
+}

@@ -36,6 +36,7 @@ model event trees, and exploratory runs are excluded.
 |---|---|---|
 | Construction, execution profiles and task schemas | [Construction protocol](benchmark_construction.md) | [Repository profiles](../benchmark/server/repo_profiles/README.md), [evaluator schema](../benchmark/server/schema.md) |
 | Test-maintenance patterns: classification and counting | [Annotation protocol](annotation_and_trajectory_protocol.md#maintenance-pattern-annotation) | [Characterization records](../results/benchmark_characterization/) |
+| Repository histories and within-episode commit timing | [History coordinates and counts](../results/benchmark_characterization/maintenance_history/) | [Summary](../results/benchmark_characterization/maintenance_history/summary.json) |
 | Target conditions and sensitivity | [Conditions and sensitivity](target_conditions_and_sensitivity.md) | [Sensitivity aggregates](../results/benchmark_characterization/condition_sensitivity.json) |
 | Existing-target locator configuration and cost | [Locator protocol](locator_protocol_and_cost.md) | [Locator records](../results/locator/) |
 | Experiment versions and tool permissions | [Configuration links](history_and_memory_protocol.md) | [Stateless](../experiments/agents/stateless/experiment_config.json), [Continuous](../experiments/agents/continuous/experiment_config.json), [Online](../experiments/agents/online/experiment_config.json) |

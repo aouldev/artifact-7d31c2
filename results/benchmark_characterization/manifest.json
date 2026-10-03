@@ -41,6 +41,26 @@
     "attribution_summary.json": {
       "bytes": 788,
       "sha256": "db2228c33cd23ee6aaa1e190377cb0acbdc763df05d5375a3e665b2ab3ae94e4"
+    },
+    "maintenance_history/episode_timing.csv": {
+      "bytes": 26163,
+      "sha256": "ee733a7f827a052d27b80a58761713faa615b518f9087f306090d3e6fafde8fc"
+    },
+    "maintenance_history/episode_temporal_organization.csv": {
+      "bytes": 18846,
+      "sha256": "757012197005d0d50c121c9d2468f19918a7ea5d73892f4376ced0573ea321bd"
+    },
+    "maintenance_history/repository_variation.csv": {
+      "bytes": 4034,
+      "sha256": "b54e4dddf7ac4dabf265938d67aa7e6a7f5917ed52d35b333c10517227662b3d"
+    },
+    "maintenance_history/episode_commits.csv": {
+      "bytes": 47016,
+      "sha256": "82d8522af54c0062e0e1ad16c12b38accef8f98e1f8a7f68ac2a4b5c50234874"
+    },
+    "maintenance_history/summary.json": {
+      "bytes": 784,
+      "sha256": "dd9cf84d9b098275f96f5dde236c85c9e40a5849d1dfa76da51ea65ddf55f92d"
     }
   }
 }
